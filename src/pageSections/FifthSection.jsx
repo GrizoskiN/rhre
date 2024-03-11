@@ -112,8 +112,8 @@ const FifthSection = () => {
                           </span>
                         </h2>
                       </div>
-                    </div>
-                    <div className="flex justify-between items-center mt-4">
+                  </div>
+                  <div className="flex justify-between items-center mt-4">
                       <div className="hidden lg:flex lg:flex-col">
                         <h3 className="font-bold text-2xl">{address}</h3>
                         <h4 className="">{address2}</h4>
@@ -132,9 +132,9 @@ const FifthSection = () => {
                           <p className="">Baths</p>
                         </div>
                       </div>
-                    </div>
                   </div>
-                  <Image src={img} className="rounded-xl w-full group-hover:scale-125 transition-transform duration-700" />
+                 </div>
+                  <Image src={img}className="rounded-xl w-full group-hover:scale-125 transition-transform duration-700"/>
                 </div>
               </li>
             ),
