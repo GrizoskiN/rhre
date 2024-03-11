@@ -4,6 +4,7 @@ import HeaderSection from "@/pageSections/HeaderSection";
 import SecondSection from "@/pageSections/SecondSection";
 import ThirdSection from "@/pageSections/ThirdSection";
 import FourthSection from "@/pageSections/FourthSection";
+import FifthSection from "@/pageSections/FifthSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,7 @@ export default function Home() {
       <SecondSection />
       <ThirdSection/>
       <FourthSection/>
+      <FifthSection/>
     </main>
   )
 }
