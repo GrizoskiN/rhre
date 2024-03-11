@@ -27,15 +27,15 @@ const FourthSection = () => {
     
 
   return (
-    <div className="bg-royal relative py-32 my-32">
-        <h1 className="text-center text-8xl font-bold text-white">Available Locations</h1>
-        <div className="text-white flex w-1/5 m-auto items-center justify-between mt-16 text-xl">
+    <div className="bg-royal relative py-11 lg:py-32 my-32">
+        <h1 className="text-center text-5xl xl:text-8xl font-bold text-white">Available Locations</h1>
+        <div className="text-white flex w-2/3 lg:w-1/5 m-auto items-center justify-between mt-6  lg:mt-16 text-xl">
             <h3 className="flex items-center"><span className="mr-3">{email}</span> Email Us</h3>
             <h3 className="flex items-center"><span className="mr-3">{phone}</span>Call Us</h3>
             <h3 className="flex items-center"><span className="mr-3">{whatsapp}</span>WhatsApp</h3>
         </div>
         <div>
-      <Image src={dubai} width={1000} className="w-2/3 m-auto top-48"/>
+      <Image src={dubai} width={1000} className="lg:w-2/3 m-auto "/>
 </div>
     </div>
   )
