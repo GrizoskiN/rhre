@@ -53,14 +53,9 @@ const Menu = (props) => {
 
   return (
     <>
-      <div className="hidden text-white max-w-[1400px] w-10/12 absolute top-5 left-1/2 -translate-x-1/2 lg:flex justify-between items-center z-20">
+      <div className="hidden text-white max-w-[1400px] w-11/12 absolute top-5 left-1/2 -translate-x-1/2 lg:flex justify-between items-center z-20">
         <Link href="/">
-        <Image
-              src={logo}
-              lobjectFit="cover"
-              width={200}
-              className="bg-fit"
-            />
+          <Image src={logo} objectFit="cover" width={200} className="bg-fit" />
         </Link>
         <div className="flex items-center uppercase font-[400] mt-4 text-lg">
           <Link href="/" className="lg:mx-5">
@@ -81,12 +76,12 @@ const Menu = (props) => {
         </div>
       </div>
       <div className="MOBILE  lg:hidden absolute w-full m-auto top-0 left-1/2 -translate-x-1/2 z-50">
-        <div className=" m-auto w-10/12  flex justify-between items-center h-16 mt-5 relative z-50">
+        <div className=" m-auto w-11/12  flex justify-between items-center h-16 mt-5 relative z-50">
           <Link href="/">
             {" "}
             <Image
               src={logo}
-              lobjectFit="cover"
+              objectFit="cover"
               layout="contain"
               className="bg-fit"
             />

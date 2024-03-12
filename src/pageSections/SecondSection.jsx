@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SecondSection = () => {
   return (
-    <div className="w-10/12 max-w-[1400px] m-auto py-16 xl:py-32">
+    <div className="w-11/12 max-w-[1400px] m-auto py-16 xl:py-32">
       <div className=" lg:flex justify-between items-end">
         <h1 className="text-4xl mb-3 xl:mb-0 lg:text-6xl font-bold xl:w-1/2">
           Your Trusted Real Estate Advisors

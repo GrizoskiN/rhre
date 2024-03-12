@@ -5,7 +5,7 @@ const HeaderSection = () => {
   return (
     <>
       <div className="h-screen  overflow-hidden relative w-full text-white">
-        <div className="flex flex-col text-left justify-center items-start max-w-[1400px] w-10/12 h-full m-auto">
+        <div className="flex flex-col text-left justify-center items-start max-w-[1400px] w-11/12 h-full m-auto">
           <h1 className=" text-5xl lg:text-7xl xl:text-[8rem] mt-24 font-bold">
             Making Your <br /> Dream <span className="font-light">Space</span>
           </h1>

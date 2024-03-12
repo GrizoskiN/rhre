@@ -75,7 +75,7 @@ const FifthSection = () => {
   }, []);
   return (
     <div className="w-full m-auto py-16 xl:py-11 overflow-hidden">
-      <div className="w-2/3 max-w-[1400px] m-auto lg:flex justify-between items-end">
+      <div className="w-11/12 max-w-[1400px] m-auto lg:flex justify-between items-end">
         <h1 className="text-4xl mb-3 xl:mb-0 lg:text-6xl font-bold xl:w-1/2">
           Discover Your Perfect Property Match
         </h1>
@@ -85,7 +85,7 @@ const FifthSection = () => {
           imagination
         </p>
       </div>
-      <div ref={menuRef} className="flex mt-32 w-4/5 ml-auto ">
+      <div ref={menuRef} className="flex mt-32 w-2/3 ml-auto ">
         <motion.ul
           drag="x"
           dragConstraints={{ right: 0, left: -width }}

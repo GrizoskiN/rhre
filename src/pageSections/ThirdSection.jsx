@@ -5,7 +5,7 @@ import rhre3 from "@/../public/img/rhre3.jpg";
 import rhre from "@/../public/img/rhre.jpg";
 const ThirdSection = () => {
   return (
-    <div className="w-10/12 max-w-[1400px] m-auto  ">
+    <div className="w-11/12 max-w-[1400px] m-auto  ">
       <div className=" lg:flex justify-between items-end gap-11">
         <h1 className="text-4xl lg:text-5xl mb-3 xl:mb-0  font-bold  xl:w-1/2">
           Discover Your Perfect Property Match
@@ -47,7 +47,7 @@ const ThirdSection = () => {
                 x2="365.412"
                 y2="168.845"
                 stroke="black"
-                stroke-width="1.04609"
+                strokeWidth="1.04609"
               />
               <line
                 x1="491.39"
@@ -55,7 +55,7 @@ const ThirdSection = () => {
                 x2="491.39"
                 y2="168.845"
                 stroke="black"
-                stroke-width="1.04609"
+                strokeWidth="1.04609"
               />
               <rect
                 x="18.723"
