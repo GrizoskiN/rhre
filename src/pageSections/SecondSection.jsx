@@ -16,7 +16,7 @@ const SecondSection = () => {
       </div>
 
       <div className="mt-8 lg:mt-24 lg:flex gap-5">
-        <div className="grid grid-cols-2 lg:w-1/2 gap-5 ">
+        <div className="grid grid-cols-2 lg:w-1/2 gap-2 lg:gap-5 ">
           <div className="bg-white rounded-xl pl-5 py-4">
             <h1 className="text-5xl md:text-8xl font-bold">4k</h1>
             <p className="text-md md:text-xl">Project Completed</p>
@@ -34,7 +34,7 @@ const SecondSection = () => {
             <p className="text-md md:text-xl">Awards Achievement</p>
           </div>
         </div>
-        <div className="bg-royal/10 mt-5 lg:mt-0 lg:w-1/2 h-full md:flex p-5 rounded-xl gap-5">
+        <div className="bg-royal/10 mt-2 lg:mt-0 lg:w-1/2 h-full md:flex p-5 rounded-xl gap-5">
           <div className="flex flex-col items-start justify-between">
             
             <p className="text-xl font-[500]">

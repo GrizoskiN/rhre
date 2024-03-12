@@ -53,25 +53,27 @@ const EightSection = () => {
     setWidth(menuRef.current.scrollWidth - menuRef.current.offsetWidth);
   }, []);
   return (
-    <div className="w-11/12 max-w-[1800px] ml-auto py-16 xl:py-11 overflow-hidden flex">
-      <div className="w-2/3 max-w-[1400px] m-auto  justify-between items-end">
-        <h1 className="text-4xl mb-3 xl:mb-0 lg:text-6xl font-bold xl:w-1/2">
+    <div className="w-full text-white  ml-auto  py-11 overflow-hidden lg:flex bg-royal">
+      <div className="w-11/12 lg:w-2/3  m-auto  ">
+        <h1 className="text-4xl mb-3 xl:mb-0 lg:text-6xl font-bold lg:w-2/3 m-auto">
           Latest News
         </h1>
-       <p className="lg:w-2/3 mt-5 text-xl">Here you can find the best articles that will help you and your business when it comes to investments in real estate!</p>
+       <p className="lg:w-2/3 m-auto mt-5 text-xl">Here you can find the best articles that will help you and your business when it comes to investments in real estate!</p>
       </div>
-      <div ref={menuRef} className="flex mt-32 w-full ml-auto overflow-hidden">
+      <div ref={menuRef} className="flex mt-11 lg:mt-32 w-full ml-auto overflow-hidden">
         <motion.ul
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
           className="flex gap-5 ">
           {services.map(
-            ({ id, text1, img, address, address2, area, baths, rooms }) => (
+            ({ id, text1, img, address}) => (
               <li
                 key={id}
-                className=" overflow-hidden cursor-pointer w-96 lg:w-[27rem] group ">
-                <div className="pointer-events-none  relative  ">
-                  <Image src={img}className="rounded-xl w-full "/>
+                className=" overflow-hidden cursor-pointer w-96 lg:w-[27rem]  group">
+                <div className="pointer-events-none overflow-hidden ">
+                  <div className="overflow-hidden ">
+                  <Image src={img}className="rounded-xl w-full group-hover:scale-125 transition-transform duration-300"/>
+                  </div>
                   <div className=" rounded-xl mt-5 ">
                     <div className=" ">
                       <h1 className="font-bold text-3xl">

@@ -3,8 +3,8 @@ import zaid from "@/../public/img/zaid_rhre.png";
 
 const SeventhSection = () => {
   return (
-    <div className="w-11/12 max-w-[1400px] m-auto my-11 lg:my-32 text-center">
-      <p className="text-xl lg:text-3xl font-light text-center italic">
+    <div className="w-11/12 max-w-[1400px] m-auto my-16 lg:my-32 text-center">
+      <p className="text-2xl lg:text-3xl font-light text-center italic">
         "Welcome to our real estate agency, where we believe that{" "}
         <span className="font-semibold">finding your dream property</span>{" "}
         should be an exciting and fulfilling experience. With a passion for

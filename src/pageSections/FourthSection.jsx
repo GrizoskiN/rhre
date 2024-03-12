@@ -67,7 +67,7 @@ const FourthSection = () => {
   );
 
   return (
-    <div className="bg-royal  relative py-11 lg:py-32 my-32">
+    <div className="bg-royal  relative py-11 lg:py-32 w-11/12 m-auto rounded-3xl lg:rounded-full my-11 lg:my-32 ">
       <h1 className="text-center text-3xl xl:text-8xl font-bold text-white">
         Available Locations
       </h1>

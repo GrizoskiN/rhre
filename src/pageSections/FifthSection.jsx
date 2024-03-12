@@ -74,7 +74,7 @@ const FifthSection = () => {
     setWidth(menuRef.current.scrollWidth - menuRef.current.offsetWidth);
   }, []);
   return (
-    <div className="w-full m-auto py-16 xl:py-11 overflow-hidden">
+    <div className="w-full m-auto  xl:py-11 overflow-hidden">
       <div className="w-11/12 max-w-[1400px] m-auto lg:flex justify-between items-end">
         <h1 className="text-4xl mb-3 xl:mb-0 lg:text-6xl font-bold xl:w-1/2">
           Discover Your Perfect Property Match
@@ -85,7 +85,7 @@ const FifthSection = () => {
           imagination
         </p>
       </div>
-      <div ref={menuRef} className="flex mt-32 w-2/3 ml-auto ">
+      <div ref={menuRef} className="flex mt-11 lg:mt-32 w-2/3 ml-auto ">
         <motion.ul
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
@@ -94,7 +94,7 @@ const FifthSection = () => {
             ({ id, text1, img, address, address2, area, baths, rooms }) => (
               <li
                 key={id}
-                className=" overflow-hidden cursor-pointer w-96 lg:w-[32rem] group ">
+                className=" overflow-hidden cursor-pointer w-80 lg:w-[32rem] group ">
                 <div className="pointer-events-none  relative  ">
                   <div className="bg-gray-200 rounded-xl p-5 absolute  left-[5%] right-[5%] opacity-0 group-hover:opacity-100 z-20 -bottom-32 group-hover:bottom-5 transition-all duration-500">
                     <div className="lg:flex justify-between items-center text-center ">
