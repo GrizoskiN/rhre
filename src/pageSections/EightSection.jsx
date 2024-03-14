@@ -64,15 +64,15 @@ const EightSection = () => {
         <motion.ul
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
-          className="flex gap-5 ">
+          className="flex gap-5 ml-16">
           {services.map(
             ({ id, text1, img, address}) => (
               <li
                 key={id}
-                className=" overflow-hidden cursor-pointer w-96 lg:w-[27rem]  group">
+                className=" overflow-hidden cursor-pointer w-96 md:w-[30rem] lg:w-[27rem]  group">
                 <div className="pointer-events-none overflow-hidden ">
-                  <div className="overflow-hidden ">
-                  <Image src={img}className="rounded-xl w-full group-hover:scale-125 transition-transform duration-300"/>
+                  <div className="overflow-hidden  h-64 md:h-80  lg:h-auto rounded-xl ">
+                  <Image src={img}className="w-full  group-hover:scale-125 transition-transform duration-300"/>
                   </div>
                   <div className=" rounded-xl mt-5 ">
                     <div className=" ">
