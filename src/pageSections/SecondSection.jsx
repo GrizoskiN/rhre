@@ -6,23 +6,21 @@ import { useInView } from "react-intersection-observer";
 const SecondSection = () => {
   const { ref, inView } = useInView({
     triggerOnce: true, // Only trigger the animation once
-    threshold: 0.2, // Trigger the animation when 70% of the element is in view
+    threshold: 0.2, // Trigger the animation when 20% of the element is in view
   });
   return (
     <div className="w-11/12 max-w-[1400px] m-auto py-16 xl:py-32" >
       <motion.div
       ref={ref}
-      
-   
-      initial={{ opacity: 0, y: 70 }}
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 70 }}
+      initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
         transition={{ duration: 0.6 }}
         className="lg:flex justify-between items-end"
       >
         <motion.h1
          ref={ref}
-         initial={{ opacity: 0, y: 70 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 70 }}
+         initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
           transition={{ duration: 0.6 }}
           className="text-4xl mb-3 xl:mb-0 lg:text-6xl font-bold xl:w-1/2"
         >
@@ -30,8 +28,8 @@ const SecondSection = () => {
         </motion.h1>
         <motion.p
          ref={ref}
-         initial={{ opacity: 0, y: 70 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 70 }}
+         initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="xl:w-1/3 text-lg"
         >
@@ -42,8 +40,8 @@ const SecondSection = () => {
 
       <motion.div
        ref={ref}
-       initial={{ opacity: 0, y: 70 }}
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 70 }}
+       initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         className="mt-8 lg:mt-24 lg:flex gap-5"
       >
@@ -87,16 +85,16 @@ const SecondSection = () => {
          
         </div>
         <motion.div
-          initial={{ opacity: 0, x: 70 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           className="bg-royal/10 mt-2 lg:mt-0 lg:w-1/2 h-full md:flex p-5 rounded-xl gap-5"
         >
           <div className="flex flex-col items-start justify-between">
             <motion.p
              ref={ref}
-             initial={{ opacity: 0, y: 70 }}
-              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 70 }}
+             initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
               transition={{ duration: 0.6, delay: 0.6 }}
               className="text-xl font-[500]"
             >

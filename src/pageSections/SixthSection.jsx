@@ -6,14 +6,14 @@ import { useInView } from "react-intersection-observer";
 const SixthSection = () => {
   const { ref, inView } = useInView({
     triggerOnce: true, // Only trigger the animation once
-    threshold: 0.2, // Trigger the animation when 80% of the element is in view
+    threshold: 0.2, // Trigger the animation when 20% of the element is in view
   });
   return (
     <div className="w-full   m-auto py-16 p-4 lg:py-16 lg:p-11 mt-32 bg-royal/80  relative overflow-hidden">
       <h1 className="text-4xl text-center text-white mb-11 xl:mb-16 lg:text-6xl font-bold  ">
         Our Services
       </h1>
-      <div className="lg:flex gap-5 lg:py-16 max-w-[1400px] m-auto">
+      <motion.div ref={ref} className="lg:flex gap-5 lg:py-16 max-w-[1400px] m-auto">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
@@ -35,9 +35,10 @@ const SixthSection = () => {
         </motion.div>
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 40 }}
-          transition={{ duration: 0.6 }}
+          
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
+          transition={{ duration: 0.6, delay: .2  }}
           className="bg-white my-4 lg:my-0 rounded-xl p-9 hover:bg-royal cursor-pointer hover:text-white lg:hover:-mt-3 transition-all duration-300">
           <h1 className="font-semibold text-6xl">02</h1>
           <div className="mt-11 lg:mt-24">
@@ -54,9 +55,9 @@ const SixthSection = () => {
         </motion.div>
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: 60 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 60 }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 40 }}
+          transition={{ duration: 0.6, delay: .4 }}
           className="bg-white rounded-xl p-9 hover:bg-royal cursor-pointer hover:text-white lg:hover:-mt-3 transition-all duration-300">
           <h1 className="font-semibold text-6xl">03</h1>
           <div className="mt-11 lg:mt-24">
@@ -71,7 +72,7 @@ const SixthSection = () => {
             </p>
           </div>
         </motion.div>
-      </div>
+      </motion.div>
       <Image
         src={img}
         width={1000}
