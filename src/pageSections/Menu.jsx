@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/../public/img/logo.png";
+import logo from "@/../public/img/Logo.svg";
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -55,23 +55,23 @@ const Menu = (props) => {
     <>
       <div className="hidden text-white max-w-[1400px] w-11/12 absolute top-5 left-1/2 -translate-x-1/2 lg:flex justify-between items-center z-20">
         <Link href="/">
-          <Image src={logo} objectFit="cover" width={200} className="bg-fit" />
+          <Image src={logo}  width={200} className="bg-fit hover:scale-[105%] transition-transform duration-300" />
         </Link>
         <div className="flex items-center uppercase font-[400] mt-4 text-lg">
-          <Link href="/" className="lg:mx-5">
+          <Link href="/" className="lg:mx-5 hover:mb-3 hover:tracking-wide hover:text-gray-300 transition-all duration-300">
             About Us
           </Link>
-          <Link href="/" className="lg:mx-5">
+          <Link href="/" className="lg:mx-5 hover:mb-3 hover:tracking-wide hover:text-gray-300 transition-all duration-300">
             Services
           </Link>
-          <Link href="/" className="lg:mx-5">
+          <Link href="/" className="lg:mx-5 hover:mb-3 hover:tracking-wide hover:text-gray-300 transition-all duration-300">
             Projects for sales
           </Link>
-          <Link href="/" className="lg:mx-5">
+          <Link href="/" className="lg:mx-5 hover:mb-3 hover:tracking-wide hover:text-gray-300 transition-all duration-300">
             News
           </Link>
-          <Link href="/" className="lg:mx-5 border-[1px] px-11 py-3 rounded-md">
-            Contact
+          <Link href="/contact" className="lg:mx-5 border-[1px] px-11 py-3 rounded-md hover:mb-3 hover:bg-royal hover:border-royal transition-all duration-300">
+            Get In Touch
           </Link>
         </div>
       </div>
@@ -81,9 +81,8 @@ const Menu = (props) => {
             {" "}
             <Image
               src={logo}
-              objectFit="cover"
-              layout="contain"
-              className="bg-fit"
+              
+              className="object-cover"
             />
           </Link>
 
@@ -98,7 +97,7 @@ const Menu = (props) => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
             className="bg-royal/90 backdrop-blur-sm w-full fixed h-screen inset-0 z-40 text-white text-2xl ">
-            <div className="w-10/12 m-auto mt-32">
+            <div className="w-11/12 m-auto mt-32">
               <div
                 onClick={handleMenu}
                 className="border-b-[1px] py-3 border-white/20 w-full">

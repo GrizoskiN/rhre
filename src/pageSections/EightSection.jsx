@@ -53,7 +53,7 @@ const EightSection = () => {
     setWidth(menuRef.current.scrollWidth - menuRef.current.offsetWidth);
   }, []);
   return (
-    <div className="w-full text-white  ml-auto  py-11 overflow-hidden lg:flex bg-royal">
+    <div className="w-full text-white  ml-auto  py-11 overflow-hidden lg:flex bg-royal pb-32">
       <div className="w-11/12 lg:w-2/3  m-auto  ">
         <h1 className="text-4xl mb-3 xl:mb-0 lg:text-6xl font-bold lg:w-2/3 m-auto">
           Latest News

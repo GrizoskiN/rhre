@@ -1,6 +1,7 @@
 import Image from "next/image";
 import dubai from "@/../public/img/dubai.png";
-
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 const FourthSection = () => {
   const email = (
     <svg
@@ -65,36 +66,56 @@ const FourthSection = () => {
       />
     </svg>
   );
-
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Only trigger the animation once
+    threshold: 0.2, // Trigger the animation when 20% of the element is in view
+  });
   return (
-    <div className="bg-royal  relative py-11 lg:py-32 w-11/12 m-auto rounded-3xl  my-11 lg:my-32 ">
-      <h1 className="text-center text-3xl xl:text-8xl font-bold text-white">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 120 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 210 }}
+      transition={{ duration: 0.6 }}
+      className="bg-royal  relative py-11 lg:py-32 w-11/12 m-auto rounded-3xl  my-11 lg:my-32 ">
+      <motion.h1  ref={ref}
+      initial={{ opacity: 0, y: 220 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 210 }}
+      transition={{ duration: 0.6 }} className="text-center text-3xl xl:text-8xl font-bold text-white">
         Available Locations
-      </h1>
+      </motion.h1>
       <div className="hidden text-white md:flex w-2/3 lg:w-1/5 m-auto items-center justify-between mt-6  lg:mt-16 text-xl">
-        <h3 className="flex  items-center">
+        <motion.h3  ref={ref}
+      initial={{ opacity: 0, y: 160 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 160}}
+      transition={{ duration: 0.6 }} className="flex  items-center">
           <span className="mr-3">{email}</span> Email Us
-        </h3>
-        <h3 className="flex  items-center">
+        </motion.h3>
+        <motion.h3  ref={ref}
+      initial={{ opacity: 0, y: 160 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 160}}
+      transition={{ duration: 0.6 }} className="flex  items-center">
           <span className="mr-3">{phone}</span>Call Us
-        </h3>
-        <h3 className="flex  items-center">
+        </motion.h3>
+        <motion.h3  ref={ref}
+      initial={{ opacity: 0, y: 160 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 160}}
+      transition={{ duration: 0.6 }} className="flex  items-center">
           <span className="mr-3">{whatsapp}</span>WhatsApp
-        </h3>
+        </motion.h3>
       </div>
       <div className="relative lg:w-2/3 m-auto">
-      <span className='absolute bg-red-500 opacity-80 w-5 h-5 md:w-8 md:h-8 rounded-full top-32 left-[20%] z-10 animate-bounce '></span>
-      <span className='absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-16 left-[45%] z-0 animate-bounce '></span>
-      <span className='absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[40%] left-[65%] z-0 animate-bounce '></span>
-      <span className='absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[33%] left-[40%] z-0 animate-bounce '></span>
-      <span className='absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[23%] left-[35%] z-0 animate-bounce '></span>
-      <span className='absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[63%] left-[45%] z-0 animate-bounce '></span>
-      <span className='absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[73%] left-[85%] z-0 animate-bounce '></span>
-      <span className='absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[53%] left-[65%] z-0 animate-bounce '></span>
-      <span className='absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[57%] left-[35%] z-0 animate-bounce '></span>
+        <span className="absolute bg-red-500 opacity-80 w-5 h-5 md:w-8 md:h-8 rounded-full top-32 left-[20%] z-10 animate-bounce "></span>
+        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-16 left-[45%] z-0 animate-bounce "></span>
+        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[40%] left-[65%] z-0 animate-bounce "></span>
+        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[33%] left-[40%] z-0 animate-bounce "></span>
+        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[23%] left-[35%] z-0 animate-bounce "></span>
+        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[63%] left-[45%] z-0 animate-bounce "></span>
+        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[73%] left-[85%] z-0 animate-bounce "></span>
+        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[53%] left-[65%] z-0 animate-bounce "></span>
+        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[57%] left-[35%] z-0 animate-bounce "></span>
         <Image src={dubai} width={1000} className="w-full  " />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
