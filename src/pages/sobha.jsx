@@ -206,7 +206,7 @@ const Sobha = () => {
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
           <h1 className=" text-4xl lg:text-6xl lg:leading-[4rem] ">
-            WHERE COMFORTAND <br /> EXTRAVAGANCE MEET
+            WHERE COMFORT AND <br /> EXTRAVAGANCE MEET
           </h1>
           <p className="w-10/12 md:w-2/4 2xl:w-2/5  lg:text-xl mt-6 ml-auto ">
             Life at Sobha Hartland II embodies an exultant sense of connection
