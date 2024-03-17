@@ -55,7 +55,7 @@ const Menu = (props) => {
     <>
       <div className="hidden text-white max-w-[1400px] w-11/12 absolute top-5 left-1/2 -translate-x-1/2 lg:flex justify-between items-center z-20">
         <Link href="/">
-          <Image src={logo}  width={200} className="bg-fit hover:scale-[105%] transition-transform duration-300" />
+          <Image src={logo} priority  width={200} className="bg-fit hover:scale-[105%] transition-transform duration-300" />
         </Link>
         <div className="flex items-center uppercase font-[400] mt-4 text-lg">
           <Link href="/" className="lg:mx-5 hover:mb-3 hover:tracking-wide hover:text-gray-300 transition-all duration-300">
@@ -81,7 +81,7 @@ const Menu = (props) => {
             {" "}
             <Image
               src={logo}
-              
+              priority
               className="object-cover"
             />
           </Link>

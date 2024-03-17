@@ -5,6 +5,8 @@ import blog2 from "@/../public/img/blog2.jpg";
 import blog1 from "@/../public/img/blog1.jpg";
 import Image from "next/image";
 import Link from "next/link";
+
+import NewsCarousel from "@/components/contact/Projects/NewsCarousel";
 const EightSection = () => {
   const services = [
     {
@@ -14,36 +16,35 @@ const EightSection = () => {
       img: blog3,
     },
     {
-        id: 1,
-        text1: "Do you know builders?",
-        address: "Why do I need an architect?",
-        img: blog2,
-      },
-      {
-        id: 2,
-        text1: "Do you know builders?",
-        address: "Why do I need an architect?",
-        img: blog1,
-      },
-      {
-        id: 3,
-        text1: "Do you know builders?",
-        address: "Why do I need an architect?",
-        img: blog2,
-      },
-      {
-        id: 4,
-        text1: "Do you know builders?",
-        address: "Why do I need an architect?",
-        img: blog3,
-      },
-      {
-        id: 5,
-        text1: "Do you know builders?",
-        address: "Why do I need an architect?",
-        img: blog1,
-      },
-  
+      id: 1,
+      text1: "Do you know builders?",
+      address: "Why do I need an architect?",
+      img: blog2,
+    },
+    {
+      id: 2,
+      text1: "Do you know builders?",
+      address: "Why do I need an architect?",
+      img: blog1,
+    },
+    {
+      id: 3,
+      text1: "Do you know builders?",
+      address: "Why do I need an architect?",
+      img: blog2,
+    },
+    {
+      id: 4,
+      text1: "Do you know builders?",
+      address: "Why do I need an architect?",
+      img: blog3,
+    },
+    {
+      id: 5,
+      text1: "Do you know builders?",
+      address: "Why do I need an architect?",
+      img: blog1,
+    },
   ];
   const [width, setWidth] = useState(null);
 
@@ -58,9 +59,12 @@ const EightSection = () => {
         <h1 className="text-4xl mb-3 xl:mb-0 lg:text-6xl font-bold lg:w-2/3 m-auto">
           Latest News
         </h1>
-       <p className="lg:w-2/3 m-auto mt-5 text-xl">Here you can find the best articles that will help you and your business when it comes to investments in real estate!</p>
+        <p className="lg:w-2/3 m-auto mt-5 text-xl">
+          Here you can find the best articles that will help you and your
+          business when it comes to investments in real estate!
+        </p>
       </div>
-      <div ref={menuRef} className="flex mt-11 lg:mt-32 w-full ml-auto overflow-hidden">
+      {/* <div ref={menuRef} className="flex mt-11 lg:mt-32 w-full ml-auto overflow-hidden">
         <motion.ul
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
@@ -89,7 +93,8 @@ const EightSection = () => {
             ),
           )}
         </motion.ul>
-      </div>
+      </div> */}
+      <NewsCarousel menuRef={menuRef} width={width} services={services} />
     </div>
   );
 };

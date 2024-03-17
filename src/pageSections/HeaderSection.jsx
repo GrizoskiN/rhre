@@ -29,7 +29,7 @@ const HeaderSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <Link href="/"className="bg-white text-royal text-xl  px-9 py-2 xl:px-20 xl:py-3 rounded-lg pointer">
+            <Link href="/sobha"className="bg-white text-royal text-xl  px-9 py-2 xl:px-20 xl:py-3 rounded-lg pointer">
                Learn More
             </Link>
           </motion.div>

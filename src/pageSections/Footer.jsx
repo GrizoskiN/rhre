@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="mt-16 bg-royal w-full 2xl:w-11/12 m-auto rounded-tr-[150px] lg:rounded-3xl text-white pt-6 md:pt-11 lg:pt-16 pb-11">
       <div className="max-w-[1400px] m-auto w-11/12 md:w-2/3 lg:w-10/12 justify-between  lg:flex items-start gap-16 my-16">
         <div className="xl:flex flex-col  xl:items-start  gap-11 xl:w-1/3 ">
-          <Image src={logologo} width={500} className="w-3/4 mb-6 lg:w-10/12 lg:mb-0" />
+          <Image src={logologo} priority width={500} className="w-3/4 mb-6 lg:w-10/12 lg:mb-0" />
           <div>
             
             

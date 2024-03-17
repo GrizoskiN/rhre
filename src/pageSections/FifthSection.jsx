@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import rhre4 from "@/../public/img/rhre4.jpg";
 import rhre5 from "@/../public/img/rhre5.jpg";
 import Image from "next/image";
+import HoverCarousel from "@/components/contact/HoverCarousel";
 const FifthSection = () => {
   const services = [
     {
@@ -85,7 +86,7 @@ const FifthSection = () => {
           imagination
         </p>
       </div>
-      <div ref={menuRef} className="flex mt-11 lg:mt-32 w-2/3 ml-auto ">
+      {/* <div ref={menuRef} className="flex mt-11 lg:mt-32 w-2/3 ml-auto ">
         <motion.ul
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
@@ -140,7 +141,8 @@ const FifthSection = () => {
             ),
           )}
         </motion.ul>
-      </div>
+      </div> */}
+      <HoverCarousel menuRef={menuRef} width={width} services={services} contact={"Contact us"} info="for more info"/>
     </div>
   );
 };
