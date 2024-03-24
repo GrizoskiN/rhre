@@ -1,24 +1,20 @@
 import { useEffect, useState, useRef } from "react";
 import Gallery from "@/components/contact/Projects/Gallery";
 import HeaderImage from "@/components/contact/Projects/HeaderImage";
-import img from "@/../public/img/damac/header.jpg";
-import bedroom from "@/../public/img/damac/lagoon.jpg";
-import bedroom2 from "@/../public/img/damac/hills.jpg";
-import bedrooms from "@/../public/img/damac/gris.jpg";
+import img from "@/../public/img/damacimg/header.jpg";
+import bedroom from "@/../public/img/damacimg/lagoon.jpg";
+import bedroom2 from "@/../public/img/damacimg/hills.jpg";
+import bedrooms from "@/../public/img/damacimg/gris.jpg";
 import Title from "@/components/contact/Projects/Title";
-import asd from "@/../public/img/damac/header.jpg";
 import Image from "next/image";
-import damac2 from "@/../public/img/damac/second.jpg";
-import comfort from "@/../public/img/damac/development.jpg";
-import home from "@/../public/img/damac/home.jpg";
+import damac2 from "@/../public/img/damacimg/second.jpg";
+import comfort from "@/../public/img/damacimg/development.jpg";
+import home from "@/../public/img/damacimg/home.jpg";
 import Apartments from "@/components/contact/Projects/Apartments";
-import HoverCarousel from "@/components/contact/HoverCarousel";
 import Squares from "@/components/contact/Squares";
-import luxury from "@/../public/img/sobha/gallery/luxury.jpg";
-
 import Faq from "@/components/contact/Projects/Faq";
 
-import NewsCarousel from "@/components/contact/Projects/NewsCarousel";
+
 const Damac = () => {
   const photos = [
     {
@@ -125,16 +121,8 @@ const Damac = () => {
       text: "No, there is no need. In Dubai, there is a uniform property purchase contract for all construction companies, which cannot be changed.",
     },
   ];
-  const amenity = [
-    { id: 0, text1: "Fitness", img: luxury },
-    { id: 1, text1: "Jogging and walking", img: luxury },
-    { id: 2, text1: "Parks and gardens", img: luxury },
-    { id: 3, text1: "Parks and gardens", img: luxury },
-    { id: 4, text1: "Parks and gardens", img: luxury },
-  ];
-  const [width, setWidth] = useState(null);
+  
 
-  const menuRef = useRef();
 
   return (
     <div>
