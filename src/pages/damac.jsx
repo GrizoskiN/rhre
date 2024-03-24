@@ -6,7 +6,7 @@ import bedroom from "@/../public/img/damac/lagoon.jpg";
 import bedroom2 from "@/../public/img/damac/hills.jpg";
 import bedrooms from "@/../public/img/damac/gris.jpg";
 import Title from "@/components/contact/Projects/Title";
-
+import asd from "@/../public/img/damac/header.jpg";
 import Image from "next/image";
 import damac2 from "@/../public/img/damac/second.jpg";
 import comfort from "@/../public/img/damac/development.jpg";
@@ -54,9 +54,24 @@ const Damac = () => {
   ];
   const image = img;
   const clients = [
-    { id: 0, name: "Damac Lagoons", area: "A new master community inspired by wonders of the Mediterranean", image: bedroom },
-    { id: 1, name: "Damac Hills", area: "Luxury villas, apartments and a hotel", image: bedroom2 },
-    { id: 2, name: "Safa One de GRISOGONO", area: "Luxury and super luxury residences in Safa Park", image: bedrooms },
+    {
+      id: 0,
+      name: "Damac Lagoons",
+      area: "A new master community inspired by wonders of the Mediterranean",
+      image: bedroom,
+    },
+    {
+      id: 1,
+      name: "Damac Hills",
+      area: "Luxury villas, apartments and a hotel",
+      image: bedroom2,
+    },
+    {
+      id: 2,
+      name: "Safa One de GRISOGONO",
+      area: "Luxury and super luxury residences in Safa Park",
+      image: bedrooms,
+    },
   ];
 
   const benefits = [
@@ -128,7 +143,7 @@ const Damac = () => {
         company={"Properties by"}
         project={"DAMAC"}
         text={
-          "DAMAC Group established its property development division in 2002 with the establishment of DAMAC Properties, which has grown and expanded to be a globally recognised brand name around the world"
+          "DAMAC Group established its property development division in 2002 with the establishment of DAMAC Properties, which has grown and expanded to be a globally recognized brand name around the world"
         }
         price={"480.000"}
       />
