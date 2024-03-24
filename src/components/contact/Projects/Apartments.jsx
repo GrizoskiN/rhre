@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const Apartments = ({clients}) => {
+const Apartments = ({clients,title, subtitle}) => {
 //   const clients = [
 //     { id: 0, name: "1 Bedroom", area: "496 – 848 SQ FT", image: general },
 //     { id: 1, name: "1.5 Bedroom", area: "639 – 737 SQ FT", image: specialty },
@@ -16,15 +16,15 @@ const Apartments = ({clients}) => {
   return (
     <div className="w-11/12  max-w-[1400px] m-auto my-16 xl:my-32">
       <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold ">
-      RIVERSIDE CRESCENT
+      {title}
       </h1>
-     <p className="mb-6 text-2xl">Floorplans</p>
+     <p className="mb-6 text-2xl">{subtitle}</p>
       <div className="flex lg:mt-32  m-auto justify-between items-center">
         <div className="w-full ">
           {clients.map(({ id, name, area }) => (
             <ul
               key={id}
-              className="flex items-center transition-all duration-300 hover:duration-500 even:border-y-2 border-royal even:py-3 md:w-1/2 lg:w-1/3">
+              className="flex items-center transition-all duration-300 hover:duration-500 even:border-y-2 border-royal even:py-3 md:w-1/2 lg:w-2/3">
               {select === id }
               <li
                 onMouseOver={() => handleClick(id)}

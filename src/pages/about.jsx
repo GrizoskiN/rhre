@@ -2,7 +2,7 @@ import Image from "next/image";
 import About from "@/../public/img/about1.webp";
 import About1 from "@/../public/img/about2.webp";
 import ContactForm from "@/components/contact/ContactForm";
-import Zaid from "@/../public/img/zaid_rhre.png";
+import Zaid from "@/../public/img/zaid.jpg";
 const about = () => {
   const downArrow = (
     <svg
@@ -54,7 +54,7 @@ const about = () => {
         </div>
 
         <div className=" lg:w-2/4 ml-auto text-xl">
-          <h3 className="font-semibold">Our Founder, started this company because he wanted to make it easier for companies and clients to find their perfect match!</h3>
+          <h3 className="font-semibold">Our Founder, started this company because he wanted to make it easier for clients to find their perfect match!</h3>
           <p className="mt-11">
             With 15 rich years of sales experience, including 7 years in
             Telecommunication and 8 years in Real Estate in Dubai, I bring a
@@ -84,9 +84,9 @@ At our organization, we don't just promise success; we embody it. Rise high with
           </p>
 
           <div className="mt-11 flex items-center">
-            <Image src={Zaid} />
+            <Image src={Zaid} width={260} className="rounded-full" />
             <div className="ml-7">
-              <h1 className="font-semibold text-2xl">Zaid Mohammad</h1>
+              <h1 className="font-semibold text-2xl">Mohammad Zaid</h1>
               <h5 className="font-light text-[#777777] text-sm">
                 Founder & CEO
               </h5>
