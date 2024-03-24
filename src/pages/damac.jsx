@@ -18,31 +18,31 @@ import Faq from "@/components/contact/Projects/Faq";
 const Damac = () => {
   const photos = [
     {
-      src: "/img/damac/gallery/damac5.jpg",
+      src: "/img/damacimg/gallery/damac5.jpg",
       alt: "Image 1",
       width: 600,
       height: 800,
     },
     {
-      src: "/img/damac/gallery/damac2.jpg",
+      src: "/img/damacimg/gallery/damac2.jpg",
       alt: "Image 2",
       width: 800,
       height: 520,
     },
     {
-      src: "/img/damac/gallery/damac3.jpg",
+      src: "/img/damacimg/gallery/damac3.jpg",
       alt: "Image 1",
       width: 800,
       height: 520,
     },
     {
-      src: "/img/damac/gallery/damac1.jpg",
+      src: "/img/damacimg/gallery/damac1.jpg",
       alt: "Image 2",
       width: 800,
       height: 520,
     },
     {
-      src: "/img/damac/gallery/damac4.jpg",
+      src: "/img/damacimg/gallery/damac4.jpg",
       alt: "Image 2",
       width: 800,
       height: 517,
