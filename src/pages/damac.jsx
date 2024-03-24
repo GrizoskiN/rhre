@@ -6,9 +6,9 @@ import bedroom from "@/../public/img/damac/lagoon.jpg";
 import bedroom2 from "@/../public/img/damac/hills.jpg";
 import bedrooms from "@/../public/img/damac/gris.jpg";
 import Title from "@/components/contact/Projects/Title";
-import Icons from "@/components/contact/Projects/Icons";
+
 import Image from "next/image";
-import damac from "@/../public/img/damac/second.jpg";
+import damac2 from "@/../public/img/damac/second.jpg";
 import comfort from "@/../public/img/damac/development.jpg";
 import home from "@/../public/img/damac/home.jpg";
 import Apartments from "@/components/contact/Projects/Apartments";
@@ -141,7 +141,7 @@ const Damac = () => {
       />
 
       <Image
-        src={damac}
+        src={damac2}
         width={2000}
         className="w-full h-[25rem] md:h-auto object-cover"
       />
