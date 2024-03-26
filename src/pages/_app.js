@@ -1,7 +1,7 @@
-import Menu from "@/pageSections/Menu";
+import Menu from "@/components/pageSections/Menu";
 import { useState } from "react";
 import "@/styles/globals.css";
-import Footer from "@/pageSections/Footer";
+import Footer from "@/components/pageSections/Footer";
 
 export default function App({ Component, pageProps }) {
   const [active, setActive] = useState(false);
@@ -10,9 +10,9 @@ export default function App({ Component, pageProps }) {
   };
   return (
     <>
-      <Menu handleMenus={handleActive}  />
+      <Menu handleMenus={handleActive} />
       <Component {...pageProps} />
-      <Footer/>
+      <Footer />
     </>
   );
 }
