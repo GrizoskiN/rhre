@@ -12,17 +12,15 @@ const HeaderSection = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-5xl lg:text-7xl xl:text-[8rem] mt-24 font-bold">
+            className="text-5xl lg:text-7xl xl:text-8xl mt-24 font-bold">
             Making Your <br /> Dream <span className="font-light">Space</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:w-1/2 xl:w-1/2 xl:text-2xl my-8">
-            Welcome to our interior design agency! Our team of experienced
-            designers and decorators is passionate about creating beautiful,
-            functional spaces that enhance our client's lives.
+            className="lg:w-1/2 xl:w-1/2 xl:text-lg my-8">
+            Welcome to our agency! Our team of experienced designers and decorators is passionate about creating beautiful, functional spaces that enhance our clients' lives.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 110 }}

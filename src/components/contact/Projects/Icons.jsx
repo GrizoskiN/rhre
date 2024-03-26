@@ -77,13 +77,13 @@ const Icons = () => {
   </defs>
   </svg>
   
-  return <div className="w-11/12 max-w-[1400px] m-auto my-16 lg:my-32 grid grid-cols-2  lg:grid-cols-5 gap-5">
+  return <div className="w-11/12 max-w-[1300px] m-auto my-16 lg:my-32 grid grid-cols-2  lg:grid-cols-5 gap-5">
     {allIcons.map(({id, image, title, minutes}) =>(
 
         <div key={id} className="my-5  flex flex-col items-center">
             <Image src={image}  alt={title} className="h-11 object-contain"/>
             <div className="mt-4 text-center flex flex-col justify-between ">
-                <h1 className="font-bold text-xl uppercase leading-6 ">{title}</h1>
+                <h1 className="font-bold text-lg capitalize text-royal leading-6 ">{title}</h1>
                 <p className="flex items-center justify-center text-xl mt-3"><span className="mr-3">{clock}</span>{minutes} minutes</p>
             </div>
         </div>

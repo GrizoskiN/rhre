@@ -35,7 +35,7 @@ export default function Faq() {
     },
   ];
   return (
-    <div className="w-11/12 max-w-[1400px] m-auto mb-32">
+    <div className="w-11/12 max-w-[1200px] m-auto mb-32">
         <h1 className="text-4xl font-bold text-royal lg:text-center mb-16 ">Frequently Asked Questions</h1>
       <Accordion type="single" collapsible className="w-full  m-auto">
       {items.map(({ id, title, text }) => (

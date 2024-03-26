@@ -12,7 +12,7 @@ const Gallery = ({ photos }) => {
   const [index, setIndex] = useState(-1);
 
   return (
-    <div className="w-11/12 max-w-[1400px] m-auto my-11 lg:my-32">
+    <div className="w-11/12 max-w-[1200px] m-auto my-11 lg:my-32">
       <div className="">
         <PhotoAlbum
           photos={photos}

@@ -14,7 +14,7 @@ const Apartments = ({clients,title, subtitle}) => {
     setSelect(id);
   };
   return (
-    <div className="w-11/12  max-w-[1400px] m-auto my-16 xl:my-32">
+    <div className="w-11/12  max-w-[1200px] m-auto my-16 xl:my-32">
       <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold ">
       {title}
       </h1>

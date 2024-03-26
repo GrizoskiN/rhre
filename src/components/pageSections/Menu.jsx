@@ -61,7 +61,7 @@ const Menu = (props) => {
         <Link href="/">
           <Image src={about ? logodark : logo} priority  width={200} className="bg-fit hover:scale-[105%] transition-transform duration-300" />
         </Link>
-        <div className={`flex items-center uppercase font-[400] mt-4 text-lg ${about ? "text-royal" : "text-white"}`}>
+        <div className={`flex items-center uppercase font-[400] mt-4 text-sm ${about ? "text-royal" : "text-white"}`}>
           <Link href="/about" className="lg:mx-5  hover:tracking-wide hover:text-gray-300 transition-all duration-300">
             About Us
           </Link>

@@ -95,7 +95,7 @@ At our organization, we don't just promise success; we embody it. Rise high with
         </div>
       </div>
     
-      <div className="w-full lg:w-2/3 m-auto">
+      <div className="w-full max-w-[1300px] m-auto">
         <ContactForm />
       </div>
     </>

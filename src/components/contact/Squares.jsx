@@ -2,7 +2,7 @@
 
 export default function Squares({benefits}){
     return (
-        <div className="w-11/12 max-w-[1400px] m-auto my-11 lg:my-32">
+        <div className="w-11/12 max-w-[1200px] m-auto my-11 lg:my-32">
            
         <h3 className="text-2xl uppercase">Modern lifestyle</h3>
         <h1 className="text-4xl lg:text-6xl lg:leading-[4rem] lg:w-2/3 font-bold">What does the 360 Riverside Crescent project offer?</h1>

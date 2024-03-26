@@ -230,7 +230,7 @@ const Sobha = () => {
         <div><h1 className="text-4xl font-bold">AMMENITIES</h1><p className="">At Sobha Hartland II, amenities become necessities.</p></div>
       <NewsCarousel services={amenity} menuRef={menuRef} width={width} />
       </div> */}
-       <div className="w-full lg:w-2/3 m-auto">
+       <div className="w-full max-w-[1200px] m-auto">
         <ContactForm />
       </div>
     </>
