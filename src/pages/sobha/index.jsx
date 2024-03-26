@@ -23,6 +23,7 @@ import living from "@/../public/img/sobha/gallery/living.jpg";
 import Faq from "@/components/contact/Projects/Faq";
 
 import NewsCarousel from "@/components/contact/Projects/NewsCarousel";
+import ContactForm from "@/components/contact/ContactForm";
 const Sobha = () => {
   const photos = [
     {
@@ -129,34 +130,7 @@ const Sobha = () => {
     },
   ];
 
-  const items = [
-    {
-      id: 0,
-      title: "What taxes do I have to pay?",
-      text: "When you purchase a property, you pay a one-time fee of 4% of its price to the Dubai Land Department (DLD). You do not pay any taxes on profits when you decide to sell the property. The entire return on the property’s appreciation is yours!",
-    },
-   
-    {
-      id: 1,
-      title: "How can I pay for the property?",
-      text: "Several payment options are available for purchasing a property in the Riverside Crescent project. You can pay in cash, use cryptocurrencies, credit cards, or make a bank transfer. In Dubai, there is no limit on the amount of cash, and there is no need to declare the source of the funds. Important: the payment goes directly to the construction company and not through the real estate agent!"
-    },
-    {
-      id: 2,
-      title: "If I invest in the project, will I be the owner of the property?",
-      text: "Yes, definitely. When you purchase the property, you become the owner of the property and the land forever until you decide to sell it. In 2006, the government approved full ownership for all foreigners in 33 free trade zones in Dubai. After completing the registration of the property at the Dubai Land Department (DLD), you will receive a deed of ownership of the property directly to your email address.",
-    },
-    {
-      id: 3,
-      title: "Is my money in a safe place?",
-      text: "The funds you transfer to the construction company are held in an escrow account with bank support, ensuring the safety of investors’ funds until the property is delivered. In Dubai, there are strict government oversight, control, and enforcement mechanisms in place to fully protect investors’ funds. You do not need to open a bank account or get involved in the matter as everything is handled by the construction company.",
-    },
-    {
-      id: 4,
-      title: "Should I take a lawyer to review the contract?",
-      text: "No, there is no need. In Dubai, there is a uniform property purchase contract for all construction companies, which cannot be changed.",
-    },
-  ];
+
   const amenity = [
     {id:0, text1:"Fitness", img:luxury},
     {id:1, text1:"Jogging and walking", img:luxury},
@@ -173,7 +147,7 @@ const Sobha = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <HeaderImage
         header={image}
         company={"Sobha"}
@@ -251,12 +225,15 @@ const Sobha = () => {
       </div>
       <HoverCarousel menuRef={menuRef} width={width} services={services} />
       <Squares benefits={benefits} />
-      <Faq items={items} />
+      <Faq />
       {/* <div className="w-full m-auto my-32 flex items-center pl-48 pt-16 pb-32 bg-gray-200">
         <div><h1 className="text-4xl font-bold">AMMENITIES</h1><p className="">At Sobha Hartland II, amenities become necessities.</p></div>
       <NewsCarousel services={amenity} menuRef={menuRef} width={width} />
       </div> */}
-    </div>
+       <div className="w-full lg:w-2/3 m-auto">
+        <ContactForm />
+      </div>
+    </>
   );
 };
 

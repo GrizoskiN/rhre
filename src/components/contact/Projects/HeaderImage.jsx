@@ -4,8 +4,8 @@ import Link from "next/link";
 const HeaderImage = ({ header, link, company, project, text, price }) => {
   return (
     <div className="relative overflow-hidden">
-      <div className="flex flex-col lg:flex-row w-11/12 max-w-[1400px] m-auto justify-evenly items-center lg:justify-between  lg:items-center h-full text-white pb-32">
-        <div className="mt-80 md:text-center lg:text-left">
+      <div className="flex flex-col lg:flex-row w-11/12 max-w-[1400px] m-auto justify-evenly items-center lg:justify-between  lg:items-center  text-white  my-60 2xl:my-80">
+        <div className=" md:text-center lg:text-left">
           <h2 className="font-light uppercase  text-3xl lg:text-5xl">{company}</h2>
           <h1 className="text-8xl md:text-9xl 2xl:text-[9rem] font-bold ">{project}</h1>
           <p className=" md:text-xl lg:w-3/4 font-light mt-3 ">{text}</p>
