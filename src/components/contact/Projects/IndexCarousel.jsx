@@ -15,7 +15,7 @@ export default function IndexCarousel({
   return (
     <div
       ref={menuRef}
-      className="flex mt-11 lg:mt-32  w-2/3 ml-auto  overflow-hidden">
+      className="flex mt-11 lg:mt-32 w-10/12 lg:w-2/3 ml-auto  overflow-hidden">
       <motion.ul
         drag="x"
         dragConstraints={{ right: 0, left: -width }}
@@ -28,10 +28,10 @@ export default function IndexCarousel({
               <div className="  w-80  lg:w-[556px]    relative  ">
                 <div className=" bg-gray-200  rounded-xl p-5 absolute  left-[5%] right-[5%] opacity-0 group-hover:opacity-100 z-20 -bottom-32 group-hover:bottom-5 transition-all duration-500">
                   <div className="lg:flex justify-between items-center text-center ">
-                    <h1 className="uppercase text-white  bg-royal px-5 py-2  font-bold text-2xl">
+                    <h1 className="uppercase text-white  bg-royal px-5 py-2  font-bold lg:text-2xl">
                       {text1}
                     </h1>
-                  <Image src={logo} width={130} height={30} className="pt-1 mix-blend-exclusion"/>
+                  <Image src={logo} width={130} height={30} className="hidden lg:flex pt-1 mix-blend-exclusion "/>
                   </div>
                   <Link href={Projectlink} className="flex justify-between items-end mt-4">
                     <div className="hidden lg:flex lg:flex-col w-1/2">
@@ -40,7 +40,7 @@ export default function IndexCarousel({
                       </h4>
                       <h3 className="font-bold text-royal text-4xl">{address}</h3>
                     </div>
-                    <div  className="hidden lg:flex items-center justify-end text-right w-1/2">
+                    <div  className="flex items-center justify-end text-right lg:w-1/2">
                     
                         <span className="bg-royal w-5 h-5 rounded-full text-white flex items-center justify-center text-center mr-3">
                           ↗
