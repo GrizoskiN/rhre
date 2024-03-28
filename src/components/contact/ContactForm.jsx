@@ -21,9 +21,9 @@ const schema = yup
 const ContactForm = () => {
   const router = useRouter();
   const contactPage = router.pathname === '/contact';
-  console.log(contactPage)
+ 
   const [isPopupOpen, setPopupOpen] = useState(false);
-  const [range, setRange] = useState(3);
+  const [range, setRange] = useState(500000);
   const handleForm = (e) => {
     e.preventDefault();
   };
@@ -56,7 +56,9 @@ const ContactForm = () => {
     // Close the popup
     setPopupOpen(false);
   };
-  
+  const formatNumberWithCommas = (number) => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  };
   return (
     <>
     <h1 className={`"w-11/12 ${contactPage ?  "xl:w-11/12 " : "w-full"}  m-auto text-4xl lg:text-6xl font-semibold text-royal"`}>Drop as a message</h1>
@@ -146,8 +148,8 @@ const ContactForm = () => {
                   <label className='text-royal'> AED 500k </label>
                   <input
                     type='range'
-                    min='1'
-                    max='40'
+                    min='500'
+                    max='5000000'
                     className='w-3/4 accent-royal'
                     {...register("budget")}
                     value={range}
@@ -156,7 +158,7 @@ const ContactForm = () => {
 
                   <label className='text-royal'> AED 5M </label>
                   <span className='absolute top-7 left-2/4 -translate-x-3/4 text-royal'>
-                    $ {range} k
+                    AED {formatNumberWithCommas(range)}
                   </span>
                 </div>
               </div>
