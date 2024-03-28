@@ -7,15 +7,15 @@ const HeaderImage = ({ header, link, company, project, text, price }) => {
       <div className="flex flex-col lg:flex-row w-11/12 max-w-[1400px] m-auto justify-evenly items-center lg:justify-between  lg:items-center  text-white  my-60 2xl:my-80">
         <div className=" md:text-center lg:text-left">
           <h2 className="font-light uppercase  text-3xl lg:text-5xl">{company}</h2>
-          <h1 className="text-8xl md:text-9xl 2xl:text-[9rem] font-bold ">{project}</h1>
-          <p className=" md:text-xl lg:w-3/4 font-light mt-3 ">{text}</p>
+          <h1 className="text-7xl md:text-9xl  font-bold  ">{project}</h1>
+          <p className=" md:text-xl lg:w-3/4 font-light mt-3 leading-5 md:leading-normal text-gray-200">{text}</p>
           <div className="mt-11 lg:mt-11 flex flex-col lg:flex-row text-center">
-            <button className="text-xl bg-red-500 px-11 py-4 mb-6 lg:mb-0 rounded-lg hover:bg-royal transition-all duration-300">
+            <button className="text-lg bg-red-500 px-11 py-4 mb-6 lg:mb-0 rounded-lg hover:bg-royal transition-all duration-300">
               Download Brochure
             </button>
             <Link
               href="/contact"
-              className="text-xl bg-white text-royal px-11 py-4 rounded-lg lg:ml-5  hover:bg-royal hover:text-white transition-all duration-300">
+              className="text-lg bg-white text-royal px-11 py-4 rounded-lg lg:ml-5  hover:bg-royal hover:text-white transition-all duration-300">
               Register Interest
             </Link>
           </div>

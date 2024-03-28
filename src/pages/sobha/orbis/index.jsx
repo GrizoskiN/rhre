@@ -77,7 +77,7 @@ export default function Index() {
         text={
           "Sobha Realty redefines the concept of luxury residential living with a repertoire of real estate projects across Dubai."
         }
-        price={"1.57M"}
+        price={"985k"}
       />
       <Title
         title={"The Enduring"}

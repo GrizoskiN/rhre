@@ -2,9 +2,9 @@ import { useEffect, useState, useRef } from "react";
 import Gallery from "@/components/contact/Projects/Gallery";
 import HeaderImage from "@/components/contact/Projects/HeaderImage";
 import img from "@/../public/img/damacimg/header.jpg";
-import bedroom from "@/../public/img/damacimg/lagoon.jpg";
-import bedroom2 from "@/../public/img/damacimg/hills.jpg";
-import bedrooms from "@/../public/img/damacimg/gris.jpg";
+import bedroom from "@/../public/img/damacimg/projects/lagoon.jpg";
+import bedroom2 from "@/../public/img/damacimg/projects/hills.jpg";
+import bedrooms from "@/../public/img/damacimg/projects/gris.jpg";
 import Title from "@/components/contact/Projects/Title";
 import Image from "next/image";
 import damac2 from "@/../public/img/damacimg/second.jpg";
@@ -16,7 +16,7 @@ import Faq from "@/components/contact/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
 
 
-const Damac = () => {
+export default function index (){
   const photos = [
     {
       src: "/img/damacimg/gallery/damac5.jpg",
@@ -194,4 +194,4 @@ const Damac = () => {
   );
 };
 
-export default Damac;
+

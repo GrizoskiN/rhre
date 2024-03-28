@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             
             
-            <p className="text-xl font-light">
+            <p className="text-md font-light">
               Welcome to our REAL ESTATE agency! Our team of experienced
               designers and decorators is passionate about creating beautiful,
               functional spaces that enhance our clients' lives.
@@ -20,18 +20,18 @@ const Footer = () => {
         </div>
       <div className="md:flex justify-between items-start md:mt-16 xl:w-1/2">
       <div className=" flex-col flex text-xl   lg:ml-auto my-11 md:my-0" >
-          <h1 className="font-bold text-4xl  tracking-wider mb-6">Company</h1>
-          <Link className="my-2 text-gray-300" href="/">About Us</Link>
-          <Link className="my-2 text-gray-300" href="/">Services</Link>
-          <Link className="my-2 text-gray-300" href="/">Projects</Link>
-          <Link className="my-2 text-gray-300" href="/">News</Link>
-          <Link className="my-2 text-gray-300" href="/contact">Get In Touch</Link>
+          <h1 className="font-bold text-2xl  tracking-wider mb-6">Company</h1>
+          <Link className="my-2 text-lg text-gray-300" href="/">About Us</Link>
+          <Link className="my-2 text-lg text-gray-300" href="/">Services</Link>
+          <Link className="my-2 text-lg text-gray-300" href="/">Projects</Link>
+          <Link className="my-2 text-lg text-gray-300" href="/">News</Link>
+          <Link className="my-2 text-lg text-gray-300" href="/contact">Get In Touch</Link>
         </div>
         <div className="lg:ml-auto">
-        <h1 className="font-bold text-4xl  tracking-wider mb-6">Information</h1>
-          <h3 className="text-xl  my-3 font-light">Some Street, 31, Dubai UAE</h3>
-          <h3 className="text-xl  my-3 font-light">00971 52999 2763</h3>
-          <h3 className="text-xl  my-3 font-light">info@risehighrealestate.ae</h3>
+        <h1 className="font-bold text-2xl  tracking-wider mb-6">Information</h1>
+          <h3 className="text-lg  my-3 font-light">Some Street, 31, Dubai UAE</h3>
+          <h3 className="text-lg  my-3 font-light">00971 52999 2763</h3>
+          <h3 className="text-lg  my-3 font-light">info@risehighrealestate.ae</h3>
         </div>
       </div>
       </div>

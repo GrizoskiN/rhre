@@ -1,70 +1,63 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import rhre4 from "@/../public/img/rhre4.jpg";
-import rhre5 from "@/../public/img/rhre5.jpg";
 import Image from "next/image";
-import HoverCarousel from "@/components/contact/HoverCarousel";
+import sobha from "@/../public/img/developers/sobha.jpg";
+import ellington from "@/../public/img/developers/ellington.jpg";
+import danube from "@/../public/img/developers/danube.jpg";
+import meraas from "@/../public/img/developers/meraas.jpg";
+import damac from "@/../public/img/developers/damac.jpg";
+import IndexCarousel from "../contact/Projects/IndexCarousel";
+import sobhalogo from "@/../public/img/sobha/sobhalogo.png";
+import damaclogo from "@/../public/img/damacimg/damaclogo.png";
+import ellingtonlogo from "@/../public/img/ellington/ellingtonlogo.png";
+import danubelogo from "@/../public/img/danube/danubelogo.png";
+import meraaslogo from "@/../public/img/meraas/meraaslogo.png";
 const FifthSection = () => {
   const services = [
     {
       id: 0,
-      text1: `AVAILABLE NOW!`,
-      address: "Some Location",
-      address2: "Address 232, 02471",
-      area: "165",
-      rooms: "3",
-      baths: "2",
-      img: rhre4,
-    },
+      text1: `AVAILABLE IN 2026!`,
+      address: "AED 1.6M",
+      address2: "Starting Price",
+      logo: sobhalogo,
+      img: sobha,
+      Projectlink:"/sobha",    
+},
     {
       id: 1,
       text1: `AVAILABLE NOW!`,
-      address: "Some Location",
-      address2: "Address 232, 02471",
-      area: "125",
-      rooms: "2",
-      baths: "1",
-      img: rhre5,
+      address: "AED 1.5M",
+      address2: "Starting Price",
+      logo: ellingtonlogo,
+      img: ellington,
+      Projectlink:"/ellington",
     },
     {
       id: 2,
       text1: `AVAILABLE NOW!`,
-      address: "Some Location",
-      address2: "Address 232, 02471",
-      area: "165",
-      rooms: "3",
-      baths: "2",
-      img: rhre4,
-    },
+      address: "AED 1.5M",
+      address2: "Starting Price",
+      logo: damaclogo,
+      img: damac,
+      Projectlink:"/damac",  
+  },
     {
       id: 3,
       text1: `AVAILABLE NOW!`,
-      address: "Some Location",
-      address2: "Address 232, 02471",
-      area: "125",
-      rooms: "2",
-      baths: "1",
-      img: rhre5,
+      address: "AED 1.5M",
+      address2: "Starting Price",
+      logo: danubelogo,
+      img: danube,
+      Projectlink:"/danube",
     },
     {
       id: 4,
       text1: `AVAILABLE NOW!`,
-      address: "Some Location",
-      address2: "Address 232, 02471",
-      area: "165",
-      rooms: "3",
-      baths: "2",
-      img: rhre4,
-    },
-    {
-      id: 5,
-      text1: `AVAILABLE NOW!`,
-      address: "Some Location",
-      address2: "Address 232, 02471",
-      area: "125",
-      rooms: "2",
-      baths: "1",
-      img: rhre5,
+      address: "AED 1.5M",
+      address2: "Starting Price",
+      logo: meraaslogo,
+      img: meraas,
+      Projectlink:"/meraas",
     },
   ];
   const [width, setWidth] = useState(null);
@@ -142,7 +135,14 @@ const FifthSection = () => {
           )}
         </motion.ul>
       </div> */}
-      <HoverCarousel menuRef={menuRef} width={width} services={services} contact={"Contact us"} info="for more info"/>
+      <IndexCarousel
+        menuRef={menuRef}
+        width={width}
+        services={services}
+       
+        contact={"Contact us"}
+        info="for more info"
+      />
     </div>
   );
 };

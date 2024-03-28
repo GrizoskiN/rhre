@@ -20,8 +20,10 @@ const schema = yup
 
 const ContactForm = () => {
   const router = useRouter();
+  const contactPage = router.pathname === '/contact';
+  console.log(contactPage)
   const [isPopupOpen, setPopupOpen] = useState(false);
-
+  const [range, setRange] = useState(3);
   const handleForm = (e) => {
     e.preventDefault();
   };
@@ -54,13 +56,14 @@ const ContactForm = () => {
     // Close the popup
     setPopupOpen(false);
   };
+  
   return (
     <>
-    <h1 className="w-11/12 xl:w-full   m-auto text-4xl lg:text-6xl font-semibold text-royal">Drop as a message</h1>
+    <h1 className={`"w-11/12 ${contactPage ?  "xl:w-11/12 " : "w-full"}  m-auto text-4xl lg:text-6xl font-semibold text-royal"`}>Drop as a message</h1>
       <form
         className="w-full py-11 mt-11 mb-32 lg:mt-0  "
         onSubmit={handleSubmit(submitHandler)}>
-        <div className="w-11/12  xl:w-full m-auto ">
+        <div className={`w-11/12  ${contactPage ?  "xl:w-11/12 " : "w-full"} m-auto `}>
           <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">
             <input
               type="text"
@@ -113,39 +116,7 @@ const ContactForm = () => {
    
             <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">
 
-          <input
-            type="text"
-            placeholder="Company Name"
-            {...register("company")}
-            className={`w-full mb-5  p-3 border-b-2 border-b-royal bg-transparent ${
-              errors.company
-                ? "border-red-500 placeholder-royal outline-none"
-                : "border-white outline-none text-royal "
-            }`}
-          />
-
-          <select
-            name="projects"
-            {...register("project")}
-            className="w-full mb-5  p-3  border-b-2 border-b-royal bg-transparent text-royal overflow-hidden">
-            <option className="text-black my-5" value="light">
-              Please select your project
-            </option>
-            <option className="text-black my-5" value="Buying">
-            Buying a property
-            </option>
-            <option className="text-black my-5" value="Selling">
-            Selling a property
-            </option>
-            <option className="text-black my-5" value="Leasing">
-            Leasing a property
-            </option>
-            
-          </select>
-
-            </div>
-
-          <textarea
+            <textarea
             type="textarea"
             {...register("notes")}
             placeholder="Notes"
@@ -157,7 +128,63 @@ const ContactForm = () => {
                 : "border-white outline-none text-royal "
             }`}></textarea>
 
-          <button className="w-1/3 mx-auto h-16 bg-royal text-white rounded-xl ">
+
+            </div>
+<div className='flex flex-col w-full h-full mb-24 '>
+            <label
+              htmlFor='name'
+              className='text-royal  text-xl mt-5 relative'
+            >
+              What is your budget?
+             
+            </label>
+           
+
+            <div className='w-full lg:w-[75%]  flex flex-col xl:flex-row justify-between mt-5 items-center'>
+              <div className=' w-full   '>
+                <div className='relative w-full flex justify-between  '>
+                  <label className='text-royal'> AED 500k </label>
+                  <input
+                    type='range'
+                    min='1'
+                    max='40'
+                    className='w-3/4 accent-royal'
+                    {...register("budget")}
+                    value={range}
+                    onChange={(e) => setRange(e.target.value)}
+                  />
+
+                  <label className='text-royal'> AED 5M </label>
+                  <span className='absolute top-7 left-2/4 -translate-x-3/4 text-royal'>
+                    $ {range} k
+                  </span>
+                </div>
+              </div>
+
+              <div className='mt-11 xl:mt-0 text-center lg:w-1/3'>
+                <input
+                  type='checkbox'
+                  id='budget'
+                  name='budget'
+                  {...register("checkbox")}
+                  value="I don't know my budget"
+                  className='hidden peer'
+                  // defaultChecked={true}
+                />
+                <label
+                  htmlFor='budget'
+                  id='budget'
+                  className=' w-full  border-[1px] border-Green hover:bg-[#262538] text-royal hover:text-white  cursor-pointer peer-checked:bg-red-500 peer-checked:text-white transition-all duration-800 ease-in-out p-3 text-sm '
+                >
+                  I don't know my budget
+                </label>
+              </div>
+            </div>
+          </div>
+
+        
+
+          <button className="w-1/3 mx-auto h-16 bg-royal hover:bg-royal/80 text-white rounded-xl ">
             Submit
           </button>
         </div>

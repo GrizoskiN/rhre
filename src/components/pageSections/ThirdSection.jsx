@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import rhre1 from "@/../public/img/rhre1.jpg";
-import rhre2 from "@/../public/img/rhre2.jpg";
-import rhre3 from "@/../public/img/rhre3.jpg";
+import rhre2 from "@/../public/img/rhre5.jpg";
+import rhre3 from "@/../public/img/rhre6.jpg";
 import rhre from "@/../public/img/rhre.jpg";
 import { useInView } from "react-intersection-observer";
 
@@ -49,15 +49,15 @@ const ThirdSection = () => {
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 80 }}
           transition={{ duration: 0.6 }} className="w-1/2">
-          <div className="">
-            <Image src={rhre} width={1500} className="w-full rounded-2xl" />
+          <div className="group overflow-hidden cursor-pointer">
+            <Image src={rhre} width={1500} className="w-full rounded-2xl group-hover:scale-125 transition-all duration-500" />
           </div>
-          <div className="flex mt-3 lg:mt-11 gap-3 lg:gap-12">
-            <div>
-              <Image src={rhre2} width={1500} className="w-full rounded-2xl" />
+          <div className="flex mt-3 lg:mt-11 gap-3 lg:gap-12 ">
+            <div className="group overflow-hidden  cursor-pointer">
+              <Image src={rhre2} width={1500} className="w-full rounded-2xl group-hover:scale-125 transition-all duration-500" />
             </div>
-            <div>
-              <Image src={rhre3} width={1500} className="w-full rounded-2xl" />
+            <div className="group overflow-hidden cursor-pointer">
+              <Image src={rhre3} width={1500} className="w-full rounded-2xl group-hover:scale-125 transition-all duration-500" />
             </div>
           </div>
         </motion.div>
