@@ -10,23 +10,25 @@ const Menu = (props) => {
   const [scrolled, setScrolled] = useState(false);
   const router = useRouter()
   const about = router.pathname === "/about"
+  const listings = router.pathname === "/properties"
+  const properties = router.pathname === "/properties/[id]"
   const menuOpen = (
     <svg
-      className="w-6"
+      className="fill-royal  w-6"
       width="240"
       height="146"
       viewBox="0 0 240 146"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">
-      <rect x="23" width="217" height="22" rx="11" fill="white" />
-      <rect y="62" width="217" height="22" rx="11" fill="white" />
-      <rect x="23" y="124" width="217" height="22" rx="11" fill="white" />
+      <rect x="23" width="217" height="22" rx="11" fill={`${about || listings || properties ? "royal" : "white"}`} />
+      <rect y="62" width="217" height="22" rx="11" fill={`${about || listings || properties ? "royal" : "white"}`} />
+      <rect x="23" y="124" width="217" height="22" rx="11" fill={`${about || listings || properties ? "royal" : "white"}`} />
     </svg>
   );
 
   const menuClosed = (
     <svg
-      className="w-6"
+      className={`w-6`}
       width="170"
       height="170"
       viewBox="0 0 170 170"
@@ -59,33 +61,32 @@ const Menu = (props) => {
     <>
       <div className="hidden text-white max-w-[1400px] w-11/12 absolute top-5 left-1/2 -translate-x-1/2 lg:flex justify-between items-center z-20">
         <Link href="/">
-          <Image src={about ? logodark : logo} priority  width={200} className="bg-fit hover:scale-[105%] transition-transform duration-300" />
+          <Image src={about || listings || properties ? logodark : logo} priority  width={200} className="bg-fit hover:scale-[105%] transition-transform duration-300" />
         </Link>
-        <div className={`flex items-center uppercase font-[400] mt-4 text-sm ${about ? "text-royal" : "text-white"}`}>
+        <div className={`flex items-center uppercase font-[400] mt-4 text-sm ${about || listings || properties ? "text-royal" : "text-white"}`}>
           <Link href="/about" className="lg:mx-5  hover:tracking-wide hover:text-gray-300 transition-all duration-300">
             About Us
           </Link>
           <Link href="/" className="lg:mx-5  hover:tracking-wide hover:text-gray-300 transition-all duration-300">
             Services
           </Link>
-          <Link href="/" className="lg:mx-5  hover:tracking-wide hover:text-gray-300 transition-all duration-300">
+          <Link href="/properties" className="lg:mx-5  hover:tracking-wide hover:text-gray-300 transition-all duration-300">
             Projects for sales
           </Link>
           <Link href="/" className="lg:mx-5  hover:tracking-wide hover:text-gray-300 transition-all duration-300">
             News
           </Link>
-          <Link href="/contact" className={`lg:mx-5 border-[1px] px-11 py-3 ${about ? "bg-royal text-white hover:bg-royal/90": "hover:bg-royal hover:border-royal"} rounded-md   transition-all duration-300`}>
+          <Link href="/contact" className={`lg:mx-5 border-[1px] px-11 py-3 ${about || listings || properties ? "bg-royal text-white hover:bg-royal/90": "hover:bg-royal hover:border-royal"} rounded-md   transition-all duration-300`}>
             Get In Touch
           </Link>
         </div>
       </div>
-      <div className={`MOBILE  lg:hidden absolute w-full m-auto top-0 left-1/2 -translate-x-1/2 z-40 ${about ? "bg-royal" : ""}`}>
+      <div className={`MOBILE  lg:hidden absolute w-full m-auto top-0 left-1/2 -translate-x-1/2 z-40 `}>
         <div className=" m-auto w-11/12  flex justify-between items-start  relative z-50">
           <Link href="/">
-            {" "}
+            
             <Image
-              src={logo}
-              priority
+              src={about || listings || properties ? logodark : logo} priority
               className="object-cover"
             />
           </Link>
@@ -115,7 +116,7 @@ const Menu = (props) => {
               <div
                 onClick={handleMenu}
                 className="border-b-[1px] py-3 border-white/20 w-full">
-                <Link href="/blog">Projects For Sale</Link>
+                <Link href="/properties">Projects For Sale</Link>
               </div>
               <div
                 onClick={handleMenu}
