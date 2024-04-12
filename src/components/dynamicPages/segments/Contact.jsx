@@ -72,10 +72,10 @@ const Contact = () => {
               type="text"
               placeholder={errors.name ? "Please Enter your Name" : "Your Name"}
               {...register("name", { required: true })}
-              className={`w-full 2 p-3 border-[1px] rounded-md border-Blue bg-transparent  ${
+              className={`w-full 2 p-3 border-[1px] rounded-md  bg-transparent  ${
                 errors.name
                   ? "border-red-500 placeholder-royal outline-none"
-                  : "border-white outline-none text-royal "
+                  : "border-royal outline-none text-royal "
               }`}
             />
 
@@ -89,10 +89,10 @@ const Contact = () => {
               required: true,
               pattern: "/^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$/",
             })}
-            className={`w-full p-3 border-[1px] rounded-md border-Blue bg-transparent ${
+            className={`w-full p-3 border-[1px] rounded-md border-royal bg-transparent ${
               errors.email
                 ? "border-red-500 placeholder-royal outline-none"
-                : "border-white outline-none text-royal "
+                : "border-royal outline-none text-royal "
             }`}
           />
 
@@ -103,10 +103,10 @@ const Contact = () => {
             type="tel"
             placeholder="Phone number"
             {...register("phone")}
-            className={`w-full mb-2  p-3 border-[1px] rounded-md border-Blue bg-transparent ${
+            className={`w-full mb-2  p-3 border-[1px] rounded-md border-royal bg-transparent ${
               errors.phone
                 ? "border-red-500 placeholder-royal outline-none"
-                : "border-white outline-none text-royal "
+                : "border-royal outline-none text-royal "
             }`}
           />
 
@@ -116,10 +116,10 @@ const Contact = () => {
             placeholder="Notes"
             rows="10"
             cols="30"
-            className={`w-full mb-2 max-h-32 p-3 border-[1px] rounded-md border-Blue bg-transparent ${
+            className={`w-full mb-2 max-h-32 p-3 border-[1px] rounded-md border-royal bg-transparent ${
               errors.company
                 ? "border-red-500 placeholder-royal outline-none"
-                : "border-white outline-none text-royal "
+                : "border-royal outline-none text-royal "
             }`}></textarea>
 
 

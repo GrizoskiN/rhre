@@ -22,22 +22,23 @@ export default function PropertiesGallery({ photos }) {
   const closeLightbox = () => {
     setLightboxOpen(false);
   };
-  const slicedPhotos = photos.slice(0, 9)
+  const slicedPhotos = photos.slice(0, 3)
 
   return (
-    <div onClick={openLightbox} className="grid gap-[1px] mt-6 mb-16 ">
-    <PhotoAlbum className="flex flex-around"
+    <div onClick={openLightbox} className="w-11/12 max-w-[1400px] m-auto gap-[1px] mt-6 mb-16 ">
+    <PhotoAlbum className="w-full"
       layout="columns"
       columns={(containerWidth) => {
         if (containerWidth < 400) return 2;
-        if (containerWidth < 800) return 3;
-        return 4;
+        if (containerWidth < 800) return 2;
+        return 3;
       }}
-      padding={11}
+      padding={1}
       spacing={0}
+      photosCount={3}
       photos={slicedPhotos}
       renderPhoto={CustomImageRenderer}
-      targetRowHeight={550} 
+     
     //   sizes={{ size: "calc(100vw - 240px)" }}
     />
        <Lightbox

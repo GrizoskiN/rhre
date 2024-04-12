@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { parseXMLToJson } from "@/components/xmlFeed/getProjectData";
 import fetch from "node-fetch";
-import {  convertAmenitiesShortcutsToFullText,} from "../../components/dynamicPages/xmlData/amenities";
+import { convertAmenitiesShortcutsToFullText } from "../../components/dynamicPages/xmlData/amenities";
 import { splitXMLContent } from "../../components/dynamicPages/xmlData/description";
 const check = (
   <svg
@@ -27,11 +27,8 @@ import ProjectInfo from "../../components/dynamicPages/segments/ProjectInfo";
 import AmenitiesList from "@/components/dynamicPages/segments/AmenitiesList";
 import LocationAdvantages from "@/components/dynamicPages/segments/LocationAdvantages";
 
-
 import PropertiesGallery from "@/components/dynamicPages/segments/PropertiesGallery";
 import AgentCard from "@/components/dynamicPages/segments/AgentCard";
-
-
 
 export default function ProjectPage({ project }) {
   const [index, setIndex] = useState(-1);
@@ -40,10 +37,10 @@ export default function ProjectPage({ project }) {
   }
 
   const parts = splitXMLContent(project.description_en[0]);
-  const fullTextAmenities = convertAmenitiesShortcutsToFullText(project.amenities);
-  const q = `${project.q}`
-  
-  
+  const fullTextAmenities = convertAmenitiesShortcutsToFullText(
+    project.amenities,
+  );
+  const q = `${project.q}`;
 
   // Assuming project.photo[0].url contains the URL of the image
   const photos = project.photo[0].url.map((url) => ({
@@ -54,42 +51,49 @@ export default function ProjectPage({ project }) {
     //   { src: url._, width: 400, height: 400 },
     //   { src: url._, width: 200, height: 200 },
     // ],
-   
   }));
-  console.log(parts)
+  console.log(parts);
   return (
-    <div className="bg-gradient-to-b from-white from-30% to-[#f2f2f2]  mt-[10rem]">
-      {/* <div className="w-full max-w-[1400px] m-auto h-[1px] bg-royal mt-32 lg:mt-48"></div> */}
-      <h1 className="w-11/12 m-auto max-w-[1400px] pt-11 lg:text-3xl">{project.title_en} </h1>
+    <div className="bg-gradient-to-b from-white from-30% to-[#f2f2f2] mt-32 lg:mt-[10rem]">
+      <div className="w-11/12 max-w-[1400px] m-auto h-[1px] bg-royal  lg:mt-32 "></div>
+      <div className="w-11/12 max-w-[1400px] m-auto flex gap-1 lg:gap-3 my-4 text-[12px]">
+        <h3 className="bg-royal text-white rounded-sm lg:rounded-md py-1 px-4">
+          {project.city}
+        </h3>
+        <h3 className="bg-royal text-white rounded-sm lg:rounded-md py-1 px-4">
+          {project.community}
+        </h3>
+        <h3 className="bg-royal text-white rounded-sm lg:rounded-md py-1 px-4">
+          {project.sub_community}
+        </h3>
+      </div>
+      <h1 className="w-11/12 m-auto max-w-[1400px] text-2xl font-semibold lg:text-4xl">
+        {project.title_en}{" "}
+      </h1>
       <div className="w-full overflow-x-hidden">
-      <PropertiesGallery photos={photos}/>
-        
-
-        
+        <PropertiesGallery photos={photos} />
       </div>
 
       <div className="w-11/12 max-w-[1400px] m-auto">
-     
-     <div className="flex gap-5 flex-col lg:flex-row">
-      <div className="lg:w-2/3">
+        <div className="flex gap-5 flex-col lg:flex-row">
+          <div className="lg:w-2/3">
+            <Description parts={parts} />
 
-      <Description parts={parts} />
+            <ProjectInfo fullTextAmenities={fullTextAmenities} check={check} />
 
-      <ProjectInfo fullTextAmenities={fullTextAmenities} check={check} />
-         
-      <ProjectDetails parts={parts} check={check} />
-   
-      <AmenitiesList parts={parts} check={check}/>
-      
-      <LocationAdvantages parts={parts} check={check}/>
-      
-      <CustomGoogleMap key={q} q={q} />
+            <ProjectDetails parts={parts} check={check} />
+
+            <AmenitiesList parts={parts} check={check} />
+
+            <LocationAdvantages parts={parts} check={check} />
+
+            <CustomGoogleMap key={q} q={q} />
+          </div>
+          <div className=" lg:w-1/3 ">
+            <AgentCard project={project} />
+          </div>
+        </div>
       </div>
-      <div className=" lg:w-1/3 ">
-        <AgentCard project={project}/>
-      </div>
-     </div>
-    </div>
     </div>
   );
 }

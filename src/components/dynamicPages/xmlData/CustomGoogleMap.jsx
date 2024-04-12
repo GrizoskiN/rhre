@@ -8,7 +8,7 @@ const CustomGoogleMap = ({ q }) => {
 
 
   return (
-    <iframe className='shadow-xl rounded-lg my-5'
+    <iframe className='shadow-xl rounded-lg my-5 lg:my-16'
       loading="lazy"
       src={`https://www.google.com/maps/embed/v1/${mode}?key=${googleMapsApiKey}&q=${encodeURIComponent(q)}`}
       referrerPolicy="no-referrer-when-downgrade"

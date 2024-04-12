@@ -23,7 +23,7 @@ const ContactForm = () => {
   const contactPage = router.pathname === '/contact';
  
   const [isPopupOpen, setPopupOpen] = useState(false);
-  const [range, setRange] = useState(500000);
+  const [range, setRange] = useState(1000000);
   const handleForm = (e) => {
     e.preventDefault();
   };
@@ -148,7 +148,7 @@ const ContactForm = () => {
                   <label className='text-royal'> AED 500k </label>
                   <input
                     type='range'
-                    min='500'
+                    min='500000'
                     max='5000000'
                     className='w-3/4 accent-royal'
                     {...register("budget")}
