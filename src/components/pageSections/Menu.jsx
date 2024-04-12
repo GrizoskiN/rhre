@@ -93,7 +93,7 @@ const Menu = (props) => {
   const handleMenu = () => {
     props.handleMenus(setOpen(!open));
   };
-  
+
   const [isOpen, setIsOpen] = useState(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
@@ -146,29 +146,46 @@ const Menu = (props) => {
             className="lg:mx-5  hover:text-gray-300 transition-all duration-300">
             Available now
           </Link>
-          <div className="relative" onMouseEnter={handleMenuHover} onMouseLeave={handleMenuLeave}>
-      <Link
-        href="/"
-        className="lg:mx-5  hover:text-gray-300 transition-all duration-300"
-      >
-        New Projects
-      </Link>
-      {isOpen && (
-        <div
-          className="absolute top-full left-1 w-80 py-2 px-4 backdrop-blur-sm "
-          onMouseEnter={handleSubMenuHover}
-          onMouseLeave={handleSubMenuLeave}
-        >
-          {/* Add your submenu items here */}
-          <Link href="/damac" className="flex py-1  hover:text-gray-300">Damac New Projects</Link>
-          <Link href="/ellington" className="flex py-1  hover:text-gray-300">Ellington New Projects</Link>
-          <Link href="/meraas" className="flex py-1  hover:text-gray-300">Meraas New Projects</Link>
-          <Link href="/nakheel" className="flex py-1  hover:text-gray-300">Nakheel New Projects</Link>
-          <Link href="/emaar" className="flex py-1  hover:text-gray-300">Emaar New Projects</Link>
-          <Link href="/sobha" className="flex py-1  hover:text-gray-300">Sobha New Projects</Link>
-        </div>
-      )}
-    </div>
+          <div
+            className="relative"
+            onMouseEnter={handleMenuHover}
+            onMouseLeave={handleMenuLeave}>
+            <Link
+              href="/"
+              className="lg:mx-5  hover:text-gray-300 transition-all duration-300">
+              New Projects
+            </Link>
+            {isOpen && (
+              <div
+                className="absolute top-full left-1 w-80 py-2 px-4 backdrop-blur-sm "
+                onMouseEnter={handleSubMenuHover}
+                onMouseLeave={handleSubMenuLeave}>
+                {/* Add your submenu items here */}
+                <Link href="/damac" className="flex py-1  hover:text-gray-300">
+                  Damac New Projects
+                </Link>
+                <Link
+                  href="/ellington"
+                  className="flex py-1  hover:text-gray-300">
+                  Ellington New Projects
+                </Link>
+                <Link href="/meraas" className="flex py-1  hover:text-gray-300">
+                  Meraas New Projects
+                </Link>
+                <Link
+                  href="/nakheel"
+                  className="flex py-1  hover:text-gray-300">
+                  Nakheel New Projects
+                </Link>
+                <Link href="/emaar" className="flex py-1  hover:text-gray-300">
+                  Emaar New Projects
+                </Link>
+                <Link href="/sobha" className="flex py-1  hover:text-gray-300">
+                  Sobha New Projects
+                </Link>
+              </div>
+            )}
+          </div>
           <Link
             href="/"
             className="lg:mx-5  hover:text-gray-300 transition-all duration-300">
@@ -227,25 +244,36 @@ const Menu = (props) => {
               </div>
 
               <div className="relative border-b-[1px] py-3 border-white/20 w-full">
-            <Link
-              href="/"
-              className="lg:mx-5   transition-all duration-300"
-              
-              onClick={handleClick}>
-              New Projects
-            </Link>
-            {isOpen && (
-              <div className=" top-full left-0 font-light text-lg py-2 px-4">
-                {/* Add your menu items here */}
-                <Link href="/damac" className="flex py-1 ">Damac New Projects</Link>
-          <Link href="/ellington" className="flex py-1 ">Ellington New Projects</Link>
-          <Link href="/meraas" className="flex py-1 ">Meraas New Projects</Link>
-          <Link href="/nakheel" className="flex py-1 ">Nakheel New Projects</Link>
-          <Link href="/emaar" className="flex py-1 ">Emaar New Projects</Link>
-          <Link href="/sobha" className="flex py-1 ">Sobha New Projects</Link>
+                <Link
+                  href="/"
+                  className="lg:mx-5   transition-all duration-300"
+                  onClick={handleClick}>
+                  New Projects
+                </Link>
+                {isOpen && (
+                  <div className=" top-full left-0 font-light text-lg py-2 px-4">
+                    {/* Add your menu items here */}
+                    <Link onClick={handleMenu} href="/damac" className="flex py-1 ">
+                      Damac New Projects
+                    </Link>
+                    <Link onClick={handleMenu} href="/ellington" className="flex py-1 ">
+                      Ellington New Projects
+                    </Link>
+                    <Link onClick={handleMenu} href="/meraas" className="flex py-1 ">
+                      Meraas New Projects
+                    </Link>
+                    <Link onClick={handleMenu} href="/nakheel" className="flex py-1 ">
+                      Nakheel New Projects
+                    </Link>
+                    <Link onClick={handleMenu} href="/emaar" className="flex py-1 ">
+                      Emaar New Projects
+                    </Link>
+                    <Link onClick={handleMenu} href="/sobha" className="flex py-1 ">
+                      Sobha New Projects
+                    </Link>
+                  </div>
+                )}
               </div>
-            )}
-          </div>
               <div
                 onClick={handleMenu}
                 className="border-b-[1px] py-3 border-white/20 w-full">
@@ -256,7 +284,6 @@ const Menu = (props) => {
                 className="border-b-[1px] py-3 border-white/20 w-full">
                 <Link href="/contact">Contact</Link>
               </div>
-          
             </div>
           </motion.div>
         ) : (

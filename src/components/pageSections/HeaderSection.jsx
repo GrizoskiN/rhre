@@ -7,20 +7,20 @@ const HeaderSection = () => {
   return (
     <>
       <div className="h-screen  overflow-hidden relative w-full text-white">
-        <div className="flex flex-col text-left justify-center items-start max-w-[1400px] w-11/12 h-full m-auto">
+        <div className="flex flex-col text-center justify-center items-center max-w-[1400px] w-11/12 h-full m-auto">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-5xl lg:text-7xl xl:text-8xl mt-24 font-bold">
-            Making Your <br /> Dream <span className="font-light">Space</span>
+            className="text-5xl lg:text-7xl xl:text-8xl mt-24 font-light">
+            Discover Your Dream Home<br />  <span className="font-bold uppercase">with Us</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:w-1/2 xl:w-1/2 xl:text-lg my-8">
-            Welcome to our agency! Our team of experienced designers and decorators is passionate about creating beautiful, functional spaces that enhance our clients' lives.
+          Explore a wide range of properties that suit your lifestyle and budget.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 110 }}

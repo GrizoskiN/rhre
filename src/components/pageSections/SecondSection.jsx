@@ -106,7 +106,7 @@ const SecondSection = () => {
               whileTap={{ scale: 0.9 }}
               className="bg-royal rounded-full my-5 w-11 lg:w-24 h-11 lg:h-24 flex items-center justify-center text-white text-xl lg:text-5xl leading-tight"
             >
-              <Link href="/">↗️</Link>
+              <Link href="/about">↗️</Link>
             </motion.div>
           </div>
           <Image src={sobha} width={500} alt="Rise High Real Estate - Sobha, Dubai, Apartments in Dubai, UAE" className="rounded-xl" />

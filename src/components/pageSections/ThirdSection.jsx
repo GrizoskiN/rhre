@@ -30,7 +30,7 @@ const ThirdSection = () => {
           imagination
         </motion.p> 
       </div>
-      <div className="flex mt-8 xl:mt-16 2xl:mt-32 gap-3 xl:gap-12">
+      <div className="flex mt-8 xl:mt-16 2xl:mt-32 gap-3 xl:gap-5">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 80 }}
@@ -52,11 +52,11 @@ const ThirdSection = () => {
           <div className="group overflow-hidden cursor-pointer">
             <Image src={rhre} width={1500} className="w-full rounded-2xl group-hover:scale-125 transition-all duration-500" />
           </div>
-          <div className="flex mt-3 lg:mt-11 gap-3 lg:gap-12 ">
-            <div className="group overflow-hidden  cursor-pointer">
+          <div className="flex mt-3  gap-3 lg:gap-5 ">
+            <div className="group overflow-hidden w-1/2 cursor-pointer">
               <Image src={rhre2} width={1500} className="w-full rounded-2xl group-hover:scale-125 transition-all duration-500" />
             </div>
-            <div className="group overflow-hidden cursor-pointer">
+            <div className="group overflow-hidden w-1/2 cursor-pointer">
               <Image src={rhre3} width={1500} className="w-full rounded-2xl group-hover:scale-125 transition-all duration-500" />
             </div>
           </div>
