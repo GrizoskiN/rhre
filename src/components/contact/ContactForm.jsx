@@ -61,11 +61,11 @@ const ContactForm = () => {
   };
   return (
     <>
-    <h1 className={`"w-11/12 ${contactPage ?  "xl:w-11/12 " : "w-full"}  m-auto text-4xl lg:text-6xl font-semibold text-royal"`}>Drop as a message</h1>
+    <h1 className={"w-11/12   m-auto text-4xl lg:text-6xl font-semibold text-royal"}>Drop as a message</h1>
       <form
         className="w-full py-11 mt-11 mb-32 lg:mt-0  "
         onSubmit={handleSubmit(submitHandler)}>
-        <div className={`w-11/12  ${contactPage ?  "xl:w-11/12 " : "w-full"} m-auto `}>
+        <div className={`w-11/12   m-auto `}>
           <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">
             <input
               type="text"
@@ -186,7 +186,7 @@ const ContactForm = () => {
 
         
 
-          <button className="w-1/3 mx-auto h-16 bg-royal hover:bg-royal/80 text-white rounded-xl ">
+          <button className="w-full lg:w-1/3 m-auto h-16 bg-royal hover:bg-royal/80 text-white rounded-xl ">
             Submit
           </button>
         </div>

@@ -29,25 +29,25 @@ const Testimonials = () => {
           <CarouselItem className="relative text-royal  text-justify shadow-md rounded-md py-6 mx-2 lg:mx-5 px-5  lg:px-32 ">
             <span className="absolute z-40 -top-5 right-5 lg:-top-11 lg:left-11">{quotes}</span>
             <p className="mb-3">⭐⭐⭐⭐⭐</p>
-          <p>Mohammed and the Rise High Real Estate team are simply outstanding! Their knowledge of the Dubai real estate market is unmatched, and their dedication to finding the perfect property for me was truly impressive. I highly recommend them to anyone looking to buy or sell property in Dubai.</p>
+          <p>Zaid and the Rise High Real Estate team are simply outstanding! Their knowledge of the Dubai real estate market is unmatched, and their dedication to finding the perfect property for me was truly impressive. I highly recommend them to anyone looking to buy or sell property in Dubai.</p>
           <h4 className="my-4 font-semibold">Sarah T.</h4>
           </CarouselItem>
           <CarouselItem className="relative text-royal  text-justify shadow-md rounded-md py-6 mx-2 lg:mx-5 px-5 lg:px-32">
             <span className="absolute z-40 -top-5 right-5 lg:-top-11 lg:left-11">{quotes}</span>
             <p className="mb-3">⭐⭐⭐⭐⭐</p>
-          <p>Working with Mohammed and the Rise High Real Estate team was a breeze! From start to finish, they were professional, attentive, and always had my best interests at heart. Thanks to their expertise, I found my dream home in Dubai in no time. I couldn't be happier!</p>
+          <p>Working with Zaid and the Rise High Real Estate team was a breeze! From start to finish, they were professional, attentive, and always had my best interests at heart. Thanks to their expertise, I found my dream home in Dubai in no time. I couldn't be happier!</p>
           <h4 className="my-4 font-semibold">Ahmed K.</h4>
           </CarouselItem>
           <CarouselItem className="relative text-royal  text-justify shadow-md rounded-md py-6 mx-2 lg:mx-5 px-5 lg:px-32">
             <span className="absolute z-40 -top-5 right-5 lg:-top-11 lg:left-11">{quotes}</span>
             <p className="mb-3">⭐⭐⭐⭐⭐</p>
-          <p>I can't thank Mohammed and Rise High Real Estate enough for their exceptional service. They made the entire process of selling my property in Dubai seamless and stress-free. Their market knowledge and negotiation skills are top-notch. Highly recommended!</p>
+          <p>I can't thank Zaid and Rise High Real Estate enough for their exceptional service. They made the entire process of selling my property in Dubai seamless and stress-free. Their market knowledge and negotiation skills are top-notch. Highly recommended!</p>
           <h4 className="my-4 font-semibold">Fatima R.</h4>
           </CarouselItem>
           <CarouselItem className="relative text-royal  text-justify shadow-md rounded-md py-6 mx-2 lg:mx-5 px-5 lg:px-32">
             <span className="absolute z-40 -top-5 right-5 lg:-top-11 lg:left-11">{quotes}</span>
             <p className="mb-3">⭐⭐⭐⭐⭐</p>
-          <p>Mohammed and the Rise High Real Estate team are the best in the business! Their commitment to excellence and personalized approach made me feel confident and supported throughout my property search in Dubai. I wouldn't trust anyone else with my real estate needs.</p>
+          <p>Zaid and the Rise High Real Estate team are the best in the business! Their commitment to excellence and personalized approach made me feel confident and supported throughout my property search in Dubai. I wouldn't trust anyone else with my real estate needs.</p>
           <h4 className="my-4 font-semibold">Ali M.</h4>
           </CarouselItem>
      
