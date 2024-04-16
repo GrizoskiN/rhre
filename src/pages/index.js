@@ -8,6 +8,7 @@ import FifthSection from "@/components/pageSections/FifthSection";
 import SixthSection from "@/components/pageSections/SixthSection";
 import SeventhSection from "@/components/pageSections/SeventhSection";
 import EightSection from "@/components/pageSections/EightSection";
+import Testimonials from "@/components/pageSections/Testimonials";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function Home() {
       <SixthSection />
       <SeventhSection />
       <EightSection />
+      <Testimonials/>
     </main>
   );
 }
