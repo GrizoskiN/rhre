@@ -6,6 +6,7 @@ import header from "@/../public/img/ellington/oneriverpoint/header.webp";
 import second from "@/../public/img/ellington/oneriverpoint/second.webp";
 import third from "@/../public/img/ellington/oneriverpoint/third.webp";
 import fourth from "@/../public/img/ellington/oneriverpoint/fourth.webp";
+import oneqr from "@/../public/img/ellington/qr/onepointqr.jpg";
 import Squares from "@/components/contact/Squares";
 import Faq from "@/components/contact/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
@@ -123,7 +124,7 @@ help its residents flourish in their new home.
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>
-      <ProjectInfo price={"2.8M"} handover={"2027 3Q"} payment={"70/30"} />
+      <ProjectInfo price={"2.8M"} handover={"2027 3Q"} payment={"70/30"} qr={oneqr} />
       <Image
         src={fourth}
         width={2000}

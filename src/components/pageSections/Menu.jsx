@@ -66,8 +66,8 @@ const Menu = (props) => {
   const menuClosed = (
     <svg
       className={`w-6`}
-      width="170"
-      height="170"
+      width="240"
+      height="146"
       viewBox="0 0 170 170"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">
@@ -161,25 +161,28 @@ const Menu = (props) => {
                 onMouseEnter={handleSubMenuHover}
                 onMouseLeave={handleSubMenuLeave}>
                 {/* Add your submenu items here */}
-                <Link href="/damac" className="flex py-1  hover:text-gray-300">
+                {/* <Link href="/damac" className="flex py-1  hover:text-gray-300">
                   Damac New Projects
-                </Link>
+                </Link> */}
                 <Link
                   href="/ellington"
                   className="flex py-1  hover:text-gray-300">
                   Ellington New Projects
                 </Link>
-                <Link href="/meraas" className="flex py-1  hover:text-gray-300">
+                {/* <Link href="/meraas" className="flex py-1  hover:text-gray-300">
                   Meraas New Projects
+                </Link> */}
+                <Link href="/danube" className="flex py-1  hover:text-gray-300">
+                  Danube New Projects
                 </Link>
-                <Link
+                {/* <Link
                   href="/nakheel"
                   className="flex py-1  hover:text-gray-300">
                   Nakheel New Projects
-                </Link>
-                <Link href="/emaar" className="flex py-1  hover:text-gray-300">
+                </Link> */}
+                {/* <Link href="/emaar" className="flex py-1  hover:text-gray-300">
                   Emaar New Projects
-                </Link>
+                </Link> */}
                 <Link href="/sobha" className="flex py-1  hover:text-gray-300">
                   Sobha New Projects
                 </Link>
@@ -253,23 +256,26 @@ const Menu = (props) => {
                 {isOpen && (
                   <div className=" top-full left-0 font-light text-lg py-2 px-4">
                     {/* Add your menu items here */}
-                    <Link onClick={handleMenu} href="/damac" className="flex py-1 ">
+                    {/* <Link onClick={handleMenu} href="/damac" className="flex py-1 ">
                       Damac New Projects
-                    </Link>
+                    </Link> */}
                     <Link onClick={handleMenu} href="/ellington" className="flex py-1 ">
                       Ellington New Projects
                     </Link>
-                    <Link onClick={handleMenu} href="/meraas" className="flex py-1 ">
+                    {/* <Link onClick={handleMenu} href="/meraas" className="flex py-1 ">
                       Meraas New Projects
-                    </Link>
-                    <Link onClick={handleMenu} href="/nakheel" className="flex py-1 ">
+                    </Link> */}
+                    {/* <Link onClick={handleMenu} href="/nakheel" className="flex py-1 ">
                       Nakheel New Projects
-                    </Link>
-                    <Link onClick={handleMenu} href="/emaar" className="flex py-1 ">
+                    </Link> */}
+                    {/* <Link onClick={handleMenu} href="/emaar" className="flex py-1 ">
                       Emaar New Projects
-                    </Link>
+                    </Link> */}
                     <Link onClick={handleMenu} href="/sobha" className="flex py-1 ">
                       Sobha New Projects
+                    </Link>
+                    <Link onClick={handleMenu} href="/danube" className="flex py-1 ">
+                      Danube New Projects
                     </Link>
                   </div>
                 )}

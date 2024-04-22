@@ -45,8 +45,8 @@ const SecondSection = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="mt-8 lg:mt-24 lg:flex gap-5"
       >
-        <div className="grid grid-cols-2 lg:w-1/2 gap-2 lg:gap-5 ">
-          <motion.div
+        <div className="grid grid-cols-1 lg:w-1/2 gap-2 lg:gap-5 ">
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -54,33 +54,33 @@ const SecondSection = () => {
           >
             <h1 className="text-5xl md:text-8xl font-bold">4k</h1>
             <p className="text-md md:text-xl">Project Completed</p>
-          </motion.div>
-          <motion.div
+          </motion.div> */}
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             className="bg-royal text-white rounded-xl pl-5 py-4"
           >
-            <h1 className="text-5xl md:text-8xl b font-bold">4k</h1>
+            <h1 className="text-5xl   font-bold">Countless</h1>
             <p className="text-md md:text-xl">Happy Customers</p>
-          </motion.div>
+          </motion.div> */}
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-[#E6E7E8] rounded-xl pl-5 py-4"
+            className=" bg-royal/20 rounded-xl  py-4 flex flex-col items-center justify-center"
           >
-            <h1 className="text-5xl md:text-8xl font-bold">8</h1>
+            <h1 className="text-5xl md:text-8xl font-bold">15</h1>
             <p className="text-md md:text-xl">Years of experience</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-[#E6E7E8] rounded-xl pl-5 py-4"
+            className="bg-[#f2f3f5] rounded-xl  py-4 flex flex-col items-center justify-center"
           >
-            <h1 className="text-5xl md:text-8xl font-bold">24</h1>
-            <p className="text-md md:text-xl">Awards Achievement</p>
+            <h1 className="text-5xl md:text-8xl font-bold">150+</h1>
+            <p className="text-md md:text-xl">Happy Customers</p>
           </motion.div>
          
         </div>

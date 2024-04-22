@@ -6,6 +6,7 @@ import header from "@/../public/img/danube/bayz/header.webp";
 import second from "@/../public/img/danube/bayz/second.webp";
 import third from "@/../public/img/danube/bayz/third.webp";
 import fourth from "@/../public/img/danube/bayz/fourth.webp";
+import bayzqr from "@/../public/img/danube/qr/bayzqr.jpg";
 import Squares from "@/components/contact/Squares";
 import Faq from "@/components/contact/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
@@ -107,7 +108,7 @@ export default function Index() {
             INFINITY POOL
           </h1>
           <p className="w-10/12 md:w-2/4 2xl:w-3/5  lg:text-xl mt-6 ml-auto ">
-          SOAK IN THE BREATHTAKING VIEWS OF DUBAI SKYLIN
+          SOAK IN THE BREATHTAKING VIEWS OF DUBAI SKYLINE
           </p>
           <button className="text-xl bg-red-500 px-11 py-4 mt-6 lg:mt-11 rounded-lg hover:bg-royal transition-all duration-300">
             Download Brochure
@@ -121,7 +122,7 @@ export default function Index() {
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>
-      <ProjectInfo price={"1.2M"} handover={2028} payment={"74-26"} />
+      <ProjectInfo price={"1.2M"} handover={2028} payment={"74-26"} qr={bayzqr}/>
       <Image
         src={fourth}
         width={2000}

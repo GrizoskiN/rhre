@@ -30,33 +30,33 @@ const ThirdSection = () => {
           imagination
         </motion.p> 
       </div>
-      <div className="flex mt-8 xl:mt-16 2xl:mt-32 gap-3 xl:gap-5">
+      <div className="flex flex-col md:flex-row mt-8 xl:mt-16 2xl:mt-32 gap-3 xl:gap-5  ">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 80 }}
           transition={{ duration: 0.6 }}
-          className="w-1/2 relative group cursor-pointer overflow-hidden"
+          className="md:w-1/2 relative group cursor-pointer overflow-hidden"
         >
-          <div className="absolute z-10 bottom-6 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+          {/* <div className="absolute z-10 bottom-6 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300"></div> */}
           <Image
             src={rhre1}
             width={1500}
-            className="w-full rounded-2xl group-hover:scale-125 transition-all duration-500"
+            className="w-full  rounded-2xl group-hover:scale-125 transition-all duration-500"
           />
         </motion.div>
         <motion.div       ref={ref}
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 80 }}
-          transition={{ duration: 0.6 }} className="w-1/2">
-          <div className="group overflow-hidden cursor-pointer">
+          transition={{ duration: 0.6 }} className="md:w-1/2 grid ">
+          <div className="group overflow-hidden cursor-pointer order-2 md:order-1">
             <Image src={rhre} width={1500} className="w-full rounded-2xl group-hover:scale-125 transition-all duration-500" />
           </div>
-          <div className="flex mt-3  gap-3 lg:gap-5 ">
-            <div className="group overflow-hidden w-1/2 cursor-pointer">
+          <div className="grid grid-cols-2 md:mt-3 mb-3 gap-3 md:gap-3 md:order-2">
+            <div className="group overflow-hidden  w-full cursor-pointer ">
               <Image src={rhre2} width={1500} className="w-full rounded-2xl group-hover:scale-125 transition-all duration-500" />
             </div>
-            <div className="group overflow-hidden w-1/2 cursor-pointer">
+            <div className="group overflow-hidden w-full cursor-pointer">
               <Image src={rhre3} width={1500} className="w-full rounded-2xl group-hover:scale-125 transition-all duration-500" />
             </div>
           </div>

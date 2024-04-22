@@ -83,25 +83,25 @@ const FourthSection = () => {
       transition={{ duration: 0.6 }} className="text-center text-3xl xl:text-8xl font-bold text-white">
         Available Locations
       </motion.h1>
-      <div className="hidden text-white md:flex w-2/3 lg:w-1/5 m-auto items-center justify-between mt-6  lg:mt-16 text-xl">
-        <motion.h3  ref={ref}
+      <div className="hidden text-white md:flex w-2/3 lg:w-2/5 xl:w-1/4 m-auto items-center justify-between mt-6  lg:mt-16 text-xl">
+        <motion.a href="mailto:info@risehighrealestate.ae" ref={ref}
       initial={{ opacity: 0, y: 160 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 160}}
       transition={{ duration: 0.6 }} className="flex  items-center">
           <span className="mr-3">{email}</span> Email Us
-        </motion.h3>
-        <motion.h3  ref={ref}
+        </motion.a>
+        <motion.a href="tel:+971529992763" ref={ref}
       initial={{ opacity: 0, y: 160 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 160}}
       transition={{ duration: 0.6 }} className="flex  items-center">
           <span className="mr-3">{phone}</span>Call Us
-        </motion.h3>
-        <motion.h3  ref={ref}
+        </motion.a>
+        <motion.a  href="https://wa.me/971529992763" ref={ref}
       initial={{ opacity: 0, y: 160 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 160}}
       transition={{ duration: 0.6 }} className="flex  items-center">
           <span className="mr-3">{whatsapp}</span>WhatsApp
-        </motion.h3>
+        </motion.a>
       </div>
       <div className="relative lg:w-2/3 m-auto">
         <span className="absolute bg-red-500 opacity-80 w-5 h-5 md:w-8 md:h-8 rounded-full top-32 left-[20%] z-10 animate-bounce "></span>

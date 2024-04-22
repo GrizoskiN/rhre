@@ -29,6 +29,8 @@ import LocationAdvantages from "@/components/dynamicPages/segments/LocationAdvan
 
 import PropertiesGallery from "@/components/dynamicPages/segments/PropertiesGallery";
 import AgentCard from "@/components/dynamicPages/segments/AgentCard";
+import QrCode from "@/components/dynamicPages/segments/QrCode";
+import AdditionalInformation from "@/components/dynamicPages/segments/AdditionalInfromation";
 
 export default function ProjectPage({ project }) {
   const [index, setIndex] = useState(-1);
@@ -86,13 +88,14 @@ export default function ProjectPage({ project }) {
             <AmenitiesList parts={parts} check={check} />
 
             <LocationAdvantages parts={parts} check={check} />
-
+            {/* <AdditionalInformation parts={parts} /> */}
             <CustomGoogleMap key={q} q={q} />
           </div>
           <div className=" lg:w-1/3 ">
             <AgentCard project={project} />
           </div>
         </div>
+        <QrCode permit={project.permit_number} parts={parts}/>
       </div>
     </div>
   );

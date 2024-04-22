@@ -1,6 +1,7 @@
+import Image from "next/image";
 import React from "react";
 
-const ProjectInfo = ({ price, handover, payment }) => {
+const ProjectInfo = ({ price, handover, payment,qr }) => {
   return (
   <div className="w-full  text-royal  lg:my-32 pt-24 py-32">
         <h1 className="text-center font-bold text-2xl lg:text-5xl mb-16">PROJECT INFORMATION</h1>
@@ -18,6 +19,7 @@ const ProjectInfo = ({ price, handover, payment }) => {
         <h2 className="font-bold text-4xl lg:text-5xl xl:text-6xl border-y-[1px] lg:border-y-2 border-royal pb-4 pt-2 mt-4">AED {payment}</h2>
       </div>
     </div>
+    <Image src={qr} width={200} alt={qr} className="max-w-2/3 m-auto mt-11"/>
   </div>
   );
 };

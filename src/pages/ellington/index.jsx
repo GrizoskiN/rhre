@@ -7,26 +7,26 @@ import AllProjects from "@/components/developersSections/allProjects";
 
 export default function index() {
   const projects = [
-    {
-      id: 0,
-      image: "/img/ellington/projects/clayton.webp",
-      title: "Clayton House",
-      subtitle: "By Ellington Realty",
-      price: "AED 1.7M ",
-      address: "Uptown Dubai",
-      text: "Waterside decadence meets the rhythm of nature at  Claydon House, Ellington Properties’ latest residential  offering in Mohammed Bin Rashid City",
-      link: "/ellington/clayton",
-    },
-    {
-      id: 1,
-      image: "/img/ellington/projects/mercer.webp",
-      title: "Mercer House",
-      subtitle: "By Ellington Realty",
-      price: "AED 2.5M",
-      address: "JLT North",
-      text: "Set in a newly revitalised Uptown Dubai,  Mercer House celebrates a refreshed energy  whereby lives and lifestyles are enhanced  through creativity, design, wellness, and  entertainment",
-      link: "/ellington/mercer",
-    },
+    // {
+    //   id: 0,
+    //   image: "/img/ellington/projects/clayton.webp",
+    //   title: "Claydon House",
+    //   subtitle: "By Ellington Realty",
+    //   price: "AED 1.7M ",
+    //   address: "Uptown Dubai",
+    //   text: "Waterside decadence meets the rhythm of nature at  Claydon House, Ellington Properties’ latest residential  offering in Mohammed Bin Rashid City",
+    //   link: "/ellington/clayton",
+    // },
+    // {
+    //   id: 1,
+    //   image: "/img/ellington/projects/mercer.webp",
+    //   title: "Mercer House",
+    //   subtitle: "By Ellington Realty",
+    //   price: "AED 2.5M",
+    //   address: "JLT North",
+    //   text: "Set in a newly revitalised Uptown Dubai,  Mercer House celebrates a refreshed energy  whereby lives and lifestyles are enhanced  through creativity, design, wellness, and  entertainment",
+    //   link: "/ellington/mercer",
+    // },
     {
       id: 2,
       image: "/img/ellington/projects/oneriver.webp",

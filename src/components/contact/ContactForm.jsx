@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Popup from "../../pages/Popup";
-
+import PhoneInput from "react-phone-number-input";
 
 const schema = yup
   .object({
@@ -20,8 +20,8 @@ const schema = yup
 
 const ContactForm = () => {
   const router = useRouter();
-  const contactPage = router.pathname === '/contact';
- 
+  const contactPage = router.pathname === "/contact";
+  const [value, setValue] = useState();
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [range, setRange] = useState(1000000);
   const handleForm = (e) => {
@@ -47,10 +47,9 @@ const ContactForm = () => {
     });
     reset();
     router.push({
-        pathname: "./Popup",
-        query: { name: data.name }, // Pass the name as a query parameter
-      });
-     
+      pathname: "./Popup",
+      query: { name: data.name }, // Pass the name as a query parameter
+    });
   };
   const closePopup = () => {
     // Close the popup
@@ -61,7 +60,12 @@ const ContactForm = () => {
   };
   return (
     <>
-    <h1 className={"w-11/12   m-auto text-4xl lg:text-6xl font-semibold text-royal"}>Drop as a message</h1>
+      <h1
+        className={
+          "w-11/12   m-auto text-4xl lg:text-6xl font-semibold text-royal"
+        }>
+        Drop as a message
+      </h1>
       <form
         className="w-full py-11 mt-11 mb-32 lg:mt-0  "
         onSubmit={handleSubmit(submitHandler)}>
@@ -73,8 +77,8 @@ const ContactForm = () => {
               {...register("name", { required: true })}
               className={`w-full   p-3 border-b-2 border-b-royal bg-transparent  ${
                 errors.name
-                  ? "border-red-500 placeholder-royal outline-none"
-                  : "border-white outline-none text-royal "
+                  ? "text-red-500   outline-none"
+                  : " outline-none text-white "
               }`}
             />
 
@@ -89,22 +93,22 @@ const ContactForm = () => {
               }`}
             />
           </div>
-              <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">
-              <input
-            type="email"
-            placeholder="Email*"
-            {...register("email", {
-              required: true,
-              pattern: "/^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$/",
-            })}
-            className={`w-full mb-5 p-3 border-b-2 border-b-royal bg-transparent ${
-              errors.email
-                ? "border-red-500 placeholder-royal outline-none"
-                : "border-white outline-none text-royal "
-            }`}
-          />
+          <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">
+            <input
+              type="email"
+              placeholder="Email*"
+              {...register("email", {
+                required: true,
+                pattern: "/^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$/",
+              })}
+              className={`w-full mb-5 p-3 border-b-2 border-b-royal bg-transparent ${
+                errors.email
+                  ? "border-red-500 placeholder-royal outline-none"
+                  : "border-white outline-none text-royal "
+              }`}
+            />
 
-          <input
+            {/* <input
             type="tel"
             placeholder="Phone number"
             {...register("phone")}
@@ -113,85 +117,87 @@ const ContactForm = () => {
                 ? "border-red-500 placeholder-royal outline-none"
                 : "border-white outline-none text-royal "
             }`}
-          />
-              </div>
-   
-            <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">
+          /> */}
+            <PhoneInput
+              id="phone"
+              className="border-royal border-b-[1px]  px-3 focus:outline-none focus:ring w-full flex "
+              placeholder="Phone Number"
+              value={value}
+              defaultCountry="AE"
+              onChange={setValue}
+            />
+          </div>
 
+          <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">
             <textarea
-            type="textarea"
-            {...register("notes")}
-            placeholder="Notes"
-            rows="10"
-            cols="30"
-            className={`w-full mb-5 max-h-32 p-3 border-b-2 border-b-royal bg-transparent ${
-              errors.company
-                ? "border-red-500 placeholder-royal outline-none"
-                : "border-white outline-none text-royal "
-            }`}></textarea>
-
-
-            </div>
-<div className='flex flex-col w-full h-full mb-24 '>
-            <label
-              htmlFor='name'
-              className='text-royal  text-xl mt-5 relative'
-            >
+              type="textarea"
+              {...register("notes")}
+              placeholder="Notes"
+              rows="10"
+              cols="30"
+              className={`w-full mb-5 max-h-32 p-3 border-b-2 border-b-royal bg-transparent ${
+                errors.company
+                  ? "border-red-500 placeholder-royal outline-none"
+                  : "border-white outline-none text-royal "
+              }`}></textarea>
+          </div>
+          <div className="flex flex-col w-full h-full mb-24 ">
+            <label htmlFor="name" className="text-royal  text-xl mt-5 relative">
               What is your budget?
-             
             </label>
-           
 
-            <div className='w-full lg:w-[75%]  flex flex-col xl:flex-row justify-between mt-5 items-center'>
-              <div className=' w-full   '>
-                <div className='relative w-full flex justify-between  '>
-                  <label className='text-royal'> AED 500k </label>
+            <div className="w-full lg:w-[75%]  flex flex-col xl:flex-row justify-between mt-5 items-center">
+              <div className=" w-full   ">
+                <div className="relative w-full flex justify-between  ">
+                  <label className="text-royal"> AED 500k </label>
                   <input
-                    type='range'
-                    min='500000'
-                    max='5000000'
-                    className='w-3/4 accent-royal'
+                    type="range"
+                    min="500000"
+                    max="5000000"
+                    className="w-3/4 accent-royal"
                     {...register("budget")}
                     value={range}
                     onChange={(e) => setRange(e.target.value)}
                   />
 
-                  <label className='text-royal'> AED 5M </label>
-                  <span className='absolute top-7 left-2/4 -translate-x-3/4 text-royal'>
+                  <label className="text-royal"> AED 5M </label>
+                  <span className="absolute top-7 left-2/4 -translate-x-3/4 text-royal">
                     AED {formatNumberWithCommas(range)}
                   </span>
                 </div>
               </div>
 
-              <div className='mt-11 xl:mt-0 text-center lg:w-1/3'>
+              <div className="mt-11 xl:mt-0 text-center lg:w-1/3">
                 <input
-                  type='checkbox'
-                  id='budget'
-                  name='budget'
+                  type="checkbox"
+                  id="budget"
+                  name="budget"
                   {...register("checkbox")}
                   value="I don't know my budget"
-                  className='hidden peer'
+                  className="hidden peer"
                   // defaultChecked={true}
                 />
                 <label
-                  htmlFor='budget'
-                  id='budget'
-                  className=' w-full  border-[1px] border-Green hover:bg-[#262538] text-royal hover:text-white  cursor-pointer peer-checked:bg-red-500 peer-checked:text-white transition-all duration-800 ease-in-out p-3 text-sm '
-                >
+                  htmlFor="budget"
+                  id="budget"
+                  className=" w-full  border-[1px] border-Green hover:bg-[#262538] text-royal hover:text-white  cursor-pointer peer-checked:bg-red-500 peer-checked:text-white transition-all duration-800 ease-in-out p-3 text-sm ">
                   I don't know my budget
                 </label>
               </div>
             </div>
           </div>
 
-        
-
           <button className="w-full lg:w-1/3 m-auto h-16 bg-royal hover:bg-royal/80 text-white rounded-xl ">
             Submit
           </button>
         </div>
-        {isPopupOpen && <Popup isOpen={isPopupOpen} onClose={closePopup} name={watch("name")} />}
-
+        {isPopupOpen && (
+          <Popup
+            isOpen={isPopupOpen}
+            onClose={closePopup}
+            name={watch("name")}
+          />
+        )}
       </form>
     </>
   );

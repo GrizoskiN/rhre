@@ -1,0 +1,40 @@
+// components/ScrollToTopButton.js
+
+import { useEffect, useState } from 'react';
+
+const ScrollToTopButton = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = document.documentElement.scrollTop;
+      setIsVisible(scrollTop > 500); // Show the button when scrolled down 100 pixels
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  return (
+    <button
+      onClick={scrollToTop}
+      className={`${
+        isVisible ? 'opacity-100' : 'opacity-0' 
+      } mix-blend-exclusion transition-all duration-500 text-lg fixed bottom-8 right-8 bg-royal text-white w-11 h-16  rounded-full cursor-pointer z-50 hover:bg-royal/80 `}
+    >
+      ↑
+    </button>
+  );
+};
+
+export default ScrollToTopButton;

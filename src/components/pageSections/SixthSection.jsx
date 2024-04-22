@@ -9,7 +9,7 @@ const SixthSection = () => {
     threshold: 0.2, // Trigger the animation when 20% of the element is in view
   });
   return (
-    <div className="w-full   m-auto py-16 p-4 lg:py-16 lg:p-11 mt-32 bg-royal/80  relative overflow-hidden">
+    <div id="services" className="w-full   m-auto py-16 p-4 lg:py-16 lg:p-11 mt-32 bg-royal/80  relative overflow-hidden">
       <h1 className="text-4xl text-center text-white mb-11 xl:mb-16 lg:text-6xl font-bold  ">
         Our Services
       </h1>

@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import xml2js from "xml2js";
@@ -42,7 +43,7 @@ export default function Listings({ data }) {
     const email = "info@risehighrealestate.ae";
     const phone = "+971529992763";
     const whatsapp = "https://wa.me/971529992763";
-
+    const permit = project.permit_number
     // Return an object with the title, index, and photos
     return {
       reference_number,
@@ -129,6 +130,7 @@ export default function Listings({ data }) {
                 Whatsapp
               </a>
             </div>
+            
           </div>
         ))}
       </div>

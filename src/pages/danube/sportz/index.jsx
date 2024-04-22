@@ -6,6 +6,7 @@ import header from "@/../public/img/danube/sportz/header.webp";
 import second from "@/../public/img/danube/sportz/second.webp";
 import third from "@/../public/img/danube/sportz/third.webp";
 import fourth from "@/../public/img/danube/sportz/fourth.webp";
+import sportzqr from "@/../public/img/danube/qr/sportzqr.jpg";
 import Squares from "@/components/contact/Squares";
 import Faq from "@/components/contact/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
@@ -114,7 +115,7 @@ export default function Index() {
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>
-      <ProjectInfo price={"1M"} handover={"2027"} payment={"65/35"} />
+      <ProjectInfo price={"1M"} handover={"2027"} payment={"65/35"} qr={sportzqr}/>
       <Image
         src={fourth}
         width={2000}

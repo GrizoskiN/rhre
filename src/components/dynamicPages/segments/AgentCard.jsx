@@ -36,10 +36,10 @@ const whatsapp = <svg  className="w-5 h-5" width="15" height="15" viewBox="0 0 1
             </div>
         </div>
         <div className="buttons flex justify-between w-10/12 m-auto gap-1 mt-2 lg:my-5">
-            <button className="flex items-center w-1/2 border-[1px] border-royal text-royal justify-center rounded-md text-md py-2 ">
-                <span className="mr-3">{phone}</span>Call Me</button>
-            <button className="flex items-center w-1/2 border-[1px] border-Green text-Green justify-center rounded-md text-md py-2">
-                <span className="mr-3">{whatsapp}</span>WhatsApp</button>
+            <a href="tel:+971529992763" className="flex items-center w-1/2 border-[1px] border-royal text-royal justify-center rounded-md text-md py-2 hover:cursor-pointer">
+                <span className="mr-3">{phone}</span> Call Me</a>
+            <a href="https://wa.me/971529992763" className="flex items-center w-1/2 border-[1px] border-Green text-Green justify-center rounded-md text-md py-2">
+                <span className="mr-3">{whatsapp}</span>WhatsApp</a>
         </div>
         <div className="w-10/12 m-auto hidden lg:flex flex-col">
             <h1 className="text-2xl">Schedule a visit</h1>

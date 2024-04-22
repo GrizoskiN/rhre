@@ -2,11 +2,11 @@ import Image from "next/image";
 import About from "@/../public/img/about1.webp";
 import About1 from "@/../public/img/about2.webp";
 import ContactForm from "@/components/contact/ContactForm";
-import Zaid from "@/../public/img/zaid.jpg";
+import Zaid from "@/../public/img/zaid.png";
 const about = () => {
   const downArrow = (
     <svg
-      className="w-11 h-11"
+      className="w-6 h-6 lg:w-11  lg:h-11"
       width="60"
       height="60"
       viewBox="0 0 91 91"
@@ -25,12 +25,12 @@ const about = () => {
   return (
     <>
       <div className="pt-32 pb-16 lg:py-48  w-full m-auto ">
-        <div className="w-11/12 m-auto max-w-[1400px] text-royal md:text-center">
-          <div className=" my-16">
+        <div className="w-11/12 m-auto max-w-[1200px] text-royal md:text-center">
+          <div className="">
             <h4 className="text-red-300 text-2xl">WHO WE ARE</h4>
-            <h1 className="text-4xl md:text-6xl xl:text-8xl xl:leading-[7rem]">
+            <h1 className="text-4xl md:text-6xl xl:text-4xl ">
               Your journey to a new <br />
-              <span className=" xl:text-9xl uppercase font-bold">
+              <span className=" xl:text-6xl uppercase font-bold">
                 home starts here
               </span>
             </h1>
@@ -38,7 +38,7 @@ const about = () => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row md:w-10/12 m-auto justify-between gap-6  ">
+      <div className="flex max-w-[1400px] m-auto flex-col lg:flex-row  justify-between gap-6  ">
         <Image src={About} width={1300} className="object-cover  md:h-auto" />
         <Image
           src={About1}
@@ -47,15 +47,15 @@ const about = () => {
         />
       </div>
 
-      <div className="w-11/12 lg:w-2/3 m-auto flex flex-col lg:flex-row  my-11 lg:my-32 items-start">
-        <div className="lg:w-1/2 flex justify-around items-end mb-7">
-          <h1 className="text-5xl text-royal lg:text-8xl font-bold mr-7">Our Story</h1>
+      <div className="w-11/12 max-w-[1200px] m-auto flex flex-col lg:flex-row gap-7 my-11 lg:my-32 items-start">
+        <div className="lg:w-1/2 flex justify-evenly items-end mb-7 ">
+          <h1 className="text-5xl text-royal xl:text-8xl font-bold mr-6">Our Story</h1>
           {downArrow}
         </div>
 
         <div className=" lg:w-2/4 ml-auto text-xl">
           <h3 className="font-semibold">Our Founder, started this company because he wanted to make it easier for clients to find their perfect match!</h3>
-          <p className="mt-11">
+          <p className="mt-11 text-justify">
             With 15 rich years of sales experience, including 7 years in
             Telecommunication and 8 years in Real Estate in Dubai, I bring a
             wealth of knowledge and expertise to the table. Hailing from
@@ -83,9 +83,9 @@ const about = () => {
 At our organization, we don't just promise success; we embody it. Rise high with us, where your investment is not just a transaction but a partnership built on trust and mutual growth.
           </p>
 
-          <div className="mt-11 flex items-center">
-            <Image src={Zaid} width={260} className="rounded-full" />
-            <div className="ml-7">
+          <div className="mt-11 flex flex-col  items-start">
+            <Image src={Zaid} width={100} className="" />
+            <div className="">
               <h1 className="font-semibold text-2xl">Mohammad Zaid</h1>
               <h5 className="font-light text-[#777777] text-sm">
                 Founder & CEO
