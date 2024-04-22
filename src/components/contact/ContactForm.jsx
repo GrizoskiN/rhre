@@ -4,8 +4,8 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Popup from "../../pages/Popup";
-import PhoneInput from "react-phone-number-input";
-
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 const schema = yup
   .object({
     name: yup.string().required(),
@@ -22,6 +22,8 @@ const ContactForm = () => {
   const router = useRouter();
   const contactPage = router.pathname === "/contact";
   const [value, setValue] = useState();
+  const [phone, setPhone] = useState('');
+
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [range, setRange] = useState(1000000);
   const handleForm = (e) => {
@@ -67,7 +69,7 @@ const ContactForm = () => {
         Drop as a message
       </h1>
       <form
-        className="w-full py-11 mt-11 mb-32 lg:mt-0  "
+        className="w-11/12 overflow-hidden py-11 mt-11 mb-32 lg:mt-0  "
         onSubmit={handleSubmit(submitHandler)}>
         <div className={`w-11/12   m-auto `}>
           <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">
@@ -108,24 +110,13 @@ const ContactForm = () => {
               }`}
             />
 
-            {/* <input
-            type="tel"
-            placeholder="Phone number"
-            {...register("phone")}
-            className={`w-full mb-5 p-3 border-b-2 border-b-royal bg-transparent ${
-              errors.phone
-                ? "border-red-500 placeholder-royal outline-none"
-                : "border-white outline-none text-royal "
-            }`}
-          /> */}
-            <PhoneInput
-              id="phone"
-              className="border-royal border-b-[1px]  px-3 focus:outline-none focus:ring w-full flex "
-              placeholder="Phone Number"
-              value={value}
-              defaultCountry="AE"
-              onChange={setValue}
-            />
+        
+          <PhoneInput
+          className="border-royal border-b-2 px-3 mb-2  focus:outline-none focus:ring w-full  "
+        defaultCountry="ua"
+        value={phone}
+        onChange={(phone) => setPhone(phone)}
+      />
           </div>
 
           <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">

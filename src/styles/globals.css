@@ -8,9 +8,8 @@ html {
     transition: scroll-behavior 15s; /* Change 1s to the desired duration */
   }
 
-#phone {
-  outline: none;
-}
-.PhoneInputCountryIconImg {
-  width: 30px;
-}
+   .react-international-phone-country-selector button,  .react-international-phone-input{
+    border: none!important;
+    outline: none;
+    font-size: 1rem!important;
+  }
