@@ -57,6 +57,7 @@ const Testimonials = () => {
               <p className="mb-3">⭐⭐⭐⭐⭐</p>
               <p>{review.text}</p>
               <h4 className="my-4 font-semibold">{review.title}</h4>
+              <h2 className="font-semibold italic">{review.name}</h2>
             </CarouselItem>
           ))}
         </CarouselContent>

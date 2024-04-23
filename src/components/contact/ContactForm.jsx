@@ -144,14 +144,14 @@ const ContactForm = () => {
                   <input
                     type="range"
                     min="500000"
-                    max="5000000"
+                    max="100000000"
                     className="w-3/4 accent-royal"
                     {...register("budget")}
                     value={range}
                     onChange={(e) => setRange(e.target.value)}
                   />
 
-                  <label className="text-royal"> AED 5M </label>
+                  <label className="text-royal"> AED 100M </label>
                   <span className="absolute top-7 left-2/4 -translate-x-3/4 text-royal">
                     AED {formatNumberWithCommas(range)}
                   </span>
