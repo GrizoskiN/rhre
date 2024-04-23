@@ -19,7 +19,7 @@ const HeaderSection = () => {
             initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:w-1/2 xl:w-1/2 xl:text-xl mt-3 mb-5">
+            className="lg:w-1/2 xl:w-1/2 xl:text-xl mt-3 mb-11">
           Explore a wide range of properties that suit your lifestyle and budget.
           </motion.p>
           <motion.div

@@ -21,6 +21,8 @@ const Menu = (props) => {
   const [scrolled, setScrolled] = useState(false);
   const router = useRouter();
   const about = router.pathname === "/about";
+  const blog = router.pathname.startsWith("/blog/");
+
   const listings = router.pathname === "/properties";
   const newProjects = router.pathname === "/newProjects";
   const properties = router.pathname === "/properties/[id]";
@@ -38,7 +40,7 @@ const Menu = (props) => {
         height="22"
         rx="11"
         fill={`${
-          about || listings || newProjects || properties ? "royal" : "white"
+          about || listings || newProjects || properties || blog  || blog ? "royal" : "white"
         }`}
       />
       <rect
@@ -47,7 +49,7 @@ const Menu = (props) => {
         height="22"
         rx="11"
         fill={`${
-          about || listings || newProjects || properties ? "royal" : "white"
+          about || listings || newProjects || properties || blog  ? "royal" : "white"
         }`}
       />
       <rect
@@ -57,7 +59,7 @@ const Menu = (props) => {
         height="22"
         rx="11"
         fill={`${
-          about || listings || newProjects || properties ? "royal" : "white"
+          about || listings || newProjects || properties || blog  ? "royal" : "white"
         }`}
       />
     </svg>
@@ -128,7 +130,7 @@ const Menu = (props) => {
         <Link href="/">
           <Image
             src={
-              about || listings || newProjects || properties ? logodark : logo
+              about || listings || newProjects || properties || blog  ? logodark : logo
             }
             priority
             width={150}
@@ -137,7 +139,7 @@ const Menu = (props) => {
         </Link>
         <div
           className={`flex items-center  font-[400] mt-4 text-lg ${
-            about || listings || newProjects || properties
+            about || listings || newProjects || properties || blog 
               ? "text-royal"
               : "text-white"
           }`}>
@@ -151,7 +153,7 @@ const Menu = (props) => {
             onMouseEnter={handleMenuHover}
             onMouseLeave={handleMenuLeave}>
             <Link
-              href="/"
+              href="/#projects"
               className="lg:mx-5  hover:text-gray-300 transition-all duration-300">
               New Projects
             </Link>
@@ -190,7 +192,7 @@ const Menu = (props) => {
             )}
           </div>
           <Link
-            href="/"
+            href="/#news"
             className="lg:mx-5  hover:text-gray-300 transition-all duration-300">
             News
           </Link>
@@ -202,7 +204,7 @@ const Menu = (props) => {
           <Link
             href="/contact"
             className={`lg:mx-5   px-7 py-2 ${
-              about || listings || newProjects || properties
+              about || listings || newProjects || properties || blog 
                 ? "bg-royal text-white hover:bg-royal/90"
                 : "bg-white text-royal hover:bg-royal/20 hover:text-white hover:border-royal"
             } rounded-md   transition-all duration-300`}>
@@ -216,7 +218,7 @@ const Menu = (props) => {
           <Link href="/">
             <Image
               src={
-                about || listings || newProjects || properties ? logodark : logo
+                about || listings || newProjects || properties || blog  ? logodark : logo
               }
               priority
               className="object-cover"
@@ -283,7 +285,7 @@ const Menu = (props) => {
               <div
                 onClick={handleMenu}
                 className="border-b-[1px] py-3 border-white/20 w-full">
-                <Link href="/blog">Blog</Link>
+                <Link href="/#news">Blog</Link>
               </div>
               <div
                 onClick={handleMenu}

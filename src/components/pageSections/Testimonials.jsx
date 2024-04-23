@@ -36,7 +36,7 @@ const Testimonials = () => {
 
   return (
     <div className="overflow-x-hidden my-32 w-full px-8 m-auto text-royal flex flex-col items-center justify-center">
-      <h1 className="text-royal font-bold text-4xl lg:text-6xl mb-11 lg:mb-24 text-center lg:w-2/4 xl:w-1/3">
+      <h1 className="text-royal font-bold text-4xl lg:text-6xl mb-11 lg:mb-24 text-center lg:w-2/4 2xl:w-1/3">
         What our clients say about us
       </h1>
       <Carousel

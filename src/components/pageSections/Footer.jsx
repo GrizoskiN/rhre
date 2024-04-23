@@ -21,10 +21,10 @@ const Footer = () => {
       <div className="md:flex justify-between items-start md:mt-16 xl:w-1/2">
       <div className=" flex-col flex text-xl   lg:ml-auto my-11 md:my-0" >
           <h1 className="font-bold text-2xl  tracking-wider mb-6">Company</h1>
-          <Link className="my-1 text-lg text-gray-300" href="/">About Us</Link>
-          <Link className="my-1 text-lg text-gray-300" href="/">Services</Link>
-          <Link className="my-1 text-lg text-gray-300" href="/">Projects</Link>
-          <Link className="my-1 text-lg text-gray-300" href="/">News</Link>
+          <Link className="my-1 text-lg text-gray-300" href="/about">About Us</Link>
+          <Link className="my-1 text-lg text-gray-300" href="/properties">Available Projects</Link>
+          <Link className="my-1 text-lg text-gray-300" href="/#projects">Off Plan Projects</Link>
+          <Link className="my-1 text-lg text-gray-300" href="/#news">News</Link>
           <Link className="my-1 text-lg text-gray-300" href="/contact">Get In Touch</Link>
         </div>
         <div className="lg:ml-auto">

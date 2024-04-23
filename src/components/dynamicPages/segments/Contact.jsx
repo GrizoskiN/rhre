@@ -6,8 +6,8 @@ import * as yup from "yup";
 
 import Popup from "./../../../pages/Popup";
 
-import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input'
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 const schema = yup
   .object({
     name: yup.string().required(),
@@ -23,7 +23,7 @@ const schema = yup
 const Contact = () => {
   const router = useRouter();
   const contactPage = router.pathname === "/contact";
-  const [value, setValue] = useState()
+  const [phone, setPhone] = useState('');
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [range, setRange] = useState(500000);
   const handleForm = (e) => {
@@ -49,7 +49,7 @@ const Contact = () => {
     });
     reset();
     router.push({
-      pathname: "./Popup",
+      pathname: "/Popup",
       query: { name: data.name }, // Pass the name as a query parameter
     });
   };
@@ -62,6 +62,7 @@ const Contact = () => {
   };
   return (
     <>
+    {/* <Popup/> */}
       {/* <h1 className={`"w-11/12 ${contactPage ?  "xl:w-11/12 " : "w-full"}  m-auto text-4xl lg:text-6xl font-semibold text-royal"`}>Drop as a message</h1> */}
       <form
         className="w-full pt-5 pb-3 lg:mt-0  "
@@ -97,11 +98,12 @@ const Contact = () => {
               }`}
             />
           </div>
-
-            <PhoneInput id="phone" className="border-royal border-[1px] rounded-md p-3 focus:outline-none focus:ring"
-      placeholder="Phone Number"
-      value={value} defaultCountry="AE"
-      onChange={setValue}/>
+          <PhoneInput
+          className="border-royal border-b-2 px-3 mb-2  focus:outline-none focus:ring w-full  "
+        defaultCountry="ae"
+        value={phone}
+        onChange={(phone) => setPhone(phone)}
+      />
             {/* <div className="flex border-[1px] p-3 border-royal rounded-md items-center">
               <input
                 type="tel"

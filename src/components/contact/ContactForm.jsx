@@ -3,9 +3,9 @@ import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import Popup from "../../pages/Popup";
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
+import Popup from './../../pages/Popup';
 const schema = yup
   .object({
     name: yup.string().required(),
@@ -21,7 +21,7 @@ const schema = yup
 const ContactForm = () => {
   const router = useRouter();
   const contactPage = router.pathname === "/contact";
-  const [value, setValue] = useState();
+
   const [phone, setPhone] = useState('');
 
   const [isPopupOpen, setPopupOpen] = useState(false);
@@ -49,10 +49,10 @@ const ContactForm = () => {
     });
     reset();
     router.push({
-      pathname: "./Popup",
+      pathname: "/Popup",
       query: { name: data.name }, // Pass the name as a query parameter
-    });
-  };
+    })
+  };;
   const closePopup = () => {
     // Close the popup
     setPopupOpen(false);
@@ -77,10 +77,10 @@ const ContactForm = () => {
               type="text"
               placeholder={errors.name ? "Please Enter your Name" : "Your Name"}
               {...register("name", { required: true })}
-              className={`w-full   p-3 border-b-2 border-b-royal bg-transparent  ${
+              className={`w-full text-royal  p-3 border-b-2 border-b-royal bg-transparent  ${
                 errors.name
                   ? "text-red-500   outline-none"
-                  : " outline-none text-white "
+                  : " outline-none text-royal "
               }`}
             />
 
@@ -113,7 +113,7 @@ const ContactForm = () => {
         
           <PhoneInput
           className="border-royal border-b-2 px-3 mb-2  focus:outline-none focus:ring w-full  "
-        defaultCountry="ua"
+        defaultCountry="ae"
         value={phone}
         onChange={(phone) => setPhone(phone)}
       />
@@ -186,7 +186,7 @@ const ContactForm = () => {
           <Popup
             isOpen={isPopupOpen}
             onClose={closePopup}
-            name={watch("name")}
+           
           />
         )}
       </form>

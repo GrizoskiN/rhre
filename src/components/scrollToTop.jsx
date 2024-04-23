@@ -30,7 +30,7 @@ const ScrollToTopButton = () => {
       onClick={scrollToTop}
       className={`${
         isVisible ? 'opacity-100' : 'opacity-0' 
-      } mix-blend-exclusion transition-all duration-500 text-lg fixed bottom-8 right-8 bg-royal text-white w-11 h-16  rounded-full cursor-pointer z-50 hover:bg-royal/80 `}
+      } mix-blend-exclusion transition-all duration-500 text-lg fixed bottom-8 right-8 bg-royal text-white w-11 h-16  rounded-full cursor-pointer z-40 hover:bg-royal/80 `}
     >
       ↑
     </button>
