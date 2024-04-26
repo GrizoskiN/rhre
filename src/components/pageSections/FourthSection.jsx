@@ -74,12 +74,12 @@ const FourthSection = () => {
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 120 }}
-      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 210 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 40 }}
       transition={{ duration: 0.6 }}
       className="bg-royal  relative py-11 lg:py-32 w-11/12 m-auto rounded-3xl  my-11 lg:my-32 ">
       <motion.h1  ref={ref}
       initial={{ opacity: 0, y: 220 }}
-      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 210 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 40 }}
       transition={{ duration: 0.6 }} className="text-center text-3xl xl:text-8xl font-bold text-white">
         Available Locations
       </motion.h1>

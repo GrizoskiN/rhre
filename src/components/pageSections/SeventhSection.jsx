@@ -1,5 +1,5 @@
 import Image from "next/image";
-import zaid from "@/../public/img/zaid_rhre.png";
+import zaid from "@/../public/img/zaid.png";
 
 const SeventhSection = () => {
   return (
@@ -17,7 +17,7 @@ const SeventhSection = () => {
         successful one."
       </p>
       <div className="mt-11 flex flex-col items-center justify-center ">
-        <Image src={zaid} width={100} className="" />
+        <Image src={zaid} width={150} className="" />
         <h1 className="text-2xl font-bold">Mohammad Zaid </h1>
         <h3 className="">Founder & CEO</h3>
       </div>

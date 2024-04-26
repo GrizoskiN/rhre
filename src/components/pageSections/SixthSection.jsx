@@ -23,7 +23,7 @@ const SixthSection = () => {
           <h1 className="font-semibold text-6xl">01</h1>
           <div className="mt-11 ">
             <h1 className="font-bold text-4xl lg:text-4xl xl:text-5xl mb-5 leading-10 ">
-              <span className="text-red-500">BUYING</span> A PROPERTY
+              <span className="text-red-500">OWNING</span> A PROPERTY
             </h1>
             <p className="text-lg xl:text-xl font-light">
               Looking to buy a property in Dubai? Our agency offers a wide

@@ -133,7 +133,7 @@ const Menu = (props) => {
               about || listings || newProjects || properties || blog  ? logodark : logo
             }
             priority
-            width={150}
+            width={180}
             className="bg-fit hover:scale-[105%] transition-transform duration-300"
           />
         </Link>

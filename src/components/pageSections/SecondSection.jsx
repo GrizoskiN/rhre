@@ -71,7 +71,7 @@ const SecondSection = () => {
             className=" bg-royal/20 rounded-xl  py-4 flex flex-col items-center justify-center"
           >
             <h1 className="text-5xl md:text-8xl font-bold">15</h1>
-            <p className="text-md md:text-xl">Years of experience</p>
+            <p className="text-md md:text-xl">Years Of Rich Experience</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -80,7 +80,7 @@ const SecondSection = () => {
             className="bg-[#f2f3f5] rounded-xl  py-4 flex flex-col items-center justify-center"
           >
             <h1 className="text-5xl md:text-8xl font-bold">150+</h1>
-            <p className="text-md md:text-xl">Happy Customers</p>
+            <p className="text-md md:text-xl">Delighted Customers</p>
           </motion.div>
          
         </div>

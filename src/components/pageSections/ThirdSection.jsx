@@ -13,15 +13,15 @@ const ThirdSection = () => {
   });
 
   return (
-    <div className="w-11/12 max-w-[1400px] m-auto">
+    <motion.div ref={ref} className="w-11/12 max-w-[1400px] m-auto">
       <div className="lg:flex justify-between items-end gap-11">
-        <motion.h1       ref={ref}
+        <motion.h1       
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
           transition={{ duration: 0.6 }} className="text-4xl lg:text-5xl mb-3 xl:mb-0 font-bold xl:w-1/2">
           Discover Your Perfect Property Match
         </motion.h1 >
-        <motion.p       ref={ref}
+        <motion.p     
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
           transition={{ duration: 0.6 }} className="xl:w-1/3 text-lg">
@@ -62,7 +62,7 @@ const ThirdSection = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
