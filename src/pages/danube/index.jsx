@@ -37,17 +37,17 @@ export default function index() {
     //   text: "Danube Oceanz offers a variety of studios and one- to three-bedroom apartments with private pools and elegant office spaces to suit your refined preferences...",
     //   link: "/danube/oceanz",
     // },
-    {
-      id: 3,
-      image: "/img/danube/projects/eleganz.webp",
-      title: "Eleganz",
-      subtitle: "by Danube Properties",
-      price: "AED 2.5M",
-      sign: "Ready!!!",
-      address: "Jumeirah Village Circle",
-      text: "In the heart of Dubai Maritime City, Oceanz by Danube offers unrivalled luxury...",
-      link: "/danube/eleganz",
-    },
+    // {
+    //   id: 3,
+    //   image: "/img/danube/projects/eleganz.webp",
+    //   title: "Eleganz",
+    //   subtitle: "by Danube Properties",
+    //   price: "AED 2.5M",
+    //   sign: "Ready!!!",
+    //   address: "Jumeirah Village Circle",
+    //   text: "In the heart of Dubai Maritime City, Oceanz by Danube offers unrivalled luxury...",
+    //   link: "/danube/eleganz",
+    // },
   ];
 
   return (
