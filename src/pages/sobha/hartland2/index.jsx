@@ -202,7 +202,7 @@ const Sobha = () => {
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>
-      <Apartments clients={clients} title={"RIVERSIDE CRESCENT"} subtitle={"Floorplans"}/>
+      {/* <Apartments clients={clients} title={"RIVERSIDE CRESCENT"} subtitle={"Floorplans"}/> */}
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
           <h1 className=" text-3xl lg:text-6xl lg:leading-[4rem] ">

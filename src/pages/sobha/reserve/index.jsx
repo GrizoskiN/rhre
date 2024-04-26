@@ -78,7 +78,7 @@ export default function Index() {
         text={
           "Sobha Realty redefines the concept of luxury residential living with a repertoire of real estate projects across Dubai."
         }
-        price={"1.57M"}
+        price={"9.8M"}
       />
       <Title
         title={"The Enduring"}
@@ -101,7 +101,7 @@ export default function Index() {
         }
       />
       <Gallery photos={photos} />
-      <ProjectInfo price={"1.56M"} handover={2027} payment={"80/20"} qr={reserveqr}/>
+      <ProjectInfo price={"9.8M"} handover={"Dec 2026"} payment={"80/20"} qr={reserveqr}/>
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
           <h1 className=" text-4xl lg:text-6xl lg:leading-[4rem] ">

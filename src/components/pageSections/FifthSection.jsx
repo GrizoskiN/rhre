@@ -59,7 +59,7 @@ const FifthSection = () => {
       address2: "Starting Price",
       logo: sobhalogo,
       img: verde,
-      Projectlink:"/damac",  
+      Projectlink:"/sobha/verde",  
   },
   {
     id: 4,

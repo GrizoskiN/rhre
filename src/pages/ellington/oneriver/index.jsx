@@ -124,7 +124,7 @@ help its residents flourish in their new home.
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>
-      <ProjectInfo price={"2.8M"} handover={"2027 3Q"} payment={"70/30"} qr={oneqr} />
+      <ProjectInfo price={"2.8M"} handover={"2027 Q3"} payment={"70/30"} qr={oneqr} />
       <Image
         src={fourth}
         width={2000}
