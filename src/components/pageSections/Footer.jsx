@@ -39,9 +39,9 @@ Dubai</h3>
       </div>
       <div className="max-w-[1400px] items-end m-auto w-11/12 md:w-2/3 xl:w-10/12 lg:flex justify-between ">
         <div className="flex-col flex md:flex-row gap-4 md:justify-center">
-            <a href="https://www.facebook.com/people/Rise-High-Real-Estate/61558887151383/" className="text-sm  text-center  font-light border-[1px] border-white px-9 py-3">Facebook</a>
-            <a href="https://www.instagram.com/risehighrealestate/" className="text-sm  text-center  font-light border-[1px] border-white px-9 py-3">Instagram</a>
-            <a href="https://www.linkedin.com/company/rise-high-real-estate" className="text-sm  text-center  font-light border-[1px] border-white px-9 py-3">LinkedIn</a>
+            <a target="_blank" href="https://www.facebook.com/people/Rise-High-Real-Estate/61558887151383/" className="text-sm  text-center  font-light border-[1px] border-white px-9 py-3">Facebook</a>
+            <a target="_blank" href="https://www.instagram.com/risehighrealestate/" className="text-sm  text-center  font-light border-[1px] border-white px-9 py-3">Instagram</a>
+            <a target="_blank" href="https://www.linkedin.com/company/rise-high-real-estate" className="text-sm  text-center  font-light border-[1px] border-white px-9 py-3">LinkedIn</a>
         </div>
         <div>
             <h2 className="text-center lg:text-left mt-11 lg:mt-0">©️ Copyright 2024, All Right reserved</h2>
