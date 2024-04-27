@@ -61,10 +61,11 @@ const reviews = [
      text:"Mr.Zaid is a good agent with great passion and responsibility. Quick and detailed reply all time with friendly manner for the customers all over the world. Thanks for the effort Mr. Zaid have done for us the recent time. ish you a good fortune "
     },
     {
-        id:14,
-        name:"Firoz Khan",
-        text: "I know Zaid personally and he becomes like my younger brother. I wanted to take a moment to express my gratitude for the tremendous service Zaid provided during my real estate deal. His professionalism, knowledge, and dedication made the entire process smooth and stress-free. Zaid's expertise in the real estate market was evident, and I truly appreciated his guidance throughout the negotiation and closing phases. Working with Zaid was a pleasure, and I would highly recommend his services to anyone in need of a reliable and trustworthy real estate service provider."
-    }
+        id:15,
+        name:"Damjan",
+        text: "This real estate website provides a user-friendly experience with intuitive navigation, detailed property listings, and robust search filters. The site offers comprehensive information about each listing, including photos, descriptions, and pricing details. Overall, it's a reliable platform for anyone looking to buy, sell, or rent real estate."
+    },
+   
 ]
 
 export default reviews
