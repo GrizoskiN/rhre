@@ -1,0 +1,55 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.risehighrealestate.ae/</loc>
+    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://www.risehighrealestate.ae/properties</loc>
+    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>.8</priority>
+  </url>
+  <url>
+    <!-- Add the Yoast SEO sitemap URL here -->
+    <loc>https://risehighrealestate.ae/sitemap.xml</loc> <!-- Replace with your Yoast SEO sitemap URL -->
+    <lastmod>2024-04-27T15:02:24.021Z</lastmod> <!-- Use the last modification date of the Yoast SEO sitemap -->
+  </url>
+  <url>
+    <loc>https://www.risehighrealestate.ae/ellington</loc>
+    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>.8</priority>
+  </url>
+  <url>
+    <loc>https://www.risehighrealestate.ae/danube</loc>
+    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>.8</priority>
+  </url>
+  <url>
+    <loc>https://www.risehighrealestate.ae/sobha</loc>
+    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>.8</priority>
+  </url>
+  <url>
+    <loc>https://www.risehighrealestate.ae/#news</loc>
+    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>.8</priority>
+  </url>
+  <url>
+    <loc>https://www.risehighrealestate.ae/about</loc>
+    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>.8</priority>
+  </url>
+  <url>
+    <loc>https://www.risehighrealestate.ae/contact</loc>
+    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>.8</priority>
+  </url>
+</urlset>

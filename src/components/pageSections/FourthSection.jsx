@@ -87,32 +87,32 @@ const FourthSection = () => {
         <motion.a href="mailto:info@risehighrealestate.ae" ref={ref}
       initial={{ opacity: 0, y: 160 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 160}}
-      transition={{ duration: 0.6 }} className="flex  items-center">
+      transition={{ duration: 0.6 }} className="flex  items-center hover:text-red-500 transition-color duration-300">
           <span className="mr-3">{email}</span> Email Us
         </motion.a>
         <motion.a href="tel:+971529992763" ref={ref}
       initial={{ opacity: 0, y: 160 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 160}}
-      transition={{ duration: 0.6 }} className="flex  items-center">
+      transition={{ duration: 0.6 }} className="flex  items-center hover:text-red-500 transition-color duration-300">
           <span className="mr-3">{phone}</span>Call Us
         </motion.a>
         <motion.a  href="https://wa.me/971529992763" ref={ref}
       initial={{ opacity: 0, y: 160 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 160}}
-      transition={{ duration: 0.6 }} className="flex  items-center">
-          <span className="mr-3">{whatsapp}</span>WhatsApp
+      transition={{ duration: 0.6 }} className="flex  items-center hover:text-red-500 transition-color duration-300">
+          <span className="mr-3 ">{whatsapp}</span>WhatsApp
         </motion.a>
       </div>
       <div className="relative lg:w-2/3 m-auto">
-        <span className="absolute bg-red-500 opacity-80 w-5 h-5 md:w-8 md:h-8 rounded-full top-32 left-[20%] z-10 animate-bounce "></span>
-        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-16 left-[45%] z-0 animate-bounce "></span>
-        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[40%] left-[65%] z-0 animate-bounce "></span>
-        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[33%] left-[40%] z-0 animate-bounce "></span>
-        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[23%] left-[35%] z-0 animate-bounce "></span>
-        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[63%] left-[45%] z-0 animate-bounce "></span>
-        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[73%] left-[85%] z-0 animate-bounce "></span>
-        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[53%] left-[65%] z-0 animate-bounce "></span>
-        <span className="absolute bg-red-500 opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[57%] left-[35%] z-0 animate-bounce "></span>
+        <span className="absolute bg-white opacity-80 w-5 h-5 md:w-8 md:h-8 rounded-full top-32 left-[20%] z-10 animate-bounce "></span>
+        <span className="absolute bg-white opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-16 left-[45%] z-0 animate-bounce "></span>
+        <span className="absolute bg-white opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[40%] left-[65%] z-0 animate-bounce "></span>
+        <span className="absolute bg-white opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[33%] left-[40%] z-0 animate-bounce "></span>
+        <span className="absolute bg-white opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[23%] left-[35%] z-0 animate-bounce "></span>
+        <span className="absolute bg-white opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[63%] left-[45%] z-0 animate-bounce "></span>
+        <span className="absolute bg-white opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[73%] left-[85%] z-0 animate-bounce "></span>
+        <span className="absolute bg-white opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[53%] left-[65%] z-0 animate-bounce "></span>
+        <span className="absolute bg-white opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[57%] left-[35%] z-0 animate-bounce "></span>
         <Image src={dubai} width={1000} className="w-full  " />
       </div>
     </motion.div>

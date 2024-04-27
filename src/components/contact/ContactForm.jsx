@@ -69,9 +69,9 @@ const ContactForm = () => {
         Drop as a message
       </h1>
       <form
-        className="w-11/12 overflow-hidden py-11 mt-11 mb-32 lg:mt-0  "
+        className="w-11/12 m-auto overflow-hidden py-11  mb-32 lg:mt-16  "
         onSubmit={handleSubmit(submitHandler)}>
-        <div className={`w-11/12   m-auto `}>
+        <div className={`w-full   m-auto `}>
           <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">
             <input
               type="text"

@@ -79,8 +79,8 @@ const SecondSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="bg-[#f2f3f5] rounded-xl  py-4 flex flex-col items-center justify-center"
           >
-            <h1 className="text-5xl md:text-8xl font-bold">150+</h1>
-            <p className="text-md md:text-xl">Delighted Customers</p>
+            <h1 className="text-5xl md:text-8xl font-bold">1000+</h1>
+            <p className="text-md md:text-xl">Happy Clients</p>
           </motion.div>
          
         </div>

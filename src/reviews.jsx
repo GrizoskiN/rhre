@@ -1,4 +1,9 @@
 const reviews = [
+    {
+        id:14,
+        name:"Firoz Khan",
+        text: "I know Zaid personally and he becomes like my younger brother. I wanted to take a moment to express my gratitude for the tremendous service Zaid provided during my real estate deal. His professionalism, knowledge, and dedication made the entire process smooth and stress-free. Zaid's expertise in the real estate market was evident, and I truly appreciated his guidance throughout the negotiation and closing phases. Working with Zaid was a pleasure, and I would highly recommend his services to anyone in need of a reliable and trustworthy real estate service provider."
+    },
     {id:0,
      name: "Steven",
      text:"Overall My Experience With Zaid From Rise High Real Estate In Purchasing A New/off-plan Property Was Exceptional. His Professionalism And Support Were Evident Throughout The Entire Process, As He Guided Us Seamlessly From Start To Finish. He Adeptly Handled Any Challenges That Arose, Ensuring That We Secured The Right Home At The Right Price.      I Have No Hesitation In Recommending Rise High Real Estate, Along With Zaid, To Anyone In Search Of A Property. His Dedication And Expertise Truly Made The Buying Process Smooth And Stress-free. "
@@ -55,6 +60,11 @@ const reviews = [
      name: "Ziqi Ma",
      text:"Mr.Zaid is a good agent with great passion and responsibility. Quick and detailed reply all time with friendly manner for the customers all over the world. Thanks for the effort Mr. Zaid have done for us the recent time. ish you a good fortune "
     },
+    {
+        id:14,
+        name:"Firoz Khan",
+        text: "I know Zaid personally and he becomes like my younger brother. I wanted to take a moment to express my gratitude for the tremendous service Zaid provided during my real estate deal. His professionalism, knowledge, and dedication made the entire process smooth and stress-free. Zaid's expertise in the real estate market was evident, and I truly appreciated his guidance throughout the negotiation and closing phases. Working with Zaid was a pleasure, and I would highly recommend his services to anyone in need of a reliable and trustworthy real estate service provider."
+    }
 ]
 
 export default reviews

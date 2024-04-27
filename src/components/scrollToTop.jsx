@@ -54,9 +54,9 @@ const mail = <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="
   }  transition-all fixed flex flex-col w-32 justify-center items-end bottom-8 right-8 z-40 duration-500 `}
 >
   <div className="text-royal flex flex-col mb-4 gap-1 items-end">
-    <a href="tel:+971529992763"  className='group flex hover:w-full bg-royal text-white items-center hover:px-5 rounded-sm transition-all duration-500 hover:bg-blue-600'>{phone} <span className=" hidden group-hover:block">Call </span></a>
-    <a href="https://wa.me/971529992763" className='group flex hover:w-full bg-royal text-white items-center hover:px-5 rounded-sm transition-all duration-500 hover:bg-[#3CC04E]'>{whatsapp}<span className=" hidden group-hover:block">WhatsApp </span></a>
-    <Link href="/contact" className='group flex hover:w-full bg-royal text-white items-center hover:px-5 rounded-sm transition-all duration-500 hover:bg-blue-600'>{mail} <span className=" hidden group-hover:block">Email</span></Link>
+    <a href="tel:+971529992763"  className='group flex hover:w-full bg-royal text-white items-center lg:lg:hover:px-5 rounded-sm transition-all duration-500 hover:bg-blue-600'>{phone} <span className=" hidden lg:group-hover:block">Call </span></a>
+    <a href="https://wa.me/971529992763" className='group flex hover:w-full bg-royal text-white items-center lg:hover:px-5 rounded-sm transition-all duration-500 hover:bg-[#3CC04E]'>{whatsapp}<span className=" hidden lg:group-hover:block">WhatsApp </span></a>
+    <Link href="/contact" className='group flex hover:w-full bg-royal text-white items-center lg:hover:px-5 rounded-sm transition-all duration-500 hover:bg-blue-600'>{mail} <span className=" hidden lg:group-hover:block">Email</span></Link>
   </div>
     <button
       onClick={scrollToTop}

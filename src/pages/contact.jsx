@@ -6,14 +6,14 @@ import ContactForm from "@/components/contact/ContactForm";
 const contact = () => {
   return (
     <>
-      <div className="h-[50vh] overflow-hidden relative object-bottom flex items-center justify-center">
+      <div className="py-48  overflow-hidden relative object-bottom flex items-center justify-center">
         <h1 className="font-bold text-4xl lg:text-7xl text-white z-20">
           Contact Us
         </h1>
         <div className="absolute z-10 bg-royal/70 w-full h-full top-0 left-0"></div>
         <Image
           src={contactImg}
-          className="w-full absolute z-0 left-0 bottom-0 object-cover "
+          className="w-full h-full absolute z-0 text-xl md:left-0 bottom-0 object-cover "
         />
       </div>
       <div className="w-full lg:w-11/12 ml-auto py-16  lg:mt-32 lg:flex justify-between">
@@ -22,7 +22,7 @@ const contact = () => {
             <div className=" flex items-center lg:items-start  2xl:flex-col">
               <span className="mr-5 2xl:mr-0">
                 <svg
-                  className="w-14 h-14 md:w-16 md:h-16 "
+                  className="w-10 h-10 lg:w-16 lg:h-16 "
                   viewBox="0 0 31 30"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -37,16 +37,16 @@ const contact = () => {
                 </svg>
               </span>
               <div className="pl:16">
-                <h3 className="font-bold text-2xl lg:text-5xl 2xl:my-5 ">
+                <h3 className="font-bold text-xl md:text-2xl lg:text-5xl 2xl:my-5 ">
                   Phone
                 </h3>
-                <p className="text-2xl">00971 52999 2763</p>
+                <p className="text-lg md:text-2xl">00971 52999 2763</p>
               </div>
             </div>
             <div className="md:ml-16 lg::ml-32 flex items-center lg:items-start mt-5 md:mt-0 2xl:flex-col">
               <span className="mr-5 2xl:mr-0">
                 <svg
-                  className="w-14 h-14 md:w-16 md:h-16 "
+                  className="w-10 h-10 lg:w-16 lg:h-16 "
                   viewBox="0 0 31 30"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -74,10 +74,10 @@ const contact = () => {
               </span>
               <div className="pl:16">
                
-                <h3 className="font-bold text-2xl lg:text-5xl  2xl:my-5">
+                <h3 className="font-bold text-xl  md:text-2xl lg:text-5xl  2xl:my-5">
                   Email
                 </h3>
-                <p className="text-2xl">zaid@risehighrealestate.ae</p>
+                <p className="text-lg md:text-2xl">zaid@risehighrealestate.ae</p>
               </div>
             </div>
           </div>
