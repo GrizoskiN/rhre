@@ -22,7 +22,7 @@ export default function index() {
       image: "/img/danube/projects/sportz.webp",
       title: "Sportz",
       subtitle: "by Danube Properties",
-      price: "AED 2.5M",
+      price: "AED 1M",
       address: "Dubai Sports City",
       text: "Located in a vibrant and dynamic community, Sportz by Danube offers an unparalleled residential experience enriched with a diverse array of sporting amenities,...",
       link: "/danube/sportz",
@@ -54,7 +54,7 @@ export default function index() {
     <div>
       <Header header={header} logo={danubelogo} />
       <Title
-        title={"Danube Realty"}
+        title={"Danube Properties"}
         subtitle={"THE PLACE TO BE"}
         paragraph={
           "Established in the year 1993, Danube Group was founded          and cultivated under the leadership of Rizwan Sajan, who          is the known to be the Founder and Chairman of the          Group. Starting off as a small trading firm, the company is          moving from strength-to-strength, expanding its foothold          in the region, and has established itself as the No. 1          building Materials Company along with other branches          under its vast umbrella. In 2019, the company recorded a          turnover of USD 1.3 billion and has been growing ever          since. Moreover, Rizwan Sajan was ranked 12th among the          ‘Top 100 Indian leaders in the UAE’ List by Forbes Middle          East."
