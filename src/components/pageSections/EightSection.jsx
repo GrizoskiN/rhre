@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import blog3 from "@/../public/img/tourist.jpg";
 import blog2 from "@/../public/img/visa.jpg";
 import blog1 from "@/../public/img/gift.jpg";
+import blog4 from "@/../public/img/airport.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -34,7 +35,7 @@ const EightSection = () => {
       id: 3,
       text1: "All Dubai International Airport operations...",
       address: "m International will span 70 square-km",
-      img: blog1,
+      img: blog4,
       url: "/blog/dubaiAirport",
     },
  
