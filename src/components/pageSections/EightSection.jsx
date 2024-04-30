@@ -30,6 +30,13 @@ const EightSection = () => {
       img: blog1,
       url: "/blog/giftingPropertyUAE",
     },
+    {
+      id: 3,
+      text1: "All Dubai International Airport operations...",
+      address: "m International will span 70 square-km",
+      img: blog1,
+      url: "/blog/dubaiAirport",
+    },
  
   ];
   const [width, setWidth] = useState(null);

@@ -12,9 +12,8 @@ const Footer = () => {
             
             
             <p className="text-md font-light">
-              Welcome to our REAL ESTATE agency! Our team of experienced
-              designers and decorators is passionate about creating beautiful,
-              functional spaces that enhance our clients' lives.
+            Welcome to our real estate agency, where we believe that finding your dream property should be an exciting and fulfilling experience. We look forward to serving you and making your real estate journey in Dubai a successful one!
+
             </p>
           </div>
         </div>
