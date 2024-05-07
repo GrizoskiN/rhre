@@ -147,6 +147,7 @@ export async function getStaticProps({ params }) {
     props: {
       project: project || null, // Ensure project is an object or null
     },
+    revalidate: 60,
   };
 }
 

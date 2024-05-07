@@ -121,6 +121,7 @@ export default function Index() {
         handover={"2027"}
         payment={"70/30"}
         qr={diamondzqr}
+        ph="PH 2 years"
       />
       <Image
         src={fourth}
