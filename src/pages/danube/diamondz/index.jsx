@@ -3,7 +3,7 @@ import HeaderImage from "@/components/Projects/HeaderImage";
 import Title from "@/components/Projects/Title";
 import Image from "next/image";
 import header from "@/../public/img/danube/diamonz/header.jpg";
-import second from "@/../public/img/danube/diamonz/second.jpg";
+import second from "@/../public/img/danube/diamonz/Second.jpg";
 import third from "@/../public/img/danube/diamonz/third.jpg";
 import fourth from "@/../public/img/danube/diamonz/fourth.jpg";
 import Squares from "@/components/contact/Squares";
