@@ -122,30 +122,75 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-  export async function getStaticProps({ params }) {
-   const url = `https://expert.propertyfinder.ae/feed/rise-high-real-estate-l-l-c/privatesite/c859a1c2a0092d1c046313eb0fe1b2c0`;
-   const response = await fetch(url);
-   const xmlData = await response.text();
+  // export async function getStaticProps({ params }) {
+  //  const url = `https://expert.propertyfinder.ae/feed/rise-high-real-estate-l-l-c/privatesite/c859a1c2a0092d1c046313eb0fe1b2c0`;
+  //  const response = await fetch(url);
+  //  const xmlData = await response.text();
 
-   let jsonData;
-   try {
-     jsonData = await parseXMLToJson(xmlData);
-   } catch (error) {
-     console.error("Error parsing XML:", error);
-     return { props: { project: null } };
-   }
-   // Ensure that jsonData.list and jsonData.list.property are not undefined
-   const properties = jsonData.list?.property || [];
-   // Find the project that matches the `id` from the URL
-   const project = properties.find(
-     (p) => p.reference_number.toString() === params.id,
-   );
-   return {
-     props: {
-       project: project || null, // Ensure project is an object or null
-     },
-    
-   };
+  //  let jsonData;
+  //  try {
+  //    jsonData = await parseXMLToJson(xmlData);
+  //  } catch (error) {
+  //    console.error("Error parsing XML:", error);
+  //    return { props: { project: null } };
+  //  }
+  //  // Ensure that jsonData.list and jsonData.list.property are not undefined
+  //  const properties = jsonData.list?.property || [];
+  //  // Find the project that matches the `id` from the URL
+  //  const project = properties.find(
+  //    (p) => p.reference_number.toString() === params.id,
+  //  );
+  //  return {
+  //    props: {
+  //      project: project || null, // Ensure project is an object or null
+  //    },
+  //    revalidate: 60,
+  //  };
+  // }
+
+
+  async function fetchDataWithRetries(url, maxRetries = 3, delay = 1000) {
+    let retries = 0;
+    while (retries < maxRetries) {
+      try {
+        const response = await fetch(url);
+        return await response.text();
+      } catch (error) {
+        console.error(`Error fetching data (retry ${retries + 1}):`, error);
+        retries++;
+        await new Promise((resolve) => setTimeout(resolve, delay));
+      }
+    }
+    throw new Error(`Failed to fetch data after ${maxRetries} retries`);
   }
-
-
+  
+  export async function getStaticProps({ params }) {
+    const url = `https://expert.propertyfinder.ae/feed/rise-high-real-estate-l-l-c/privatesite/c859a1c2a0092d1c046313eb0fe1b2c0`;
+  
+    // Fetch XML data with retries
+    const xmlData = await fetchDataWithRetries(url);
+  
+    let jsonData;
+    try {
+      jsonData = await parseXMLToJson(xmlData);
+    } catch (error) {
+      console.error("Error parsing XML:", error);
+      return { props: { project: null } };
+    }
+  
+    // Ensure that jsonData.list and jsonData.list.property are not undefined
+    const properties = jsonData.list?.property || [];
+  
+    // Find the project that matches the `id` from the URL
+    const project = properties.find(
+      (p) => p.reference_number.toString() === params.id
+    );
+  
+    return {
+      props: {
+        project: project || null, // Ensure project is an object or null
+      },
+      revalidate: 60,
+    };
+  }
+  
