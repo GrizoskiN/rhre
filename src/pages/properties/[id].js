@@ -118,7 +118,7 @@ export async function getStaticPaths() {
   const paths = jsonData.list.property.map((project) => ({
     params: { id: project.reference_number.toString() }, // Ensure the id is a string
   }));
-
+  
   return { paths, fallback: false };
 }
 
@@ -128,12 +128,12 @@ export async function getStaticProps({ params }) {
   const response = await fetch(url);
   const xmlData = await response.text();
   const jsonData = await parseXMLToJson(xmlData);
-
+  const properties = jsonData.list?.property || [];
+  console.log(jsonData)
   // Find the project that matches the `id` from the URL
-  const project = jsonData.list.property.find(
+  const project = properties.find(
     (p) => p.reference_number.toString() === params.id,
   );
-
   // Return the found project as a prop to the page component
   return {
     props: {

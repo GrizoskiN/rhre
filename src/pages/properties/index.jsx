@@ -25,7 +25,7 @@ export async function getStaticProps() {
 
 export default function Listings({ data }) {
   const properties = data.list.property;
-
+  console.log(properties);
   const mappedProjects = properties.map((project, index) => {
     // Assuming the title property is called "title" (adjust if different)
     const projectTitle = project.title_en;
@@ -43,7 +43,7 @@ export default function Listings({ data }) {
     const email = "info@risehighrealestate.ae";
     const phone = "+971529992763";
     const whatsapp = "https://wa.me/971529992763";
-    const permit = project.permit_number
+    
     // Return an object with the title, index, and photos
     return {
       reference_number,
