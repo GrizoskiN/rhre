@@ -27,7 +27,7 @@ import NewsCarousel from "@/components/Projects/NewsCarousel";
 import ContactForm from "@/components/contact/ContactForm";
 
 import ProjectInfo from "@/components/Projects/ProjectInfo";
-import DownloadBrochureBtn from "@/components/Projects/DonwloadBrochureBtn";
+import DownloadBrochureBtn from "@/components/Projects/DownloadBrochureBtn";
 const Sobha = () => {
   const photos = [
     {
@@ -197,7 +197,7 @@ const Sobha = () => {
             in a close-knit community and superior quality homes crafted for the
             discerning eye.
           </p>
-          <DownloadBrochureBtn/>
+          <DownloadBrochureBtn />
         </div>
         <Image
           src={comfort}

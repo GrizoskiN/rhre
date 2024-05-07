@@ -10,7 +10,7 @@ import Squares from "@/components/contact/Squares";
 import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
 import ProjectInfo from "@/components/Projects/ProjectInfo";
-import DownloadBrochureBtn from "@/components/Projects/DonwloadBrochureBtn";
+import DownloadBrochureBtn from "@/components/Projects/DownloadBrochureBtn";
 
 export default function Index() {
   const photos = [
@@ -109,7 +109,7 @@ export default function Index() {
           <p className="w-10/12 md:w-2/4 2xl:w-2/5  lg:text-xl mt-6 ml-auto ">
             2km crystal lagoon beach with sun loungers and cabanas
           </p>
-         <DownloadBrochureBtn/>
+          <DownloadBrochureBtn />
         </div>
 
         <Image

@@ -11,7 +11,7 @@ import Squares from "@/components/contact/Squares";
 import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
 import ProjectInfo from "@/components/Projects/ProjectInfo";
-import DownloadBrochureBtn from "@/components/Projects/DonwloadBrochureBtn";
+import DownloadBrochureBtn from "@/components/Projects/DownloadBrochureBtn";
 
 export default function Index() {
   const photos = [
@@ -118,7 +118,7 @@ export default function Index() {
             in a close-knit community and superior quality homes crafted for the
             discerning eye.
           </p>
-          <DownloadBrochureBtn/>
+          <DownloadBrochureBtn />
         </div>
 
         <Image

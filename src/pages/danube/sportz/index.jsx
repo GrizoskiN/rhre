@@ -11,7 +11,7 @@ import Squares from "@/components/contact/Squares";
 import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
 import ProjectInfo from "@/components/Projects/ProjectInfo";
-import DownloadBrochureBtn from "@/components/Projects/DonwloadBrochureBtn";
+import DownloadBrochureBtn from "@/components/Projects/DownloadBrochureBtn";
 
 export default function Index() {
   const photos = [
@@ -104,7 +104,7 @@ export default function Index() {
             WHERE AESTHETICS MEETS ATHLETICS
           </h1>
 
-         <DownloadBrochureBtn/>
+          <DownloadBrochureBtn />
         </div>
 
         <Image

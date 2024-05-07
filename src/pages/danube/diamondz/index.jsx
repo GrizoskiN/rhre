@@ -10,8 +10,8 @@ import Squares from "@/components/contact/Squares";
 import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
 import ProjectInfo from "@/components/Projects/ProjectInfo";
-import DownloadBrochureBtn from "@/components/Projects/DonwloadBrochureBtn";
-import diamondzqr from "@/../public/img/danube/qr/diamondzqr.jpg"
+import DownloadBrochureBtn from "@/components/Projects/DownloadBrochureBtn";
+import diamondzqr from "@/../public/img/danube/qr/diamondzqr.jpg";
 
 export default function Index() {
   const photos = [
@@ -107,7 +107,7 @@ export default function Index() {
           <p className="w-10/12 md:w-2/4 2xl:w-2/5 text-3xl lg:text-5xl uppercase mt-6 ml-auto ">
             DIAMONDZ presents a realm of luxury that transcends ordinary living
           </p>
-          <DownloadBrochureBtn/>
+          <DownloadBrochureBtn />
         </div>
 
         <Image
@@ -116,7 +116,12 @@ export default function Index() {
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>
-      <ProjectInfo price={"1.1M"} handover={"2027"} payment={"70/30"} qr={diamondzqr}/>
+      <ProjectInfo
+        price={"1.1M"}
+        handover={"2027"}
+        payment={"70/30"}
+        qr={diamondzqr}
+      />
       <Image
         src={fourth}
         width={2000}
