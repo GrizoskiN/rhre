@@ -1,15 +1,15 @@
-import Gallery from "@/components/contact/Projects/Gallery";
-import HeaderImage from "@/components/contact/Projects/HeaderImage";
-import Title from "@/components/contact/Projects/Title";
+import Gallery from "@/components/Projects/Gallery";
+import HeaderImage from "@/components/Projects/HeaderImage";
+import Title from "@/components/Projects/Title";
 import Image from "next/image";
 import header from "@/../public/img/nakheel/rixos/header.jpg";
 import second from "@/../public/img/nakheel/rixos/second.jpg";
 import third from "@/../public/img/nakheel/rixos/third.jpg";
 import fourth from "@/../public/img/nakheel/rixos/fourth.jpg";
 import Squares from "@/components/contact/Squares";
-import Faq from "@/components/contact/Projects/Faq";
+import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
-import ProjectInfo from "@/components/contact/Projects/ProjectInfo";
+import ProjectInfo from "@/components/Projects/ProjectInfo";
 
 export default function Index() {
   const photos = [

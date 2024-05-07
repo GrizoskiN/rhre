@@ -1,7 +1,7 @@
 import header from "@/../public/img/danube/header.webp";
 import danubelogo from "@/../public/img/danube/danubelogo.png";
 import ContactForm from "@/components/contact/ContactForm";
-import Title from "@/components/contact/Projects/Title";
+import Title from "@/components/Projects/Title";
 import Header from "@/components/developersSections/Header";
 import AllProjects from "@/components/developersSections/allProjects";
 
@@ -26,6 +26,16 @@ export default function index() {
       address: "Dubai Sports City",
       text: "Located in a vibrant and dynamic community, Sportz by Danube offers an unparalleled residential experience enriched with a diverse array of sporting amenities,...",
       link: "/danube/sportz",
+    },
+    {
+      id: 4,
+      image: "/img/danube/projects/diamondz.jpg",
+      title: "Diamondz",
+      subtitle: "by Danube Properties",
+      price: "AED 1.1M",
+      address: "Jumeirah Lake Towers, Dubai",
+      text: "This residential masterpiece caters to the discerning tastes of homeowners and investors alike...",
+      link: "/danube/diamondz",
     },
     // {
     //   id: 2,

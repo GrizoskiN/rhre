@@ -1,15 +1,15 @@
-import Gallery from "@/components/contact/Projects/Gallery";
-import HeaderImage from "@/components/contact/Projects/HeaderImage";
-import Title from "@/components/contact/Projects/Title";
+import Gallery from "@/components/Projects/Gallery";
+import HeaderImage from "@/components/Projects/HeaderImage";
+import Title from "@/components/Projects/Title";
 import Image from "next/image";
 import header from "@/../public/img/ellington/mercer/header.webp";
 import second from "@/../public/img/ellington/mercer/second.webp";
 import third from "@/../public/img/ellington/mercer/third.webp";
 import fourth from "@/../public/img/ellington/mercer/fourth.webp";
 import Squares from "@/components/contact/Squares";
-import Faq from "@/components/contact/Projects/Faq";
+import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
-import ProjectInfo from "@/components/contact/Projects/ProjectInfo";
+import ProjectInfo from "@/components/Projects/ProjectInfo";
 
 export default function Index() {
   const photos = [
@@ -103,10 +103,13 @@ export default function Index() {
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
           <h1 className=" text-4xl lg:text-6xl lg:leading-[4rem] ">
-          CREATING CONNECTION
+            CREATING CONNECTION
           </h1>
           <p className="w-10/12 md:w-2/4 2xl:w-2/5  lg:text-xl mt-6 ml-auto ">
-          The harmonious layers of Mercer House are  inspired by the intricacies found in the natural  world. These curved and linear forms help  to soften the built environment, connecting  contemporary architecture to the organic  environment.
+            The harmonious layers of Mercer House are inspired by the
+            intricacies found in the natural world. These curved and linear
+            forms help to soften the built environment, connecting contemporary
+            architecture to the organic environment.
           </p>
           <button className="text-xl bg-red-500 px-11 py-4 mt-6 lg:mt-11 rounded-lg hover:bg-royal transition-all duration-300">
             Download Brochure

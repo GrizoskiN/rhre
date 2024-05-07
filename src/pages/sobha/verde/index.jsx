@@ -1,19 +1,19 @@
-import Gallery from "@/components/contact/Projects/Gallery";
-import HeaderImage from "@/components/contact/Projects/HeaderImage";
+import Gallery from "@/components/Projects/Gallery";
+import HeaderImage from "@/components/Projects/HeaderImage";
 import img from "@/../public/img/sobha/verde/verdeheader.webp";
-import Title from "@/components/contact/Projects/Title";
-import Icons from "@/components/contact/Projects/Icons";
+import Title from "@/components/Projects/Title";
+import Icons from "@/components/Projects/Icons";
 import Image from "next/image";
 import verde from "@/../public/img/sobha/verde/verde2.webp";
 import comfort from "@/../public/img/sobha/verde/verde4.webp";
 import verdeqr from "@/../public/img/sobha/qr/verdeqr.jpg";
 import Squares from "@/components/contact/Squares";
-import Faq from "@/components/contact/Projects/Faq";
+import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
-import ProjectInfo from "@/components/contact/Projects/ProjectInfo";
+import ProjectInfo from "@/components/Projects/ProjectInfo";
+import DownloadBrochureBtn from "@/components/Projects/DonwloadBrochureBtn";
 
-
-export default function Index () {
+export default function Index() {
   const photos = [
     {
       src: "/img/sobha/verde/gallery/5.jpg",
@@ -46,7 +46,6 @@ export default function Index () {
       height: 517,
     },
   ];
- 
 
   const benefits = [
     {
@@ -71,11 +70,6 @@ export default function Index () {
     },
   ];
 
-
-
- 
-
-
   return (
     <>
       <HeaderImage
@@ -84,14 +78,15 @@ export default function Index () {
         project={"Verde"}
         text={
           "Sobha Realty redefines the concept of luxury residential living with a repertoire of real estate projects across Dubai."
-        }price={"1.57M"}
+        }
+        price={"1.57M"}
       />
       <Title
         title={"The Enduring"}
         subtitle={"LEGACY OF SUCCESS"}
         paragraph={
           "With razor-sharp focus on quality and innovation, it has created a plethora of iconic spaces such as extravagant palaces, ornate  mosques, cutting edge campuses and ultra-luxurious communities with grand villas and apartments."
-        } 
+        }
       />
       <Icons />
       <Image
@@ -107,7 +102,12 @@ export default function Index () {
         }
       />
       <Gallery photos={photos} />
-      <ProjectInfo price={"1.56M"} handover={2027} payment={"80/20"} qr={verdeqr}/>
+      <ProjectInfo
+        price={"1.56M"}
+        handover={2027}
+        payment={"80/20"}
+        qr={verdeqr}
+      />
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
           <h1 className=" text-4xl lg:text-6xl lg:leading-[4rem] ">
@@ -118,11 +118,9 @@ export default function Index () {
             in a close-knit community and superior quality homes crafted for the
             discerning eye.
           </p>
-          <button className="text-xl bg-red-500 px-11 py-4 mt-6 lg:mt-11 rounded-lg hover:bg-royal transition-all duration-300">
-            Download Brochure
-          </button>
+          <DownloadBrochureBtn/>
         </div>
-        
+
         <Image
           src={comfort}
           width={1000}
@@ -130,16 +128,13 @@ export default function Index () {
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>
-     
-   
+
       <Squares benefits={benefits} />
-      <Faq/>
-    
-       <div className="w-full lg:w-2/3 m-auto">
+      <Faq />
+
+      <div className="w-full lg:w-2/3 m-auto">
         <ContactForm />
       </div>
     </>
   );
-};
-
-
+}

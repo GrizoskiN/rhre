@@ -1,15 +1,15 @@
-import Gallery from "@/components/contact/Projects/Gallery";
-import HeaderImage from "@/components/contact/Projects/HeaderImage";
-import Title from "@/components/contact/Projects/Title";
+import Gallery from "@/components/Projects/Gallery";
+import HeaderImage from "@/components/Projects/HeaderImage";
+import Title from "@/components/Projects/Title";
 import Image from "next/image";
 import header from "@/../public/img/nakheel/palm/header.jpg";
 import second from "@/../public/img/nakheel/palm/second.jpg";
 import third from "@/../public/img/nakheel/palm/third.jpg";
 import fourth from "@/../public/img/nakheel/palm/fourth.jpg";
 import Squares from "@/components/contact/Squares";
-import Faq from "@/components/contact/Projects/Faq";
+import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
-import ProjectInfo from "@/components/contact/Projects/ProjectInfo";
+import ProjectInfo from "@/components/Projects/ProjectInfo";
 
 export default function Index() {
   const photos = [
@@ -72,7 +72,8 @@ export default function Index() {
     <>
       <HeaderImage
         header={header}
-        company={"nakheel"}    project={"Palm Jebel Ali"}
+        company={"nakheel"}
+        project={"Palm Jebel Ali"}
         text={
           "The new, futuristic Palm Jebel Ali will raise the global benchmark in waterfront living, featuring extensive green spaces and luxury lifestyle amenities."
         }
@@ -102,12 +103,15 @@ export default function Index() {
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
           <h1 className=" text-4xl lg:text-6xl lg:leading-[4rem] ">
-          A LANDMARK OF <br /> LUXURY LIVING
+            A LANDMARK OF <br /> LUXURY LIVING
           </h1>
           <p className="w-10/12 md:w-2/4 2xl:w-3/4  lg:text-xl mt-6 ml-auto ">
-          Live in one of the spectacular island districts, where everyday life is elevated from sunrise to sunset.
+            Live in one of the spectacular island districts, where everyday life
+            is elevated from sunrise to sunset.
           </p>
-          <button href="#contact" className="text-xl bg-red-500 px-11 py-4 mt-6 lg:mt-11 rounded-lg hover:bg-royal transition-all duration-300">
+          <button
+            href="#contact"
+            className="text-xl bg-red-500 px-11 py-4 mt-6 lg:mt-11 rounded-lg hover:bg-royal transition-all duration-300">
             Download Brochure
           </button>
         </div>
@@ -115,7 +119,7 @@ export default function Index() {
         <Image
           src={third}
           width={1000}
-          quality={100} 
+          quality={100}
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>

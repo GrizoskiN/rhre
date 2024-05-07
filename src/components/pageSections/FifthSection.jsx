@@ -8,7 +8,7 @@ import ellington from "@/../public/img/developers/ellington.jpg";
 import danube from "@/../public/img/developers/danube.jpg";
 import meraas from "@/../public/img/developers/meraas.jpg";
 import damac from "@/../public/img/developers/damac.jpg";
-import IndexCarousel from "../contact/Projects/IndexCarousel";
+import IndexCarousel from "../Projects/IndexCarousel";
 import sobhalogo from "@/../public/img/sobha/sobhalogo.png";
 import damaclogo from "@/../public/img/damacimg/damaclogo.png";
 import ellingtonlogo from "@/../public/img/ellington/ellingtonlogo.png";
@@ -23,17 +23,17 @@ const FifthSection = () => {
       address2: "Starting Price",
       logo: sobhalogo,
       img: sobha,
-      Projectlink:"/sobha/hartland2",    
-},
-// {
-//   id: 5,
-//   text1: `Eleganz`,
-//   address: "AED 2.5M",
-//   address2: "Starting Price",
-//   logo: danubelogo,
-//   img: eleganz,
-//   Projectlink:"/danube/eleganz",
-// },
+      Projectlink: "/sobha/hartland2",
+    },
+    // {
+    //   id: 5,
+    //   text1: `Eleganz`,
+    //   address: "AED 2.5M",
+    //   address2: "Starting Price",
+    //   logo: danubelogo,
+    //   img: eleganz,
+    //   Projectlink:"/danube/eleganz",
+    // },
     {
       id: 1,
       text1: `Reserve`,
@@ -41,7 +41,7 @@ const FifthSection = () => {
       address2: "Starting Price",
       logo: sobhalogo,
       img: reserve,
-      Projectlink:"/sobha/reserve",
+      Projectlink: "/sobha/reserve",
     },
     {
       id: 6,
@@ -50,7 +50,7 @@ const FifthSection = () => {
       address2: "Starting Price",
       logo: ellingtonlogo,
       img: ellington,
-      Projectlink:"/ellington/oneriver",
+      Projectlink: "/ellington/oneriver",
     },
     {
       id: 2,
@@ -59,17 +59,17 @@ const FifthSection = () => {
       address2: "Starting Price",
       logo: sobhalogo,
       img: verde,
-      Projectlink:"/sobha/verde",  
-  },
-  {
-    id: 4,
-    text1: `Sportz`,
-    address: "AED 2.5M",
-    address2: "Starting Price",
-    logo: danubelogo,
-    img: sportz,
-    Projectlink:"/danube/sportz",
-  },
+      Projectlink: "/sobha/verde",
+    },
+    {
+      id: 4,
+      text1: `Sportz`,
+      address: "AED 2.5M",
+      address2: "Starting Price",
+      logo: danubelogo,
+      img: sportz,
+      Projectlink: "/danube/sportz",
+    },
     {
       id: 3,
       text1: `Bayz 101`,
@@ -77,11 +77,8 @@ const FifthSection = () => {
       address2: "Starting Price",
       logo: danubelogo,
       img: danube,
-      Projectlink:"/danube/bayz",
+      Projectlink: "/danube/bayz",
     },
- 
- 
-  
   ];
   const [width, setWidth] = useState(null);
 
@@ -162,7 +159,6 @@ const FifthSection = () => {
         menuRef={menuRef}
         width={width}
         services={services}
-       
         contact={"Contact us"}
         info="for more info"
       />

@@ -1,16 +1,17 @@
-import Gallery from "@/components/contact/Projects/Gallery";
-import HeaderImage from "@/components/contact/Projects/HeaderImage";
+import Gallery from "@/components/Projects/Gallery";
+import HeaderImage from "@/components/Projects/HeaderImage";
 import img from "@/../public/img/sobha/reserve/header.webp";
-import Title from "@/components/contact/Projects/Title";
-import Icons from "@/components/contact/Projects/Icons";
+import Title from "@/components/Projects/Title";
+import Icons from "@/components/Projects/Icons";
 import Image from "next/image";
 import one from "@/../public/img/sobha/reserve/second.webp";
 import comfort from "@/../public/img/sobha/reserve/third.webp";
 import reserveqr from "@/../public/img/sobha/qr/reserveqr.jpg";
 import Squares from "@/components/contact/Squares";
-import Faq from "@/components/contact/Projects/Faq";
+import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
-import ProjectInfo from "@/components/contact/Projects/ProjectInfo";
+import ProjectInfo from "@/components/Projects/ProjectInfo";
+import DownloadBrochureBtn from "@/components/Projects/DonwloadBrochureBtn";
 
 export default function Index() {
   const photos = [
@@ -101,7 +102,12 @@ export default function Index() {
         }
       />
       <Gallery photos={photos} />
-      <ProjectInfo price={"11.5M"} handover={"Dec 2026"} payment={"80/20"} qr={reserveqr}/>
+      <ProjectInfo
+        price={"11.5M"}
+        handover={"Dec 2026"}
+        payment={"80/20"}
+        qr={reserveqr}
+      />
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
           <h1 className=" text-4xl lg:text-6xl lg:leading-[4rem] ">
@@ -112,9 +118,7 @@ export default function Index() {
             in a close-knit community and superior quality homes crafted for the
             discerning eye.
           </p>
-          <button className="text-xl bg-red-500 px-11 py-4 mt-6 lg:mt-11 rounded-lg hover:bg-royal transition-all duration-300">
-            Download Brochure
-          </button>
+          <DownloadBrochureBtn/>
         </div>
 
         <Image

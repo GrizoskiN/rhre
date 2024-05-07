@@ -1,6 +1,6 @@
-import Gallery from "@/components/contact/Projects/Gallery";
-import HeaderImage from "@/components/contact/Projects/HeaderImage";
-import Title from "@/components/contact/Projects/Title";
+import Gallery from "@/components/Projects/Gallery";
+import HeaderImage from "@/components/Projects/HeaderImage";
+import Title from "@/components/Projects/Title";
 import Image from "next/image";
 import header from "@/../public/img/ellington/oneriverpoint/header.webp";
 import second from "@/../public/img/ellington/oneriverpoint/second.webp";
@@ -8,9 +8,10 @@ import third from "@/../public/img/ellington/oneriverpoint/third.webp";
 import fourth from "@/../public/img/ellington/oneriverpoint/fourth.webp";
 import oneqr from "@/../public/img/ellington/qr/onepointqr.jpg";
 import Squares from "@/components/contact/Squares";
-import Faq from "@/components/contact/Projects/Faq";
+import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
-import ProjectInfo from "@/components/contact/Projects/ProjectInfo";
+import ProjectInfo from "@/components/Projects/ProjectInfo";
+import DownloadBrochureBtn from "@/components/Projects/DonwloadBrochureBtn";
 
 export default function Index() {
   const photos = [
@@ -104,17 +105,16 @@ export default function Index() {
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
           <h1 className=" text-4xl lg:text-6xl lg:leading-[4rem] ">
-          WHERE STYLE <br/> MEETS CHARACTER
+            WHERE STYLE <br /> MEETS CHARACTER
           </h1>
           <p className="w-10/12 md:w-2/4 2xl:w-2/5  lg:text-xl mt-6 ml-auto ">
-          Contemporary aesthetics, cutting-edge technology, and a prime location 
-connect residents to a lifestyle that crosses paths, creates opportunities, 
-and revitalises wellbeing. The entire building, inside and out is created to 
-help its residents flourish in their new home.  
+            Contemporary aesthetics, cutting-edge technology, and a prime
+            location connect residents to a lifestyle that crosses paths,
+            creates opportunities, and revitalises wellbeing. The entire
+            building, inside and out is created to help its residents flourish
+            in their new home.
           </p>
-          <button className="text-xl bg-red-500 px-11 py-4 mt-6 lg:mt-11 rounded-lg hover:bg-royal transition-all duration-300">
-            Download Brochure
-          </button>
+         <DownloadBrochureBtn/>
         </div>
 
         <Image
@@ -124,7 +124,12 @@ help its residents flourish in their new home.
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>
-      <ProjectInfo price={"2.8M"} handover={"2027 Q3"} payment={"70/30"} qr={oneqr} />
+      <ProjectInfo
+        price={"2.8M"}
+        handover={"2027 Q3"}
+        payment={"70/30"}
+        qr={oneqr}
+      />
       <Image
         src={fourth}
         width={2000}

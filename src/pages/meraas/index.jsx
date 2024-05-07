@@ -1,7 +1,7 @@
 import header from "@/../public/img/meraas/header.webp";
 import meraaslogo from "@/../public/img/meraas/meraaslogo.png";
 import ContactForm from "@/components/contact/ContactForm";
-import Title from "@/components/contact/Projects/Title";
+import Title from "@/components/Projects/Title";
 import Header from "@/components/developersSections/Header";
 import AllProjects from "@/components/developersSections/allProjects";
 

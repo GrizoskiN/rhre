@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import DownloadBrochureBtn from "./DonwloadBrochureBtn";
 
 const HeaderImage = ({ header, link, company, project, text, price }) => {
   return (
@@ -9,16 +10,8 @@ const HeaderImage = ({ header, link, company, project, text, price }) => {
           <h2 className="font-light uppercase  text-3xl lg:text-5xl">{company}</h2>
           <h1 className="text-7xl md:text-9xl  font-bold  ">{project}</h1>
           <p className=" md:text-xl lg:w-3/4 font-light mt-3 leading-5 md:leading-normal text-gray-200">{text}</p>
-          <div className="mt-11 lg:mt-11 flex flex-col lg:flex-row text-center">
-            <button className="text-lg bg-red-500 px-11 py-4 mb-6 lg:mb-0 rounded-lg hover:bg-royal transition-all duration-300">
-              Download Brochure
-            </button>
-            <Link
-              href="/contact"
-              className="text-lg bg-white text-royal px-11 py-4 rounded-lg lg:ml-5  hover:bg-royal hover:text-white transition-all duration-300">
-              Register Interest
-            </Link>
-          </div>
+         
+            <DownloadBrochureBtn/>
         </div>
         <div className="border-y-[1px] border-white py-3 mt-11 ">
           <h3 className="text-gray-400 text-2xl">STARTING PRICE</h3>
@@ -27,9 +20,9 @@ const HeaderImage = ({ header, link, company, project, text, price }) => {
       </div>
       <Image
         src={header}
-        width={3000}
+        width={2000}
         height="auto"
-        quality={100}
+       
         priority
         alt={header}
         className="w-full h-full object-cover absolute inset-0 -z-10"

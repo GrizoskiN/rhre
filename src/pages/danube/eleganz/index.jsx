@@ -1,15 +1,15 @@
-import Gallery from "@/components/contact/Projects/Gallery";
-import HeaderImage from "@/components/contact/Projects/HeaderImage";
-import Title from "@/components/contact/Projects/Title";
+import Gallery from "@/components/Projects/Gallery";
+import HeaderImage from "@/components/Projects/HeaderImage";
+import Title from "@/components/Projects/Title";
 import Image from "next/image";
 import header from "@/../public/img/danube/eleganz/header.webp";
 import second from "@/../public/img/danube/eleganz/second.webp";
 import third from "@/../public/img/danube/eleganz/third.webp";
 import fourth from "@/../public/img/danube/eleganz/fourth.webp";
 import Squares from "@/components/contact/Squares";
-import Faq from "@/components/contact/Projects/Faq";
+import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
-import ProjectInfo from "@/components/contact/Projects/ProjectInfo";
+import ProjectInfo from "@/components/Projects/ProjectInfo";
 
 export default function Index() {
   const photos = [
@@ -82,8 +82,7 @@ export default function Index() {
       <Title
         title={"ELEGANZ AT JVC"}
         subtitle={"Seaside living"}
-        paragraph={
-          `Ready to move in elegantly designed and fully-furnished 1 &
+        paragraph={`Ready to move in elegantly designed and fully-furnished 1 &
           2 bedroom Apartments, 2-bedroom Duplex Apartments
           and 4 - bedroom Townhouses.
           With a wide array of world-class amenities meticulously
@@ -91,8 +90,7 @@ export default function Index() {
           Eleganz by Danube is designed for those who seek a balanced
           lifestyle. Indulge in an unparalleled lifestyle, surrounded by
           breathtaking views, and a sense of prestige that sets this
-          project apart.`
-        }
+          project apart.`}
       />
       {/* <Icons /> */}
       <Image
@@ -113,11 +111,11 @@ export default function Index() {
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
           <h1 className=" text-4xl lg:text-6xl lg:leading-[4rem] ">
-          ELEGANZ AT JVC
+            ELEGANZ AT JVC
           </h1>
           <p className="w-10/12 md:w-2/4 2xl:w-2/5  lg:text-xl mt-6 ml-auto ">
-          Experience the true essence of elegant living, where every
-moment is adorned with elegance and sophistication.
+            Experience the true essence of elegant living, where every moment is
+            adorned with elegance and sophistication.
           </p>
           <button className="text-xl bg-red-500 px-11 py-4 mt-6 lg:mt-11 rounded-lg hover:bg-royal transition-all duration-300">
             Download Brochure

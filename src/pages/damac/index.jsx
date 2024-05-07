@@ -1,22 +1,21 @@
 import { useEffect, useState, useRef } from "react";
-import Gallery from "@/components/contact/Projects/Gallery";
-import HeaderImage from "@/components/contact/Projects/HeaderImage";
+import Gallery from "@/components/Projects/Gallery";
+import HeaderImage from "@/components/Projects/HeaderImage";
 import img from "@/../public/img/damacimg/header.jpg";
 import bedroom from "@/../public/img/damacimg/projects/lagoon.jpg";
 import bedroom2 from "@/../public/img/damacimg/projects/hills.jpg";
 import bedrooms from "@/../public/img/damacimg/projects/gris.jpg";
-import Title from "@/components/contact/Projects/Title";
+import Title from "@/components/Projects/Title";
 import Image from "next/image";
 import damac2 from "@/../public/img/damacimg/second.jpg";
 import comfort from "@/../public/img/damacimg/development.jpg";
 import home from "@/../public/img/damacimg/home.jpg";
-import Apartments from "@/components/contact/Projects/Apartments";
+import Apartments from "@/components/Projects/Apartments";
 import Squares from "@/components/contact/Squares";
-import Faq from "@/components/contact/Projects/Faq";
+import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
 
-
-export default function index (){
+export default function index() {
   const photos = [
     {
       src: "/img/damacimg/gallery/damac5.jpg",
@@ -93,10 +92,6 @@ export default function index (){
       text: "Rent prices in Dubai have jumped by 28.5% in the past year alone. A quiet, family-friendly neighborhood with parks, schools, and shopping areas will always attract families, couples, and individuals looking to rent a studio or apartment for the long term. You can use a property management company to take care of all the maintenance and management. You just have to sit back and relax.",
     },
   ];
-
-
-  
-
 
   return (
     <>
@@ -182,16 +177,14 @@ export default function index (){
       </div> */}
 
       <Squares benefits={benefits} />
-      <Faq  />
+      <Faq />
       {/* <div className="w-full m-auto my-32 flex items-center pl-48 pt-16 pb-32 bg-gray-200">
         <div><h1 className="text-4xl font-bold">AMMENITIES</h1><p className="">At Sobha Hartland II, amenities become necessities.</p></div>
       <NewsCarousel services={amenity} menuRef={menuRef} width={width} />
       </div> */}
-       <div className="w-full lg:w-2/3 m-auto">
+      <div className="w-full lg:w-2/3 m-auto">
         <ContactForm />
       </div>
     </>
   );
-};
-
-
+}

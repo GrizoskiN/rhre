@@ -1,15 +1,15 @@
-import Gallery from "@/components/contact/Projects/Gallery";
-import HeaderImage from "@/components/contact/Projects/HeaderImage";
-import Title from "@/components/contact/Projects/Title";
+import Gallery from "@/components/Projects/Gallery";
+import HeaderImage from "@/components/Projects/HeaderImage";
+import Title from "@/components/Projects/Title";
 import Image from "next/image";
 import header from "@/../public/img/meraas/acres/header.webp";
 import second from "@/../public/img/meraas/acres/second.webp";
 import third from "@/../public/img/meraas/acres/third.webp";
 import fourth from "@/../public/img/meraas/acres/fourth.webp";
 import Squares from "@/components/contact/Squares";
-import Faq from "@/components/contact/Projects/Faq";
+import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
-import ProjectInfo from "@/components/contact/Projects/ProjectInfo";
+import ProjectInfo from "@/components/Projects/ProjectInfo";
 
 export default function Index() {
   const photos = [
@@ -119,7 +119,7 @@ export default function Index() {
         <Image
           src={third}
           width={1000}
-          quality={100} 
+          quality={100}
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>

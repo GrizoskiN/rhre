@@ -7,7 +7,7 @@ import blog4 from "@/../public/img/airport.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
-import NewsCarousel from "@/components/contact/Projects/NewsCarousel";
+import NewsCarousel from "@/components/Projects/NewsCarousel";
 const EightSection = () => {
   const services = [
     {
@@ -38,7 +38,6 @@ const EightSection = () => {
       img: blog4,
       url: "/blog/dubaiAirport",
     },
- 
   ];
   const [width, setWidth] = useState(null);
 
@@ -48,7 +47,9 @@ const EightSection = () => {
     setWidth(menuRef.current.scrollWidth - menuRef.current.offsetWidth);
   }, []);
   return (
-    <div id="news" className="w-full text-white  ml-auto  py-11 overflow-hidden lg:flex bg-royal pb-32">
+    <div
+      id="news"
+      className="w-full text-white  ml-auto  py-11 overflow-hidden lg:flex bg-royal pb-32">
       <div className="w-11/12 lg:w-2/3  m-auto  ">
         <h1 className="text-4xl mb-3 xl:mb-0 lg:text-6xl font-bold lg:w-2/3 m-auto">
           Latest News
@@ -58,7 +59,7 @@ const EightSection = () => {
           business when it comes to investments in real estate!
         </p>
       </div>
-      
+
       <NewsCarousel menuRef={menuRef} width={width} services={services} />
     </div>
   );

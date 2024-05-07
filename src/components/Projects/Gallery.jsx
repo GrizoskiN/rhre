@@ -18,6 +18,7 @@ const Gallery = ({ photos }) => {
           photos={photos}
           layout="masonry"
           columns={2}
+          
           targetRowHeight={550}
           onClick={({ index }) => setIndex(index)}
         />

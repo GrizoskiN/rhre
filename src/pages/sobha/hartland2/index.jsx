@@ -1,17 +1,17 @@
 import { useEffect, useState, useRef } from "react";
-import Gallery from "@/components/contact/Projects/Gallery";
-import HeaderImage from "@/components/contact/Projects/HeaderImage";
+import Gallery from "@/components/Projects/Gallery";
+import HeaderImage from "@/components/Projects/HeaderImage";
 import img from "@/../public/img/sobha/hartland/header.webp";
 import bedroom from "@/../public/img/sobha/hartland/gallery/1bed.jpg";
 import bedroom2 from "@/../public/img/sobha/hartland/gallery/1beds.jpg";
 import bedrooms from "@/../public/img/sobha/hartland/gallery/2bed.jpg";
-import Title from "@/components/contact/Projects/Title";
-import Icons from "@/components/contact/Projects/Icons";
+import Title from "@/components/Projects/Title";
+import Icons from "@/components/Projects/Icons";
 import Image from "next/image";
 import sobha from "@/../public/img/sobha/hartland/sobha.jpg";
 import comfort from "@/../public/img/sobha/hartland/comfort.jpg";
 import home from "@/../public/img/sobha/hartland/home.jpg";
-import Apartments from "@/components/contact/Projects/Apartments";
+import Apartments from "@/components/Projects/Apartments";
 import HoverCarousel from "@/components/contact/HoverCarousel";
 import Squares from "@/components/contact/Squares";
 import luxury from "@/../public/img/sobha/hartland/gallery/luxury.jpg";
@@ -21,12 +21,13 @@ import prime from "@/../public/img/sobha/hartland/gallery/prime.jpg";
 import views from "@/../public/img/sobha/hartland/gallery/views.jpg";
 import living from "@/../public/img/sobha/hartland/gallery/living.jpg";
 import hartlandqr from "@/../public/img/sobha/qr/hartlandqr.jpg";
-import Faq from "@/components/contact/Projects/Faq";
+import Faq from "@/components/Projects/Faq";
 
-import NewsCarousel from "@/components/contact/Projects/NewsCarousel";
+import NewsCarousel from "@/components/Projects/NewsCarousel";
 import ContactForm from "@/components/contact/ContactForm";
 
-import  ProjectInfo  from '@/components/contact/Projects/ProjectInfo';
+import ProjectInfo from "@/components/Projects/ProjectInfo";
+import DownloadBrochureBtn from "@/components/Projects/DonwloadBrochureBtn";
 const Sobha = () => {
   const photos = [
     {
@@ -133,14 +134,13 @@ const Sobha = () => {
     },
   ];
 
-
   const amenity = [
-    {id:0, text1:"Fitness", img:luxury},
-    {id:1, text1:"Jogging and walking", img:luxury},
-    {id:2, text1:"Parks and gardens", img:luxury},
-    {id:3, text1:"Parks and gardens", img:luxury},
-    {id:4, text1:"Parks and gardens", img:luxury},
-  ]
+    { id: 0, text1: "Fitness", img: luxury },
+    { id: 1, text1: "Jogging and walking", img: luxury },
+    { id: 2, text1: "Parks and gardens", img: luxury },
+    { id: 3, text1: "Parks and gardens", img: luxury },
+    { id: 4, text1: "Parks and gardens", img: luxury },
+  ];
   const [width, setWidth] = useState(null);
 
   const menuRef = useRef();
@@ -157,14 +157,15 @@ const Sobha = () => {
         project={"Riverside Crescent"}
         text={
           "Sobha Realty redefines the concept of luxury residential living with a repertoire of real estate projects across Dubai."
-        }price={"1.57M"}
+        }
+        price={"1.57M"}
       />
       <Title
         title={"The Enduring"}
         subtitle={"LEGACY OF SUCCESS"}
         paragraph={
           "Sobha Hartland was conceived with an aspiration for a life less ordinary with lush fairways and an iconic resort style living located in the heart of the city"
-        } 
+        }
       />
       <Icons />
       <Image
@@ -180,7 +181,12 @@ const Sobha = () => {
         }
       />
       <Gallery photos={photos} />
-      <ProjectInfo price={"1.56M"} handover={2027} payment={"80/20"} qr={hartlandqr} />
+      <ProjectInfo
+        price={"1.56M"}
+        handover={2027}
+        payment={"80/20"}
+        qr={hartlandqr}
+      />
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
           <h1 className=" text-4xl lg:text-6xl lg:leading-[4rem] ">
@@ -191,9 +197,7 @@ const Sobha = () => {
             in a close-knit community and superior quality homes crafted for the
             discerning eye.
           </p>
-          <button className="text-xl bg-red-500 px-11 py-4 mt-6 lg:mt-11 rounded-lg hover:bg-royal transition-all duration-300">
-            Download Brochure
-          </button>
+          <DownloadBrochureBtn/>
         </div>
         <Image
           src={comfort}
@@ -234,7 +238,7 @@ const Sobha = () => {
         <div><h1 className="text-4xl font-bold">AMMENITIES</h1><p className="">At Sobha Hartland II, amenities become necessities.</p></div>
       <NewsCarousel services={amenity} menuRef={menuRef} width={width} />
       </div> */}
-       <div className="w-full max-w-[1200px] m-auto">
+      <div className="w-full max-w-[1200px] m-auto">
         <ContactForm />
       </div>
     </>

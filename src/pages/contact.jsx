@@ -16,7 +16,7 @@ const contact = () => {
           className="w-full h-full absolute z-0 text-xl md:left-0 bottom-0 object-cover "
         />
       </div>
-      <div className="w-full lg:w-11/12 ml-auto py-16  lg:mt-32 lg:flex justify-between">
+      <div id="form" className="w-full lg:w-11/12 ml-auto py-16  lg:mt-32 lg:flex justify-between">
         <div className="w-full flex flex-col ">
           <div className="w-11/12 m-auto flex flex-col md:flex-row  mb-16">
             <div className=" flex items-center lg:items-start  2xl:flex-col">
