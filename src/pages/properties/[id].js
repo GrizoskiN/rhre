@@ -122,62 +122,30 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-//  export async function getStaticProps({ params }) {
-//   const url = `https://expert.propertyfinder.ae/feed/rise-high-real-estate-l-l-c/privatesite/c859a1c2a0092d1c046313eb0fe1b2c0`;
-//   const response = await fetch(url);
-//   const xmlData = await response.text();
-  
-//   let jsonData;
-//   try {
-//     jsonData = await parseXMLToJson(xmlData);
-//   } catch (error) {
-//     console.error("Error parsing XML:", error);
-//     return { props: { project: null } };
-//   }
-//   // Ensure that jsonData.list and jsonData.list.property are not undefined
-//   const properties = jsonData.list?.property || [];
-//   // Find the project that matches the `id` from the URL
-//   const project = properties.find(
-//     (p) => p.reference_number.toString() === params.id,
-//   );
-//   return {
-//     props: {
-//       project: project || null, // Ensure project is an object or null
-//     },
-//     revalidate: 60,
-//   };
-//  }
+  export async function getStaticProps({ params }) {
+   const url = `https://expert.propertyfinder.ae/feed/rise-high-real-estate-l-l-c/privatesite/c859a1c2a0092d1c046313eb0fe1b2c0`;
+   const response = await fetch(url);
+   const xmlData = await response.text();
 
-
-export async function getStaticProps({ params }) {
-  const url = `https://expert.propertyfinder.ae/feed/rise-high-real-estate-l-l-c/privatesite/c859a1c2a0092d1c046313eb0fe1b2c0`;
-  try {
-    const response = await fetch(url);
-    const xmlData = await response.text();
-    const jsonData = await parseXMLToJson(xmlData);
-
-    const properties = jsonData.list?.property || [];
-
-    const project = properties.find(
-      (p) => p.reference_number.toString() === params.id,
-    );
-
-    if (!project) {
-      throw new Error(`Project with ID ${params.id} not found`);
-    }
-
-    return {
-      props: {
-        project,
-      },
-      revalidate: 60,
-    };
-  } catch (error) {
-    console.error("Error fetching project data:", error);
-    return {
-      props: {
-        project: null,
-      },
-    };
+   let jsonData;
+   try {
+     jsonData = await parseXMLToJson(xmlData);
+   } catch (error) {
+     console.error("Error parsing XML:", error);
+     return { props: { project: null } };
+   }
+   // Ensure that jsonData.list and jsonData.list.property are not undefined
+   const properties = jsonData.list?.property || [];
+   // Find the project that matches the `id` from the URL
+   const project = properties.find(
+     (p) => p.reference_number.toString() === params.id,
+   );
+   return {
+     props: {
+       project: project || null, // Ensure project is an object or null
+     },
+     revalidate: 60,
+   };
   }
-}
+
+
