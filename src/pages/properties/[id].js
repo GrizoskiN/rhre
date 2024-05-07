@@ -144,7 +144,7 @@ export async function getStaticPaths() {
      props: {
        project: project || null, // Ensure project is an object or null
      },
-     revalidate: 60,
+    
    };
   }
 
