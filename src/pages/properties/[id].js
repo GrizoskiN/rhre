@@ -126,7 +126,14 @@ export async function getStaticProps({ params }) {
   const url = `https://expert.propertyfinder.ae/feed/rise-high-real-estate-l-l-c/privatesite/c859a1c2a0092d1c046313eb0fe1b2c0`;
   const response = await fetch(url);
   const xmlData = await response.text();
-  const jsonData = await parseXMLToJson(xmlData);
+  
+  let jsonData;
+  try {
+    jsonData = await parseXMLToJson(xmlData);
+  } catch (error) {
+    console.error("Error parsing XML:", error);
+    return { props: { project: null } };
+  }
 
   // Ensure that jsonData.list and jsonData.list.property are not undefined
   const properties = jsonData.list?.property || [];
@@ -142,4 +149,5 @@ export async function getStaticProps({ params }) {
     },
   };
 }
+
 
