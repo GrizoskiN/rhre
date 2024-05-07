@@ -43,7 +43,7 @@ export default function ProjectPage({ project }) {
     project.amenities,
   );
   const q = `${project.q}`;
-
+ 
   // Assuming project.photo[0].url contains the URL of the image
   const photos = project.photo[0].url.map((url) => ({
     src: url._, // Assuming the URL is stored in the '_' property
@@ -54,7 +54,7 @@ export default function ProjectPage({ project }) {
     //   { src: url._, width: 200, height: 200 },
     // ],
   }));
-  console.log(parts);
+  
   return (
     <div className="bg-gradient-to-b from-white from-30% to-[#f2f2f2] mt-32 lg:mt-[10rem]">
       <div className="w-11/12 max-w-[1400px] m-auto h-[1px] bg-royal  lg:mt-32 "></div>
