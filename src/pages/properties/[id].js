@@ -123,21 +123,23 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  // The same URL and fetching logic as in getStaticPaths
   const url = `https://expert.propertyfinder.ae/feed/rise-high-real-estate-l-l-c/privatesite/c859a1c2a0092d1c046313eb0fe1b2c0`;
   const response = await fetch(url);
   const xmlData = await response.text();
   const jsonData = await parseXMLToJson(xmlData);
+
+  // Ensure that jsonData.list and jsonData.list.property are not undefined
   const properties = jsonData.list?.property || [];
-  console.log(jsonData)
+
   // Find the project that matches the `id` from the URL
   const project = properties.find(
     (p) => p.reference_number.toString() === params.id,
   );
-  // Return the found project as a prop to the page component
+
   return {
     props: {
-      project, // This can be `null` if no project matches the `id`
+      project: project || null, // Ensure project is an object or null
     },
   };
 }
+
