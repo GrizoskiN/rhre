@@ -22,7 +22,7 @@ export default function index() {
       image: "/img/sobha/projects/reserve.webp",
       title: "Reserve",
       subtitle: "By Sobha Realty",
-      price: "AED 9.3M",
+      price: "AED 11.5M",
       address: "Wadi Al Safa 5",
       text: "Embark on a waterfront lifestyle of beauty and tranquility. The tower stands poised with unparalleled views of the  clear waters and captivating illuminations of the city.",
       link: "/sobha/reserve",

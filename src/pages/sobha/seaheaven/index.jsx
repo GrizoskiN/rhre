@@ -75,11 +75,11 @@ export default function Index() {
       <HeaderImage
         header={img}
         company={"Sobha"}
-        project={"Reserve"}
+        project={"Seahaven"}
         text={
           "Sobha Realty redefines the concept of luxury residential living with a repertoire of real estate projects across Dubai."
         }
-        price={"1.57M"}
+        price={"3.18M"}
       />
       <Title
         title={"The Enduring"}
@@ -103,7 +103,7 @@ export default function Index() {
       />
       <Gallery photos={photos} />
       <ProjectInfo
-        price={"1.56M"}
+        price={"3.18M"}
         handover={2027}
         payment={"80/20"}
         qr={seaheavenqr}
