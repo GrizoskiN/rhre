@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head ><meta name="google-site-verification" content="RJjITg1RdbGIKZg38XJzdctv7HzYKYCiXbodV2pj1X0" />
-     
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERVDTQX7LF"></script>
       <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -12,7 +12,7 @@ export default function Document() {
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                })(window,document,'script','dataLayer','GTM-PL663SLC');
+                })(window,document,'script','dataLayer','G-ERVDTQX7LF');
               `,
             }}
           />
