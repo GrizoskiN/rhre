@@ -1,55 +1,123 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.risehighrealestate.ae/</loc>
-    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>https://www.risehighrealestate.ae/properties</loc>
-    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>.8</priority>
-  </url>
-  <url>
-    <!-- Add the Yoast SEO sitemap URL here -->
-    <loc>https://risehighrealestate.ae/sitemap.xml</loc> <!-- Replace with your Yoast SEO sitemap URL -->
-    <lastmod>2024-04-27T15:02:24.021Z</lastmod> <!-- Use the last modification date of the Yoast SEO sitemap -->
-  </url>
-  <url>
-    <loc>https://www.risehighrealestate.ae/ellington</loc>
-    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>.8</priority>
-  </url>
-  <url>
-    <loc>https://www.risehighrealestate.ae/danube</loc>
-    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>.8</priority>
-  </url>
-  <url>
-    <loc>https://www.risehighrealestate.ae/sobha</loc>
-    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>.8</priority>
-  </url>
-  <url>
-    <loc>https://www.risehighrealestate.ae/#news</loc>
-    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>.8</priority>
-  </url>
-  <url>
-    <loc>https://www.risehighrealestate.ae/about</loc>
-    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>.8</priority>
-  </url>
-  <url>
-    <loc>https://www.risehighrealestate.ae/contact</loc>
-    <lastmod>2024-04-27T15:02:24.021Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>.8</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+<loc>https://www.risehighrealestate.ae/</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/properties</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/about</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/contact</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/sobha/hartland2</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/sobha/reserve</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/ellington/oneriver</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/sobha/verde</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/danube/sportz</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/danube/bayz</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/blog/touristVisaForIndians</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/blog/goldenVisa</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/blog/giftingPropertyUAE</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/blog/dubaiAirport</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/properties/RH-Sale-V005</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/properties/RH-%20Sale-V004</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/properties/RH-%20Sale-R003</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/properties/RH-%20Sale-V003</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/properties/RH-%20Sale-R002</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/properties/RH-%20Sale-V002</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/properties/RH-Sale-R004</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/properties/RH-Sale-R005</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/properties/RH-Sale-TH001</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://www.risehighrealestate.ae/properties/RH-%20Sale-V001</loc>
+<lastmod>2024-05-16T07:47:48+00:00</lastmod>
+<priority>0.64</priority>
+</url>
 </urlset>

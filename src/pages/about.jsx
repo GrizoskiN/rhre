@@ -3,6 +3,7 @@ import About from "@/../public/img/about1.webp";
 import About1 from "@/../public/img/about2.webp";
 import ContactForm from "@/components/contact/ContactForm";
 import Zaid from "@/../public/img/zaid.png";
+import  Head  from 'next/head';
 const about = () => {
   const downArrow = (
     <svg
@@ -24,6 +25,10 @@ const about = () => {
   );
   return (
     <>
+      <Head>
+    <title>About Us | RHRE | Dubai, UAE</title>
+    <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
+    </Head>
       <div className="pt-32 pb-16 lg:py-48  w-full m-auto ">
         <div className="w-11/12 m-auto max-w-[1200px] text-royal md:text-center">
           <div className="">

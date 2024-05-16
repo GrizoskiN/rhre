@@ -2,10 +2,15 @@ import Image from "next/image";
 import contactImg from "@/../public/img/contact.webp";
 import contactImg1 from "@/../public/img/contact1.jpg";
 import ContactForm from "@/components/contact/ContactForm";
+import Head from "next/head";
 
 const contact = () => {
   return (
-    <>
+        <>
+    <Head>
+    <title>Contact | RHRE | Dubai, UAE</title>
+    <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
+    </Head>
       <div className="py-48  overflow-hidden relative object-bottom flex items-center justify-center">
         <h1 className="font-bold text-4xl lg:text-7xl text-white z-20">
           Contact Us

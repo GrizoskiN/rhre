@@ -11,6 +11,7 @@ import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
 import ProjectInfo from "@/components/Projects/ProjectInfo";
 import DownloadBrochureBtn from "@/components/Projects/DownloadBrochureBtn";
+import Head from "next/head";
 
 export default function Index() {
   const photos = [
@@ -71,6 +72,10 @@ export default function Index() {
 
   return (
     <>
+    <Head>
+    <title>Sobha Realty - Orbis | RHRE | Dubai, UAE</title>
+    <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
+    </Head>
       <HeaderImage
         header={img}
         company={"Sobha"}

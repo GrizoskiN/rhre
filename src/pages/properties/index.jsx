@@ -1,4 +1,5 @@
 
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import xml2js from "xml2js";
@@ -65,6 +66,12 @@ export default function Listings({ data }) {
   });
 
   return (
+    <>
+      <Head>
+    <title>Off Plan Properties| RHRE | Dubai, UAE</title>
+    <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
+    </Head>
+  
     <div className="mt-48 w-11/12 m-auto max-w-[1400px]">
       <h2 className="  text-center font-bold uppercase mb-32 text-5xl">
         Properties
@@ -135,5 +142,6 @@ export default function Listings({ data }) {
         ))}
       </div>
     </div>
+    </>
   );
 }

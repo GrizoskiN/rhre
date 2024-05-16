@@ -12,6 +12,7 @@ import ContactForm from "@/components/contact/ContactForm";
 import ProjectInfo from "@/components/Projects/ProjectInfo";
 import DownloadBrochureBtn from "@/components/Projects/DownloadBrochureBtn";
 import diamondzqr from "@/../public/img/danube/qr/diamondzqr.jpg";
+import Head from "next/head";
 
 export default function Index() {
   const photos = [
@@ -72,6 +73,10 @@ export default function Index() {
 
   return (
     <>
+    <Head>
+    <title>Danube Properties - Diamondz | RHRE | Dubai, UAE</title>
+    <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
+    </Head>
       <HeaderImage
         header={header}
         company={"Danube"}

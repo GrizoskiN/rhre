@@ -28,6 +28,7 @@ import ContactForm from "@/components/contact/ContactForm";
 
 import ProjectInfo from "@/components/Projects/ProjectInfo";
 import DownloadBrochureBtn from "@/components/Projects/DownloadBrochureBtn";
+import  Head  from 'next/head';
 const Sobha = () => {
   const photos = [
     {
@@ -151,6 +152,10 @@ const Sobha = () => {
 
   return (
     <>
+        <Head>
+    <title>Sobha Realty - Riverside Crescent | RHRE | Dubai, UAE</title>
+    <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
+    </Head>
       <HeaderImage
         header={image}
         company={"Sobha"}

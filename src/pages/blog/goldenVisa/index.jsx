@@ -1,9 +1,14 @@
 import Image from "next/image";
 import golden from "@../../../public/img/blog/golden.jpg"
 import article2 from "@../../../public/img/blog/article2.jpg"
-
+import Head from "next/head";
 const index = () => {
   return (
+    <>
+    <Head>
+    <title>Dubai's Golden Visa for Property Investors | RHRE | Dubai, UAE</title>
+    <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
+    </Head>
     <div className="w-11/12 max-w-[800px] text-royal m-auto mt-32 md:mt-48">
         <h1 className="text-2xl md:text-5xl font-bold md:text-center">Dubai's Golden Visa for Property Investors: A Comprehensive Overview</h1>
         <p className="md:text-center mt-2 md:mt-11 text-lg italics">April 18, 2024</p>
@@ -49,6 +54,7 @@ const index = () => {
       <p className="text-lg">Dubai's Golden Visa for property investors is a significant development that offers long-term residency benefits to investors and their families. The visa scheme is expected to attract more investors to Dubai's real estate market, further boosting the city's economy and reputation as a global business hub.</p>
       
     </div>
+    </>
   );
 };
 

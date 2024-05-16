@@ -1,9 +1,14 @@
 import Image from "next/image";
 import dubai from "@../../../public/img/blog/dubai.jpg"
 import article1 from "@../../../public/img/blog/article1.jpg"
-
+import Head from "next/head"
 const index = () => {
   return (
+    <>
+    <Head>
+    <title>Dubai's 5-Year Multiple Entry Tourist Visa for Indians | RHRE | Dubai, UAE</title>
+    <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
+    </Head>
     <div className="w-11/12 max-w-[800px] text-royal m-auto mt-32 md:mt-48">
         <h1 className="text-2xl md:text-5xl font-bold md:text-center">Dubai's 5-Year Multiple Entry Tourist Visa for Indians: A Comprehensive Guide</h1>
         <p className="md:text-center mt-2 md:mt-11 text-lg italics">April 23, 2024</p>
@@ -39,6 +44,7 @@ This allows for a total of 900 days in the UAE within five years, though not con
       <p className="text-lg">Dubai's 5-year multiple entry tourist visa for Indians is a significant development that is expected to boost tourism between India and Dubai. The visa offers Indian tourists a convenient and cost-effective way to visit Dubai multiple times over a period of 5 years, thereby enhancing cultural exchange and economic cooperation between the two countries.</p>
       
     </div>
+    </>
   );
 };
 

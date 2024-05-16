@@ -31,7 +31,7 @@ import PropertiesGallery from "@/components/dynamicPages/segments/PropertiesGall
 import AgentCard from "@/components/dynamicPages/segments/AgentCard";
 import QrCode from "@/components/dynamicPages/segments/QrCode";
 import AdditionalInformation from "@/components/dynamicPages/segments/AdditionalInfromation";
-
+import Head from "next/head"
 export default function ProjectPage({ project }) {
   const [index, setIndex] = useState(-1);
   if (!project) {
@@ -56,6 +56,11 @@ export default function ProjectPage({ project }) {
   }));
   
   return (
+    <>
+    <Head>
+    <title>{project.title_en} | RHRE | Dubai, UAE</title>
+    <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
+    </Head>
     <div className="bg-gradient-to-b from-white from-30% to-[#f2f2f2] mt-32 lg:mt-[10rem]">
       <div className="w-11/12 max-w-[1400px] m-auto h-[1px] bg-royal  lg:mt-32 "></div>
       <div className="w-11/12 max-w-[1400px] m-auto flex gap-1 lg:gap-3 my-4 text-[12px]">
@@ -98,6 +103,7 @@ export default function ProjectPage({ project }) {
         <QrCode permit={project.permit_number} parts={parts}/>
       </div>
     </div>
+    </>
   );
 }
 

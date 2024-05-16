@@ -1,9 +1,14 @@
 import Image from "next/image";
 import gift from "@../../../public/img/blog/gift.jpg"
 import article2 from "@../../../public/img/blog/article2.jpg"
-
+import Head from "next/head"
 const index = () => {
   return (
+    <>
+    <Head>
+    <title>Gifting Property in the UAE | RHRE | Dubai, UAE</title>
+    <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
+    </Head>
     <div className="w-11/12 max-w-[800px] text-royal m-auto mt-32 md:mt-48">
         <h1 className="text-2xl md:text-5xl font-bold md:text-center">Gifting Property in the UAE: Regulations and Fees</h1>
         <p className="md:text-center mt-2 md:mt-11 text-lg italics">March 10, 2024</p>
@@ -25,6 +30,7 @@ const index = () => {
       <p className="text-lg font-light mt-4">If you need further assistance or have any questions, feel free to contact us.</p>
       
     </div>
+    </>
   );
 };
 
