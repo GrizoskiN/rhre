@@ -110,7 +110,7 @@ export default function Index() {
       <ProjectInfo
         price={"11.5M"}
         handover={"Dec 2026"}
-        payment={"80/20"}
+        payment={"60/40"}
         qr={reserveqr}
       />
       <div className="relative ">

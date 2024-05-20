@@ -106,7 +106,7 @@ export default function Index() {
         }
       />
       <Gallery photos={photos} />
-      <ProjectInfo price={"1.56M"} handover={2027} payment={"80/20"} />
+      <ProjectInfo price={"1.56M"} handover={2027} payment={"60/40"} />
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
           <h1 className=" text-4xl lg:text-6xl lg:leading-[4rem] ">

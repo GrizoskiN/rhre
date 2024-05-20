@@ -189,7 +189,7 @@ const Sobha = () => {
       <ProjectInfo
         price={"1.56M"}
         handover={2027}
-        payment={"80/20"}
+        payment={"60/40"}
         qr={hartlandqr}
       />
       <div className="relative ">
