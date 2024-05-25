@@ -19,15 +19,14 @@ const ThirdSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
           transition={{ duration: 0.6 }} className="text-4xl lg:text-5xl mb-3 xl:mb-0 font-bold xl:w-1/2">
-          Discover Your Perfect Property Match
+          Find Your Ideal Property
         </motion.h1 >
         <motion.p     
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
           transition={{ duration: 0.6 }} className="xl:w-1/3 text-lg">
-          Embark on a journey of discovery through an exclusive collection of
-          homes, luxury properties to fulfill your aspirations and inspire your
-          imagination
+         
+Begin a journey of exploration through an exclusive selection of homes, featuring luxury properties designed to fulfill your aspirations and ignite your imagination.
         </motion.p> 
       </div>
       <div className="flex flex-col md:flex-row mt-8 xl:mt-16 2xl:mt-32 gap-3 xl:gap-5  ">
