@@ -11,7 +11,7 @@ export default function Squares(){
         {
           id: 1,
           title: "Resale after handover",
-          text: "Reselling a property in Dubai after handover can be highly profitable. With property values appreciating by 15-30% annually on average, it's a smart move for investors looking to capitalize on market growth. A newly handed-over property is often more attractive to buyers, ensuring you get the best possible price. Utilizing a real estate agency to handle the sale can streamline the process, ensuring a hassle-free transaction while you enjoy the returns on your investment.",
+          text: "Reselling a property in Dubai after handover can be highly profitable. With property values appreciating by 20-30% annually on average, it's a smart move for investors looking to capitalize on market growth. A newly handed-over property is often more attractive to buyers, ensuring you get the best possible price. Utilizing a real estate agency to handle the sale can streamline the process, ensuring a hassle-free transaction while you enjoy the returns on your investment.",
         },
         {
           id: 2,
