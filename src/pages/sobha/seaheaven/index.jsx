@@ -57,17 +57,17 @@ export default function Index() {
     {
       id: 1,
       title: "Resale after key delivery",
-      text: "Rent prices in Dubai have jumped by 28.5% in the past year alone. A quiet, family-friendly neighborhood with parks, schools, and shopping areas will always attract families, couples, and individuals looking to rent a studio or apartment for the long term. You can use a property management company to take care of all the maintenance and management. You just have to sit back and relax.",
+      text: "Reselling a property in Dubai after key delivery can be highly profitable. With property values appreciating by 15% annually on average, it's a smart move for investors looking to capitalize on market growth. A newly handed-over property is often more attractive to buyers, ensuring you get the best possible price. Utilizing a real estate agency to handle the sale can streamline the process, ensuring a hassle-free transaction while you enjoy the returns on your investment.",
     },
     {
       id: 2,
       title: "Flip deal",
-      text: "Rent prices in Dubai have jumped by 28.5% in the past year alone. A quiet, family-friendly neighborhood with parks, schools, and shopping areas will always attract families, couples, and individuals looking to rent a studio or apartment for the long term. You can use a property management company to take care of all the maintenance and management. You just have to sit back and relax.",
+      text: "A flip deal involves buying a property, renovating it, and selling it for a profit. In Dubai, this strategy can yield substantial returns due to the city's booming real estate market. The key to a successful flip deal is choosing the right property and making cost-effective improvements that significantly boost its market value. By partnering with experienced contractors and real estate agents, you can maximize your profits while minimizing the time your investment is tied up.",
     },
     {
       id: 3,
       title: "Investment for living in Dubai",
-      text: "Rent prices in Dubai have jumped by 28.5% in the past year alone. A quiet, family-friendly neighborhood with parks, schools, and shopping areas will always attract families, couples, and individuals looking to rent a studio or apartment for the long term. You can use a property management company to take care of all the maintenance and management. You just have to sit back and relax.",
+      text: "Investing in property to live in Dubai offers both a luxurious lifestyle and potential financial gains. With world-class amenities, vibrant communities, and a cosmopolitan environment, Dubai is an attractive destination for expatriates and locals alike. Owning a home in Dubai not only provides a stable living environment but also positions you to benefit from the city's growing property market. Enjoy the benefits of a high-quality lifestyle while your property's value appreciates over time.",
     },
   ];
 
@@ -110,7 +110,7 @@ export default function Index() {
       <ProjectInfo
         price={"3.18M"}
         handover={2027}
-        payment={"60/40"}
+        payment={"60/40 "}
         qr={seaheavenqr}
       />
       <div className="relative ">
@@ -134,7 +134,7 @@ export default function Index() {
         />
       </div>
 
-      <Squares benefits={benefits} />
+      <Squares  />
       <Faq />
 
       <div className="w-full lg:w-2/3 m-auto">

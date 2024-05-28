@@ -131,7 +131,7 @@ export default function Index() {
         className="w-full h-[25rem] md:h-auto object-cover"
       />
 
-      <Squares benefits={benefits} />
+      <Squares  />
       <Faq />
 
       <div className="w-full lg:w-2/3 m-auto">

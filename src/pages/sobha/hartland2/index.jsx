@@ -237,7 +237,7 @@ const Sobha = () => {
         </h1>
       </div>
       <HoverCarousel menuRef={menuRef} width={width} services={services} />
-      <Squares benefits={benefits} />
+      <Squares  />
       <Faq />
       {/* <div className="w-full m-auto my-32 flex items-center pl-48 pt-16 pb-32 bg-gray-200">
         <div><h1 className="text-4xl font-bold">AMMENITIES</h1><p className="">At Sobha Hartland II, amenities become necessities.</p></div>

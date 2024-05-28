@@ -134,7 +134,7 @@ export default function Index() {
         />
       </div>
 
-      <Squares benefits={benefits} />
+      <Squares  />
       <Faq />
 
       <div className="w-full lg:w-2/3 m-auto">
