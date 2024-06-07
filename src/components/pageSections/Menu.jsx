@@ -188,6 +188,9 @@ const Menu = (props) => {
                 <Link href="/sobha" className="flex py-1  hover:text-gray-300">
                   Sobha New Projects
                 </Link>
+                <Link href="/arada" className="flex py-1  hover:text-gray-300">
+                  Arada New Projects
+                </Link>
               </div>
             )}
           </div>
@@ -279,6 +282,10 @@ const Menu = (props) => {
                     <Link onClick={handleMenu} href="/danube" className="flex py-1 ">
                       Danube New Projects
                     </Link>
+                    <Link onClick={handleMenu} href="/arada" className="flex py-1 ">
+                      Arada New Projects
+                    </Link>
+                    
                   </div>
                 )}
               </div>
