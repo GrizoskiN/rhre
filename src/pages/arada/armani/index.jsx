@@ -5,7 +5,7 @@ import Image from "next/image";
 import header from "@/../public/img/arada/header.jpg";
 import second from "@/../public/img/arada/second.jpg";
 import third from "@/../public/img/arada/third.jpg";
-
+import armaniqr from "@/../public/img/arada/qr/armaniqr.jpg";
 import Squares from "@/components/contact/Squares";
 import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
@@ -119,7 +119,7 @@ export default function Index() {
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>
-      <ProjectInfo price={"23M"} handover={2026} payment={"60/40"} />
+      <ProjectInfo price={"23M"} handover={2026} payment={"60/40"} qr={armaniqr}/>
      
 
       <Squares />

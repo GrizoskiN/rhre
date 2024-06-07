@@ -26,12 +26,12 @@ export async function getStaticProps() {
 
 export default function Listings({ data }) {
   const properties = data.list.property;
-  console.log(properties);
   const mappedProjects = properties.map((project, index) => {
     // Assuming the title property is called "title" (adjust if different)
     const projectTitle = project.title_en;
     const reference_number = project.reference_number;
- const photos = project.photo[0].url[0]["_"];
+    const photos = project.photo?.[0]?.url?.[0]?._ || "/placeholder.jpg";
+    console.log(photos);
 
     const agent = project.agent[0].name;
     const description = project.description_en;
