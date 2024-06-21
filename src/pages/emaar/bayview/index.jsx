@@ -6,7 +6,7 @@ import header from "@/../public/img/emaar/seapoint/header.jpg";
 import second from "@/../public/img/emaar/seapoint/second.jpg";
 import third from "@/../public/img/emaar/seapoint/third.jpg";
 import fourth from "@/../public/img/emaar/seapoint/fourth.jpg";
-import oneqr from "@/../public/img/emaar/qr/seapointqr.jpg";
+import oneqr from "@/../public/img/emaar/qr/bayviewqr.jpg";
 import Squares from "@/components/contact/Squares";
 import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";

@@ -74,23 +74,23 @@ export default function Index() {
   return (
     <>
     <Head>
-    <title>Emaar Properties - Bayview | RHRE | Dubai, UAE</title>
+    <title>Emaar Properties - Club Drive | RHRE | Dubai, UAE</title>
     <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
     </Head>
       <HeaderImage
         header={header}
         company={"Emaar"}
-        project={"Bayview"}
+        project={"Club Drive"}
         text={
           "Come home to Dubai’s most exclusive island, located within the new maritime centre of the UAE, Dubai Harbour"
         }
         price={"2.9M"}
       />
       <Title
-        title={"Why Bayview?"}
-        subtitle={"EXCEPTIONAL LIFESTYLE"}
+        title={"CLUB DRIVE"}
+        subtitle={"AT DUBAI HILLS ESTATE"}
         paragraph={
-          "Seapoint combines the aspirational dream of high-end beachfront living with the sophistication of urban cool, incredible design flair and unrivalled levels of finish. Experience Dubai’s opulent way of life indoors and out, through texture, natural materials, abundant natural light and uninterrupted views."
+          "This green, family-centric area, rich in simplicity and elegance, effortlessly connects residents to conveniences. Situated along the Northern Boulevard, Club Drive is a tranquil urban pocket of Dubai, yet city centre attractions are moments away. Here, you're near premium healthcare, educational centres, a central park, a leading golf course, and the expansive Dubai Hills Mall."
         }
       />
       {/* <Icons /> */}
@@ -100,17 +100,17 @@ export default function Index() {
         className="w-full h-[25rem] md:h-auto object-cover"
       />
       <Title
-        title={"THE        RHYTHM       OF THE CITY"}
+        title={"Experience luxury"}
         // subtitle={"INFINITE POSSIBILITIES"}
         paragraph={
-          " Business Bay has long held a reputation for   being home to a vibrant cowmmunity of          innovation and aspiration. It has since attracted           a wealth of exciting venues for dining, art           culture, and socialising."
+          " Strategically positioned, yet distant from the city's hustle. Thanks to Al Khail Road, Downtown Dubai and major hubs are minutes away and soon, Etihad Rail and Dubai Metro will offer swift airport and emirate connections."
         }
       />
       <Gallery photos={photos} />
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
-          <h1 className=" text-4xl font-bold lg:text-6xl lg:leading-[4rem] ">
-          Luxury Apartments <br/>And Massive Penthouse
+          <h1 className=" text-2xl font-bold  w-10/12 md:w-2/3 ml-auto">
+          Experience the serene ambiance of Dubai Hills Estate's verdant landscapes and expansive open areas when you return to Club Drive
           </h1>
        
           <DownloadBrochureBtn />

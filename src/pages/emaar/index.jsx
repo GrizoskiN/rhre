@@ -25,7 +25,7 @@ export default function index() {
       price: "AED 1.5M",
       address: "Northern Boulevard",
       text: "Discover a sanctuary where nature’s elegance meets the grandeur of a sprawling golf landscape.",
-      link: "/meraas/design",
+      link: "/emaar/clubDrive",
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ export default function index() {
       price: "AED 2.9M",
       address: "Dubai Harbour",
       text: "A come-as-you-are creative space where industry experts and local      entrepreneurs connect, create and collaborate.",
-      link: "/meraas/design",
+      link: "/emaar/bayview",
     },
   ];
 
