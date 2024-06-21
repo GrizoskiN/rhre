@@ -84,7 +84,7 @@ export default function Index() {
         text={
           "Come home to Dubai’s most exclusive island, located within the new maritime centre of the UAE, Dubai Harbour"
         }
-        price={"2.9M"}
+        price={"1.5M"}
       />
       <Title
         title={"CLUB DRIVE"}
@@ -124,7 +124,7 @@ export default function Index() {
         />
       </div>
       <ProjectInfo
-        price={"2.9M"}
+        price={"1.5M"}
         handover={"2028"}
         payment={"90/10"}
         qr={oneqr}
