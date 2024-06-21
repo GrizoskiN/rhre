@@ -166,6 +166,9 @@ const Menu = (props) => {
                 {/* <Link href="/damac" className="flex py-1  hover:text-gray-300">
                   Damac New Projects
                 </Link> */}
+                 <Link href="/emaar" className="flex py-1  hover:text-gray-300">
+                  Emaar New Projects
+                </Link>
                 <Link
                   href="/ellington"
                   className="flex py-1  hover:text-gray-300">
@@ -191,6 +194,7 @@ const Menu = (props) => {
                 <Link href="/arada" className="flex py-1  hover:text-gray-300">
                   Arada New Projects
                 </Link>
+               
               </div>
             )}
           </div>
@@ -264,6 +268,9 @@ const Menu = (props) => {
                     {/* <Link onClick={handleMenu} href="/damac" className="flex py-1 ">
                       Damac New Projects
                     </Link> */}
+                        <Link onClick={handleMenu} href="/emaar" className="flex py-1 ">
+                      Emaar New Projects
+                    </Link>
                     <Link onClick={handleMenu} href="/ellington" className="flex py-1 ">
                       Ellington New Projects
                     </Link>
@@ -273,9 +280,7 @@ const Menu = (props) => {
                     {/* <Link onClick={handleMenu} href="/nakheel" className="flex py-1 ">
                       Nakheel New Projects
                     </Link> */}
-                    {/* <Link onClick={handleMenu} href="/emaar" className="flex py-1 ">
-                      Emaar New Projects
-                    </Link> */}
+                    
                     <Link onClick={handleMenu} href="/sobha" className="flex py-1 ">
                       Sobha New Projects
                     </Link>
@@ -285,6 +290,7 @@ const Menu = (props) => {
                     <Link onClick={handleMenu} href="/arada" className="flex py-1 ">
                       Arada New Projects
                     </Link>
+                
                     
                   </div>
                 )}

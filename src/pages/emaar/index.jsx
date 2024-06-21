@@ -1,5 +1,5 @@
-import header from "@/../public/img/meraas/header.webp";
-import meraaslogo from "@/../public/img/meraas/meraaslogo.png";
+import header from "@/../public/img/emaar/projects/header.jpg";
+import emaarlogo from "@/../public/img/emaar/logo.svg";
 import ContactForm from "@/components/contact/ContactForm";
 import Title from "@/components/Projects/Title";
 import Header from "@/components/developersSections/Header";
@@ -9,21 +9,31 @@ export default function index() {
   const projects = [
     {
       id: 0,
-      image: "/img/meraas/projects/arces.webp",
-      title: "The Acres",
-      subtitle: "By Meraas Realty",
-      price: "AED 5.01M",
-      address: "Business Bay",
-      text: "Welcome to The Acres, a brand-new community of standalone villas featuring impeccable surroundings enveloped by nature. ",
-      link: "/meraas/acres",
+      image: "/img/emaar/projects/seapoint.jpg",
+      title: "Seapoint",
+      subtitle: "By Emaar Properties",
+      price: "AED 2.95M",
+      address: "Dubai Harbour",
+      text: "Come home to Dubai’s most exclusive island, located within the new maritime centre of the UAE, Dubai Harbour",
+      link: "/emaar/seapoint",
     },
     {
       id: 1,
-      image: "/img/meraas/projects/design.webp",
-      title: "Design Quarter",
-      subtitle: "By Meraas Realty",
-      price: "AED 2.5M",
-      address: "Dubai Sports City",
+      image: "/img/emaar/projects/club.jpg",
+      title: "Club Dive",
+      subtitle: "By Emaar Properties",
+      price: "AED 1.5M",
+      address: "Northern Boulevard",
+      text: "Discover a sanctuary where nature’s elegance meets the grandeur of a sprawling golf landscape.",
+      link: "/meraas/design",
+    },
+    {
+      id: 2,
+      image: "/img/emaar/projects/bayview.jpg",
+      title: "Bayview",
+      subtitle: "By Emaar Properties",
+      price: "AED 2.9M",
+      address: "Dubai Harbour",
       text: "A come-as-you-are creative space where industry experts and local      entrepreneurs connect, create and collaborate.",
       link: "/meraas/design",
     },
@@ -31,12 +41,12 @@ export default function index() {
 
   return (
     <div>
-      <Header header={header} logo={meraaslogo} />
+      <Header header={header} logo={emaarlogo} />
       <Title
-        title={"Meraas Realty"}
-        subtitle={"We think globally"}
+        title={"Emaar Properties"}
+        subtitle={"PREMIUM PROPERTIES"}
         paragraph={
-          "Meraas is committed to creating and consistently delivering world-class real estate projects and master developments that strengthen Dubai's position as the global real estate investment destination of choice. Our cutting-edge portfolio comprises of leading developments such as City Walk Residences, Bluewaters Residences, Nikki Beach Residences, Bvlgari Residences, Port de La Mer, La Mer Maisons, Jumeirah Bay, Cherrywoods and many more."
+          "Our properties, located in prime areas, boast unique designs and aspirational lifestyles within vibrant Emaar communities, all seamlessly managed by Emaar Community Management's dedicated team."
         }
       />
       <div className="h-[1px] w-full bg-royal max-w-[1400px] m-auto"></div>
