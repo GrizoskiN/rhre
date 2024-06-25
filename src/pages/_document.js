@@ -4,8 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head ><meta name="google-site-verification" content="RJjITg1RdbGIKZg38XJzdctv7HzYKYCiXbodV2pj1X0" />
-  
-
+      <link  rel='shortcut icon' href="/favicon.png" />
       </Head>
       
       <body >

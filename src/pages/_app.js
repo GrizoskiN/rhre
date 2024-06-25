@@ -5,7 +5,8 @@ import Footer from "@/components/pageSections/Footer";
 import ScrollToTopButton from "@/components/scrollToTop";
 import { useRouter } from "next/router";
 import Script from "next/script";
-
+import  Head  from "next/head";
+import fav from "@/../public/img/favicon.png"
 
 export default function App({ Component, pageProps }) {
   const [active, setActive] = useState(false);
@@ -16,6 +17,8 @@ export default function App({ Component, pageProps }) {
   const contact = router.pathname === "/contact";
   return (
     <>
+     <Head>
+     <link  rel='shortcut icon' href='/favicon.png' />
      <Script id='google-analytics' strategy='afterInteractive'>
         {`
           window.dataLayer = window.dataLayer || [];
@@ -54,6 +57,8 @@ export default function App({ Component, pageProps }) {
               `,
             }}
           ></Script>
+
+     </Head>
 
       <Menu handleMenus={handleActive} />
       {!contact && <ScrollToTopButton/>}

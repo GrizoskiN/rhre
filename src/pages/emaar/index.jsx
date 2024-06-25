@@ -4,6 +4,7 @@ import ContactForm from "@/components/contact/ContactForm";
 import Title from "@/components/Projects/Title";
 import Header from "@/components/developersSections/Header";
 import AllProjects from "@/components/developersSections/allProjects";
+import Head from "next/head";
 
 export default function index() {
   const projects = [
@@ -91,6 +92,10 @@ export default function index() {
 
   return (
     <div>
+        <Head>
+    <title>Emaar Properties | RHRE | Dubai, UAE</title>
+    <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
+    </Head>
       <Header header={header} logo={emaarlogo} />
       <Title
         title={"Emaar Properties"}

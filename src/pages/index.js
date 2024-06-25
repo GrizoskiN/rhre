@@ -40,7 +40,7 @@ export default function Home() {
     <meta property="og:description" content="Your trusted partner for buying, selling, and leasing properties in Dubai." />
     <meta property="og:url" content="https://www.risehighrealestate.ae/" />
 
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/img/favicon.png" />
     <meta name="robots" content="index, follow" />
 </Head>
 
