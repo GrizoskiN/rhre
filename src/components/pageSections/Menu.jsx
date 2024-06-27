@@ -167,32 +167,32 @@ const Menu = (props) => {
                   Damac New Projects
                 </Link> */}
                  <Link href="/emaar" className="flex py-1  hover:text-gray-300">
-                  Emaar New Projects
+                  Emaar 
                 </Link>
                 <Link
                   href="/ellington"
                   className="flex py-1  hover:text-gray-300">
-                  Ellington New Projects
+                  Ellington 
                 </Link>
                 {/* <Link href="/meraas" className="flex py-1  hover:text-gray-300">
-                  Meraas New Projects
+                  Meraas 
                 </Link> */}
                 <Link href="/danube" className="flex py-1  hover:text-gray-300">
-                  Danube New Projects
+                  Danube 
                 </Link>
                 {/* <Link
                   href="/nakheel"
                   className="flex py-1  hover:text-gray-300">
-                  Nakheel New Projects
+                  Nakheel 
                 </Link> */}
                 {/* <Link href="/emaar" className="flex py-1  hover:text-gray-300">
-                  Emaar New Projects
+                  Emaar 
                 </Link> */}
                 <Link href="/sobha" className="flex py-1  hover:text-gray-300">
-                  Sobha New Projects
+                  Sobha 
                 </Link>
                 <Link href="/arada" className="flex py-1  hover:text-gray-300">
-                  Arada New Projects
+                  Arada 
                 </Link>
                
               </div>
@@ -269,26 +269,26 @@ const Menu = (props) => {
                       Damac New Projects
                     </Link> */}
                         <Link onClick={handleMenu} href="/emaar" className="flex py-1 ">
-                      Emaar New Projects
+                      Emaar 
                     </Link>
                     <Link onClick={handleMenu} href="/ellington" className="flex py-1 ">
-                      Ellington New Projects
+                      Ellington 
                     </Link>
                     {/* <Link onClick={handleMenu} href="/meraas" className="flex py-1 ">
-                      Meraas New Projects
+                      Meraas 
                     </Link> */}
                     {/* <Link onClick={handleMenu} href="/nakheel" className="flex py-1 ">
-                      Nakheel New Projects
+                      Nakheel 
                     </Link> */}
                     
                     <Link onClick={handleMenu} href="/sobha" className="flex py-1 ">
-                      Sobha New Projects
+                      Sobha 
                     </Link>
                     <Link onClick={handleMenu} href="/danube" className="flex py-1 ">
-                      Danube New Projects
+                      Danube 
                     </Link>
                     <Link onClick={handleMenu} href="/arada" className="flex py-1 ">
-                      Arada New Projects
+                      Arada 
                     </Link>
                 
                     

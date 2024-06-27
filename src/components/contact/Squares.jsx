@@ -29,7 +29,7 @@ export default function Squares(){
         <div className="w-11/12 max-w-[1200px] m-auto my-11 lg:my-32">
            
         <h3 className="text-2xl uppercase">Modern lifestyle</h3>
-        <h1 className="text-4xl lg:text-6xl lg:leading-[4rem] lg:w-2/3 font-bold">What does the 360 Riverside Crescent project offer?</h1>
+        <h1 className="text-4xl lg:text-5xl  lg:w-2/3 font-bold">Learn why Dubai is Perfect for Property Investment!</h1>
         <div className="grid lg:grid-cols-2 mt-16 gap-5">
             {benefits.map(({id, title, text, }, index) => (
                 <ul key={id} className={`${id === 1 || id === 2 ? 'bg-royal text-white' : ''}  bg-gray-200 text-royal px-5 py-11 rounded-xl`}>
