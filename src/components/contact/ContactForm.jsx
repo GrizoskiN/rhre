@@ -37,34 +37,34 @@ const ContactForm = () => {
 
   const developers = {
     Emaar: [
-      { name: 'Seapoint', value: 'emaar-seapoint' },
-      { name: 'Club Dive', value: 'emaar-club-dive' },
-      { name: 'Bayview', value: 'emaar-bayview' },
-      { name: 'Mangrove', value: 'emaar-mangrove' },
-      { name: 'Valo', value: 'emaar-valo' },
-      { name: 'Oria', value: 'emaar-oria' }
+      { name: 'Emaar Seapoint', value: 'emaar-seapoint' },
+      { name: 'Emaar Club Dive', value: 'emaar-club-dive' },
+      { name: 'Emaar Bayview', value: 'emaar-bayview' },
+      { name: 'Emaar Mangrove', value: 'emaar-mangrove' },
+      { name: 'Emaar Valo', value: 'emaar-valo' },
+      { name: 'Emaar Oria', value: 'emaar-oria' }
     ],
     Ellington: [
       { name: "One Riverpoint", value: 'One-riverpoint' },
     ],
     Danube: [
-      { name: "Bayz 101", value: 'Bayz' },
-      { name: "Sportz",value: 'Sportz'  },
-      { name: "Diamondz",value: 'Diamondz'  }
+      { name: "Danube Bayz 101", value: 'Bayz' },
+      { name: "Danube Sportz",value: 'Sportz'  },
+      { name: "Danube Diamondz",value: 'Diamondz'  }
     ],
     Sobha: [
-      { name: "Riverside Crescent",value: 'Riverside' },
-      { name: "Reserve",value: 'Reserve'  },
-      { name: "Sea Heaven",value: 'SeaHeven'  },
-      { name: "Verde" ,value: 'Verde'},
-      { name: "One", value: 'SobhaOne' },
-      { name: "Orbis", value: 'Orbis' },
-      { name: "Skyscape ", value: 'Skyscape' },
+      { name: "Sobha Riverside Crescent",value: 'Riverside' },
+      { name: "Sobha Reserve",value: 'Reserve'  },
+      { name: "Sobha Sea Heaven",value: 'SeaHeven'  },
+      { name: "Sobha Verde" ,value: 'Verde'},
+      { name: "Sobha One", value: 'SobhaOne' },
+      { name: "Sobha Orbis", value: 'Orbis' },
+      { name: "Sobha Skyscape ", value: 'Skyscape' },
     ],
     Damac: [
-      { name: 'Lagoons ', value: 'Lagoons ' },
-      { name: 'Hills 2 - Violet ', value: 'Hills 2 - Violet ' },
-      { name: 'Hills - Autograph Collection ', value: 'Hills - Autograph Collection ' },
+      { name: 'Damac Lagoons ', value: 'Lagoons ' },
+      { name: 'Damac Hills 2 - Violet ', value: 'Hills 2 - Violet ' },
+      { name: 'Damac Hills - Autograph Collection ', value: 'Hills - Autograph Collection ' },
     
     ],
     Arada: [
