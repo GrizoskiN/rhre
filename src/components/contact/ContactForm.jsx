@@ -12,9 +12,9 @@ const schema = yup
     lastName: yup.string(),
     email: yup.string().email().required(),
     phone: yup.string(),
-    company: yup.string(),
-    project: yup.string(),
+    selectedProject: yup.string(),
     notes: yup.string(),
+    range: yup.string(),
   })
   .required();
 
@@ -29,7 +29,54 @@ const ContactForm = () => {
   const handleForm = (e) => {
     e.preventDefault();
   };
+ 
 
+  
+  const [selectedDeveloper, setSelectedDeveloper] = useState('');
+  const [selectedProject, setSelectedProject] = useState('');
+
+  const developers = {
+    Emaar: [
+      { name: 'Seapoint', value: 'emaar-seapoint' },
+      { name: 'Club Dive', value: 'emaar-club-dive' },
+      { name: 'Bayview', value: 'emaar-bayview' },
+      { name: 'Mangrove', value: 'emaar-mangrove' },
+      { name: 'Valo', value: 'emaar-valo' },
+      { name: 'Oria', value: 'emaar-oria' }
+    ],
+    Ellington: [
+      { name: "One Riverpoint", value: 'One-riverpoint' },
+    ],
+    Danube: [
+      { name: "Bayz 101", value: 'Bayz' },
+      { name: "Sportz",value: 'Sportz'  },
+      { name: "Diamondz",value: 'Diamondz'  }
+    ],
+    Sobha: [
+      { name: "Riverside Crescent",value: 'Riverside' },
+      { name: "Reserve",value: 'Reserve'  },
+      { name: "Sea Heaven",value: 'SeaHeven'  },
+      { name: "Verde" ,value: 'Verde'},
+      { name: "One", value: 'SobhaOne' },
+      { name: "Orbis", value: 'Orbis' },
+      { name: "Skyscape ", value: 'Skyscape' },
+    ],
+    Damac: [
+      { name: 'Lagoons ', value: 'Lagoons ' },
+      { name: 'Hills 2 - Violet ', value: 'Hills 2 - Violet ' },
+      { name: 'Hills - Autograph Collection ', value: 'Hills - Autograph Collection ' },
+    
+    ],
+    Arada: [
+      { name: 'Armani Beach', value: 'Armani' },
+    
+    ]
+  };
+
+  const handleDeveloperChange = (e) => {
+    setSelectedDeveloper(e.target.value);
+    setSelectedProject('');
+  };
   const {
     register,
     handleSubmit,
@@ -45,14 +92,14 @@ const ContactForm = () => {
   const submitHandler = async (data) => {
     const httpResponse = await fetch("/api/hello", {
       method: "post",
-      body: JSON.stringify(data),
+      body: JSON.stringify({...data, phone, selectedProject, range }),
     });
     reset();
     router.push({
       pathname: "/Popup",
       query: { name: data.name }, // Pass the name as a query parameter
     })
-  };;
+  };
   const closePopup = () => {
     // Close the popup
     setPopupOpen(false);
@@ -89,7 +136,7 @@ const ContactForm = () => {
               placeholder="Last Name"
               {...register("lastName", { required: true })}
               className={`w-full   p-3 border-b-2 border-b-royal bg-transparent ${
-                errors.company
+                errors.lastName
                   ? "border-red-500 placeholder-royal outline-none"
                   : "border-white outline-none text-royal "
               }`}
@@ -118,7 +165,30 @@ const ContactForm = () => {
         onChange={(phone) => setPhone(phone)}
       />
           </div>
-
+          <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">
+          <select
+  value={selectedProject}
+  onChange={(e) => setSelectedProject(e.target.value)}
+  className="block appearance-none w-full bg-white border-b-2 border-b-royal text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+>
+  <option value="">Select Project ↓</option>
+  {Object.entries(developers).map(([developer, projects]) => (
+    <optgroup label={developer} key={developer}>
+      {projects.map((project) => (
+        <option key={project.value} value={project.value}>
+          {project.name}
+        </option>
+      ))}
+    </optgroup>
+  ))}
+</select>
+        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+          <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+          </svg>
+        </div>
+            </div>
+            
           <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">
             <textarea
               type="textarea"
