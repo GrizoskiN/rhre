@@ -44,7 +44,7 @@ export default function index() {
   return (
     <>
       <Head>
-    <title>Arada | RHRE | Dubai, UAE</title>
+    <title>Damac Properties | RHRE | Dubai, UAE</title>
     <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
     </Head>
     <div>
