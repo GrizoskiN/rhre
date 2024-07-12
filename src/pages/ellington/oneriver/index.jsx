@@ -74,7 +74,7 @@ export default function Index() {
   return (
     <>
     <Head>
-    <title>Ellington Properties - One Riverpoint| RHRE | Dubai, UAE</title>
+    <title>Ellington Properties - One Riverpoint | RHRE | Dubai, UAE</title>
     <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
     </Head>
       <HeaderImage

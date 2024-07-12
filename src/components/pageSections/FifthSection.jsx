@@ -10,7 +10,7 @@ import meraas from "@/../public/img/developers/meraas.jpg";
 import damac from "@/../public/img/developers/damac.jpg";
 import IndexCarousel from "../Projects/IndexCarousel";
 import sobhalogo from "@/../public/img/sobha/sobhalogo.png";
-import damaclogo from "@/../public/img/damacimg/damaclogo.png";
+import damaclogo from "@/../public/img/damac/damaclogo.png";
 import ellingtonlogo from "@/../public/img/ellington/ellingtonlogo.png";
 import danubelogo from "@/../public/img/danube/danubelogo.png";
 import meraaslogo from "@/../public/img/meraas/meraaslogo.png";

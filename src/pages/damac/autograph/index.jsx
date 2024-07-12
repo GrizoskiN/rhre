@@ -2,10 +2,10 @@ import Gallery from "@/components/Projects/Gallery";
 import HeaderImage from "@/components/Projects/HeaderImage";
 import Title from "@/components/Projects/Title";
 import Image from "next/image";
-import header from "@/../public/img/arada/header.jpg";
-import second from "@/../public/img/arada/second.jpg";
-import third from "@/../public/img/arada/third.jpg";
-import armaniqr from "@/../public/img/arada/qr/armaniqr.jpg";
+import header from "@/../public/img/damac/autograph/header.jpg";
+import second from "@/../public/img/damac/autograph/second.jpg";
+import third from "@/../public/img/damac/autograph/third.jpg";
+import armaniqr from "@/../public/img/damac/qr/autographqr.jpg";
 import Squares from "@/components/contact/Squares";
 import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
@@ -16,31 +16,31 @@ import Head from "next/head";
 export default function Index() {
   const photos = [
     {
-      src: "/img/arada/gallery/5.jpg",
+      src: "/img/damac/autograph/gallery/5.jpg",
       alt: "Image 1",
       width: 600,
       height: 800,
     },
     {
-      src: "/img/arada/gallery/2.jpg",
+      src: "/img/damac/autograph/gallery/2.jpg",
       alt: "Image 2",
       width: 800,
       height: 520,
     },
     {
-      src: "/img/arada/gallery/3.jpg",
+      src: "/img/damac/autograph/gallery/3.jpg",
       alt: "Image 1",
       width: 800,
       height: 520,
     },
     {
-      src: "/img/arada/gallery/1.jpg",
+      src: "/img/damac/autograph/gallery/1.jpg",
       alt: "Image 2",
       width: 800,
       height: 520,
     },
     {
-      src: "/img/arada/gallery/4.jpg",
+      src: "/img/damac/autograph/gallery/4.jpg",
       alt: "Image 2",
       width: 800,
       height: 517,
@@ -73,46 +73,48 @@ export default function Index() {
   return (
     <>
       <Head>
-    <title>Arada - Armani Beach  RHRE | Dubai, UAE</title>
+    <title>Damac Properties - Autograph | RHRE | Dubai, UAE</title>
     <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
     </Head>
       <HeaderImage
         header={header}
-        company={"Arada"}
-        project={"Armani Beach"}
+        company={"DAMAC"}
+        project={"Autograph"}
         text={
-          "Enjoying sweeping, panoramic views of the Arabian Gulf as well as Dubai’s famed skyline, Armani Beach Residences at Palm Jumeirah is designed to achieve harmony between architecture, the surrounding seascape and the senses."
+          "Autograph Collection is a new and highly-curated selection of exquisite villas in DAMAC Hills"
         }
-        price={"23M"}
+        price={"7M"}
       />
       <Title
-        title={"Armani Beach Residences"}
+        title={" Autograph Collection"}
         // subtitle={"Discover a world of timeless elegance"}
         paragraph={
-          "The magnificent elevated entry experience sets the tone, providing residents with extravagant ocean views from a range of angles. Throughout the building, the interplay of light and shadow amplifies a series of stylish design elements, including the overhanging arch and the many water features and pools."
+          "Damac Properties presents a limited edition of homes within the Autograph Collection by Damac, where every detail reflects timeless luxury and groundbreaking sophistication. These villas promise a lifestyle that captures the essence of balanced living, merging tranquility with contemporary elegance"
         }
       />
       {/* <Icons /> */}
       <Image
         src={second}
         width={2000}
+        quality={100}
         className="w-full h-[25rem] md:h-auto object-cover"
       />
       <Title
-        title={"TIMELESS ELEGANCE"}
+        title={"WHERE LUXURY IS BOUNDLESS"}
         // subtitle={"INFINITE POSSIBILITIES"}
         paragraph={
-          "Since 2004, the Armani/Casa Interior Design Studio has provided complete interior design services to private individuals and property developers, from the conceptual phase under the artistic direction of Giorgio Armani, through to the management of construction."
+          "Violet is a blossoming urban oasis for the entire family. Add colour to your life with a 4-bedroom townhouse In damac hills 2 opposite water town and its outstanding World-class amenities."
         }
       />
       <Gallery photos={photos} />
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
-          {/* <h1 className=" text-4xl lg:text-6xl lg:leading-[4rem] ">
-            COMMUNITY LAGOON
-          </h1> */}
-          <p className="w-10/12 md:w-2/4 2xl:w-2/5  lg:text-xl mt-6 ml-auto ">
-          Enjoying sweeping, panoramic views of the Arabian Gulf as well as Dubai’s famed skyline, Armani Beach Residences at Palm Jumeirah is designed to achieve harmony between architecture, the surrounding seascape and the senses.
+          <h1 className=" text-4xl lg:text-6xl lg:leading-[4rem] ">
+          Live Connected in Every
+ Way at Damac Hills
+          </h1>
+          <p className="w-10/12 md:w-2/4  lg:text-xl mt-6 ml-auto ">
+          Nestled within the tranquil yet vibrant expanses of Dubailand, Damac Hills represents the epitome of cozy, contemporary living.
           </p>
           <DownloadBrochureBtn />
         </div>
@@ -124,7 +126,8 @@ export default function Index() {
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>
-      <ProjectInfo price={"23M"} handover={2026} payment={"60/40"} qr={armaniqr}/>
+      
+      <ProjectInfo price={"7M"} handover={2027} payment={"60/40"} qr={armaniqr}/>
      
 
       <Squares />

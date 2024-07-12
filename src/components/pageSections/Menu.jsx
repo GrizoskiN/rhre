@@ -163,9 +163,9 @@ const Menu = (props) => {
                 onMouseEnter={handleSubMenuHover}
                 onMouseLeave={handleSubMenuLeave}>
                 {/* Add your submenu items here */}
-                {/* <Link href="/damac" className="flex py-1  hover:text-gray-300">
-                  Damac New Projects
-                </Link> */}
+                <Link href="/damac" className="flex py-1  hover:text-gray-300">
+                  Damac 
+                </Link>
                  <Link href="/emaar" className="flex py-1  hover:text-gray-300">
                   Emaar 
                 </Link>
@@ -265,9 +265,9 @@ const Menu = (props) => {
                 {isOpen && (
                   <div className=" top-full left-0 font-light text-lg py-2 px-4">
                     {/* Add your menu items here */}
-                    {/* <Link onClick={handleMenu} href="/damac" className="flex py-1 ">
-                      Damac New Projects
-                    </Link> */}
+                    <Link onClick={handleMenu} href="/damac" className="flex py-1 ">
+                      Damac 
+                    </Link>
                         <Link onClick={handleMenu} href="/emaar" className="flex py-1 ">
                       Emaar 
                     </Link>
