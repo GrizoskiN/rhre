@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import Script from "next/script";
 import  Head  from "next/head";
 import fav from "@/../public/img/favicon.png"
-
+import { GoogleTagManager } from '@next/third-parties/google'
 export default function App({ Component, pageProps }) {
   const [active, setActive] = useState(false);
   const handleActive = (e) => {
@@ -15,11 +15,12 @@ export default function App({ Component, pageProps }) {
   };
   const router = useRouter();
   const contact = router.pathname === "/contact";
+  const GTM_ID = 'G-ERVDTQX7LF'
   return (
     <>
      <Head>
      <link  rel='shortcut icon' href='/favicon.png' />
-     <Script id='google-analytics' strategy='afterInteractive'>
+     {/* <Script id='google-analytics' strategy='afterInteractive'>
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
@@ -28,7 +29,7 @@ export default function App({ Component, pageProps }) {
           gtag('config', 'G-ERVDTQX7LF');
         `}
       </Script> 
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ERVDTQX7LF"></Script>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ERVDTQX7LF"></Script> */}
    
    <Script
             dangerouslySetInnerHTML={{
@@ -46,7 +47,7 @@ export default function App({ Component, pageProps }) {
               `,
             }}
           ></Script>
-   <Script
+   {/* <Script
             dangerouslySetInnerHTML={{
               __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -56,13 +57,14 @@ export default function App({ Component, pageProps }) {
               })(window,document,'script','dataLayer','GTM-PL663SLC');
               `,
             }}
-          ></Script>
+          ></Script> */}
 
      </Head>
 
       <Menu handleMenus={handleActive} />
       {!contact && <ScrollToTopButton/>}
       <Component {...pageProps} />
+      <GoogleTagManager gtmId='G-ERVDTQX7LF' />
       <Footer />
     </>
   );
