@@ -6,6 +6,7 @@ import Icons from "@/components/Projects/Icons";
 import Image from "next/image";
 import one from "@/../public/img/sobha/orbis/second.webp";
 import comfort from "@/../public/img/sobha/orbis/third.webp";
+import reserveqr from "@/../public/img/sobha/qr/reserveqr.jpg";
 import Squares from "@/components/contact/Squares";
 import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
@@ -83,7 +84,7 @@ export default function Index() {
         text={
           "Sobha Realty redefines the concept of luxury residential living with a repertoire of real estate projects across Dubai."
         }
-        price={"985k"}
+        price={"965k"}
       />
       <Title
         title={"The Enduring"}
@@ -106,7 +107,7 @@ export default function Index() {
         }
       />
       <Gallery photos={photos} />
-      <ProjectInfo price={"1.56M"} handover={2027} payment={"60/40"} />
+      <ProjectInfo price={"965k"} handover={2027} payment={"60/40"} qr={reserveqr} />
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
           <h1 className=" text-4xl lg:text-6xl lg:leading-[4rem] ">
