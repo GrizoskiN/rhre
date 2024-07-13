@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }) {
         `}
       </Script> 
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-ERVDTQX7LF"></Script> */}
-   
+    
    <Script
             dangerouslySetInnerHTML={{
               __html: `
