@@ -22,6 +22,7 @@
     "embla-carousel-react": "^8.0.2",
     "express": "^4.19.2",
     "framer-motion": "^11.0.8",
+    "google-libphonenumber": "^3.2.35",
     "lucide-react": "^0.358.0",
     "next": "^14.2.4",
     "next-sitemap": "^4.2.3",

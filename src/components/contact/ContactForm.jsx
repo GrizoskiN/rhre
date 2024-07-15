@@ -6,6 +6,7 @@ import * as yup from "yup";
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
 import Popup from './../../pages/Popup';
+import { PhoneNumberUtil } from 'google-libphonenumber';
 const schema = yup
   .object({
     name: yup.string().required(),
@@ -17,12 +18,20 @@ const schema = yup
     range: yup.string(),
   })
   .required();
+  const phoneUtil = PhoneNumberUtil.getInstance();
 
+  const isPhoneValid = (phone) => {
+    try {
+      return phoneUtil.isValidNumber(phoneUtil.parseAndKeepRawInput(phone));
+    } catch (error) {
+      return false;
+    }
+  };
 const ContactForm = () => {
   const router = useRouter();
   const contactPage = router.pathname === "/contact";
-
   const [phone, setPhone] = useState('');
+  const isValid = isPhoneValid(phone);
 
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [range, setRange] = useState(1000000);
@@ -31,7 +40,7 @@ const ContactForm = () => {
   };
  
 
-  
+ 
   const [selectedDeveloper, setSelectedDeveloper] = useState('');
   const [selectedProject, setSelectedProject] = useState('');
 
@@ -158,12 +167,17 @@ const ContactForm = () => {
             />
 
         
-          <PhoneInput
-          className="border-royal border-b-2 px-3 mb-2  focus:outline-none focus:ring w-full  "
-        defaultCountry="ae"
+         <div  className="border-royal border-b-2 px-3 mb-2  focus:outline-none focus:ring w-full flex items-end justify-between">
+         <PhoneInput
+          className="  "
+           required 
+           placeholder="Enter phone number"
+         defaultCountry="ae"
         value={phone}
         onChange={(phone) => setPhone(phone)}
-      />
+        />
+        {!isValid && <div className="text-red-500 mb-2">Phone is not valid</div>}
+         </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">
           <select
@@ -248,7 +262,7 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <button className="w-full lg:w-1/3 m-auto h-16 bg-royal hover:bg-royal/80 text-white rounded-xl ">
+          <button  disabled={!isValid} className="w-full lg:w-1/3 m-auto h-16 bg-royal hover:bg-royal/80 text-white rounded-xl ">
             Submit
           </button>
         </div>
