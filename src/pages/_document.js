@@ -5,16 +5,19 @@ export default function Document() {
     <Html lang="en">
       <Head ><meta name="google-site-verification" content="RJjITg1RdbGIKZg38XJzdctv7HzYKYCiXbodV2pj1X0" />
       <link  rel='shortcut icon' href="/favicon.png" />
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERVDTQX7LF"></script>
-      <script id='google-analytics' strategy='afterInteractive'>
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
 
-          gtag('config', 'G-ERVDTQX7LF');
-        `}
-      </script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERVDTQX7LF"></script>
+
+    <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-ERVDTQX7LF');
+              `,
+            }}
+          />
       </Head>
       
       <body >
