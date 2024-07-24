@@ -99,7 +99,7 @@ export default function index() {
       <Header header={header} logo={emaarlogo} />
       <Title
         title={"Emaar Properties"}
-        subtitle={"PREMIUM PROPERTIES"}
+        // subtitle={"PREMIUM PROPERTIES"}
         paragraph={
           "Our properties, located in prime areas, boast unique designs and aspirational lifestyles within vibrant Emaar communities, all seamlessly managed by Emaar Community Management's dedicated team."
         }

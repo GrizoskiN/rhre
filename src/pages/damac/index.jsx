@@ -39,6 +39,47 @@ export default function index() {
       text: "Autograph Collection is a new and highly-curated selection of exquisite villas in DAMAC Hills",
       link: "/damac/autograph",
     },
+    {
+      id: 4,
+      image: "/img/damac/projects/heights.jpg",
+      title: "Canal Heights",
+      subtitle: "By DAMAC PROPERTIES",
+      price: "AED 1.25M",
+      address: "Dubai Marina",
+      text: "A multiple award-winning giant in an incredible Dubai marina location...",
+      link: "/damac/heights",
+    },
+    {
+      id: 5,
+      image: "/img/damac/projects/heights2.jpg",
+      title: "Canal Heights 2 ",
+      subtitle: "By DAMAC PROPERTIES",
+      price: "AED 1.25M",
+      address: "Dubai Marina",
+      text: "This development offers a range of living spaces, including studios, 1 & 2 bedroom apartments...",
+      link: "/damac/heights-2",
+    },
+    {
+      id: 6,
+      image: "/img/damac/projects/crown.jpg",
+      title: "Crown",
+      subtitle: "By DAMAC PROPERTIES",
+      price: "AED 1.12M",
+      address: "Dubai Marina",
+      text: "Escape to the ultimate waterfront living experience at Canal Crown by Damac, a tranquil residence... ",
+      link: "/damac/crown",
+    },
+    {
+      id: 7,
+      image: "/img/damac/projects/altitude.jpg",
+      title: "Altitude",
+      subtitle: "By DAMAC PROPERTIES",
+      price: "AED 1.18M",
+      address: "Dubai Marina",
+      text: "Elevate your living standards at Damac Altitude de Grisogono, a symbol of Dubai's architectural innovation",
+      link: "/damac/altitude",
+    },
+    
   ];
 
   return (
