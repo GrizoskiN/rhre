@@ -73,13 +73,13 @@ export default function Index() {
   return (
     <>
       <Head>
-    <title>Damac Properties - Crown | RHRE | Dubai, UAE</title>
+    <title>Damac Properties - Canal Crown | RHRE | Dubai, UAE</title>
     <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
     </Head>
       <HeaderImage
         header={header}
         company={"DAMAC"}
-        project={"Crown"}
+        project={"Canal Crown"}
         text={
           "A multiple award-winning giant in an incredible Dubai marina location"
         }

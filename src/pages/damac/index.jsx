@@ -62,7 +62,7 @@ export default function index() {
     {
       id: 6,
       image: "/img/damac/projects/crown.jpg",
-      title: "Crown",
+      title: "Canal Crown",
       subtitle: "By DAMAC PROPERTIES",
       price: "AED 1.12M",
       address: "Dubai Marina",
@@ -72,7 +72,7 @@ export default function index() {
     {
       id: 7,
       image: "/img/damac/projects/altitude.jpg",
-      title: "Altitude",
+      title: "Canal Altitude",
       subtitle: "By DAMAC PROPERTIES",
       price: "AED 1.18M",
       address: "Dubai Marina",
