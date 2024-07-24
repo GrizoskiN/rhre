@@ -72,7 +72,7 @@ export default function index() {
     {
       id: 7,
       image: "/img/damac/projects/altitude.jpg",
-      title: "Canal Altitude",
+      title: "Altitude",
       subtitle: "By DAMAC PROPERTIES",
       price: "AED 1.18M",
       address: "Dubai Marina",
