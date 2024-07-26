@@ -64,7 +64,7 @@ export default function index() {
       title: "Sobha One",
       subtitle: "By Sobha Realty",
       price: "AED 1.17M",
-      address: "Dubai",
+      address: "Ras Al Khor",
       text: "Embark on a waterfront lifestyle of beauty and tranquility. The tower stands poised with unparalleled views of the  clear waters and captivating illuminations of the city.",
       link: "/sobha/one",
     },
