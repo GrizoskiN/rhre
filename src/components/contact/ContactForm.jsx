@@ -47,7 +47,7 @@ const ContactForm = () => {
   const developers = {
     Emaar: [
       { name: 'Emaar Seapoint', value: 'emaar-seapoint' },
-      { name: 'Emaar Club Dive', value: 'emaar-club-dive' },
+      { name: 'Emaar Club Drive', value: 'emaar-club-drive' },
       { name: 'Emaar Bayview', value: 'emaar-bayview' },
       { name: 'Emaar Mangrove', value: 'emaar-mangrove' },
       { name: 'Emaar Valo', value: 'emaar-valo' },
