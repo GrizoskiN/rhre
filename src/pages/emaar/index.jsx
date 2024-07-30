@@ -21,7 +21,7 @@ export default function index() {
     {
       id: 1,
       image: "/img/emaar/projects/club.jpg",
-      title: "Club Dive",
+      title: "Club Drive",
       subtitle: "By Emaar Properties",
       price: "AED 1.5M",
       address: "Dubai Hills",
