@@ -15,7 +15,6 @@
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-navigation-menu": "^1.1.4",
     "@radix-ui/react-slot": "^1.0.2",
-    "@rivercode/facebook-conversion-api-nextjs": "^4.3.2",
     "@sendgrid/mail": "^8.1.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
@@ -41,7 +40,6 @@
     "xml2js": "^0.6.2",
     "yet-another-react-lightbox": "^3.17.1",
     "yup": "^1.4.0"
-
   },
   "devDependencies": {
     "autoprefixer": "^10.4.18",
