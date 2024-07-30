@@ -170,13 +170,13 @@ const ContactForm = () => {
          <div  className="border-royal border-b-2 px-3 mb-2  focus:outline-none focus:ring w-full flex items-end justify-between">
          <PhoneInput
           className="  "
-           required 
+           
            placeholder="Enter phone number"
          defaultCountry="ae"
         value={phone}
         onChange={(phone) => setPhone(phone)}
         />
-        {!isValid && <div className="text-red-500 mb-2">Phone is not valid</div>}
+        {!isValid && <div className="text-red-500 mb-2">Phone number is not valid</div>}
          </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">
@@ -262,7 +262,7 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <button  disabled={!isValid} className="w-full lg:w-1/3 m-auto h-16 bg-royal hover:bg-royal/80 text-white rounded-xl ">
+          <button   className="w-full lg:w-1/3 m-auto h-16 bg-royal hover:bg-royal/80 text-white rounded-xl ">
             Submit
           </button>
         </div>
