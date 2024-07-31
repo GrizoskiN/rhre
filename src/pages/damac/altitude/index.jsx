@@ -124,13 +124,9 @@ export default function Index() {
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>
-      
       <ProjectInfo price={"1.18M"} handover={2028} payment={"60/40"} qr={armaniqr} bedrooms="4 Bedrooms"/>
-     
-
       <Squares />
       <Faq />
-
       <div className="w-full lg:w-2/3 m-auto">
         <ContactForm />
       </div>
