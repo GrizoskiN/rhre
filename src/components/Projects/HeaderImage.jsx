@@ -5,7 +5,7 @@ import DownloadBrochureBtn from "./DownloadBrochureBtn";
 const HeaderImage = ({ header, link, company, project, text, price }) => {
   return (
     <div className="relative overflow-hidden">
-      <div className="flex flex-col lg:flex-row w-11/12 max-w-[1400px] m-auto justify-evenly items-start lg:justify-between  md:items-center  text-white  my-60 2xl:my-80">
+      <div className="flex flex-col lg:flex-row w-11/12 max-w-[1400px] m-auto justify-evenly items-start lg:justify-between  md:items-center  text-white  mt-48 mb-16 2xl:my-80">
         <div className=" md:text-center lg:text-left">
           <h2 className="font-light uppercase  text-3xl lg:text-5xl">
             {company}
@@ -17,9 +17,9 @@ const HeaderImage = ({ header, link, company, project, text, price }) => {
 
           <DownloadBrochureBtn />
         </div>
-        <div className="border-y-[1px] border-white py-3 mt-11 ">
-          <h3 className="text-gray-400 text-2xl">STARTING PRICE</h3>
-          <h2 className="font-bold text-6xl ">AED {price}</h2>
+        <div className="border-y-[1px] border-white py-3 mt-16 ">
+          <h3 className="text-gray-400 text-xl lg:text-2xl">STARTING PRICE</h3>
+          <h2 className="font-bold text-5xl lg:text-6xl ">AED {price}</h2>
         </div>
       </div>
       <Image
