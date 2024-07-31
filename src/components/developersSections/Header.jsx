@@ -6,10 +6,10 @@ export default function Header({header, logo}) {
     <div>
       <div className="relative overflow-hidden">
         <div className="flex w-11/12 max-w-[1200px] m-auto justify-center items-center  my-60 ">
-          <div className=" text-center">
-            <Image
+          <div >
+            <Image className=" w-2/3 m-auto"
               src={logo}
-              width={500}
+              width={400}
               alt="Sobha Logo, Rise High Real Estate"
             />
           </div>

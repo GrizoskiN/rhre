@@ -1,4 +1,4 @@
-import header from "@/../public/img/arada/mainheader.jpg";
+import header from "@/../public/img/damac/header.jpg";
 import ellingtonlogo from "@/../public/img/damac/damaclogo.png";
 import ContactForm from "@/components/contact/ContactForm";
 import Title from "@/components/Projects/Title";
