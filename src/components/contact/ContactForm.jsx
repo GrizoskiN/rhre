@@ -62,19 +62,19 @@ const ContactForm = () => {
     sobha: [
       { name: 'Sobha Riverside Crescent', value: 'riverside', urlValue: 'riverside' },
       { name: 'Sobha Reserve', value: 'reserve', urlValue: 'reserve' },
-      { name: 'Sobha Sea Heaven', value: 'seaheven', urlValue: 'seaheven' },
+      { name: 'Sobha Sea Heaven', value: 'seaheven', urlValue: 'seaheaven' },
       { name: 'Sobha Verde', value: 'verde', urlValue: 'verde' },
-      { name: 'Sobha One', value: 'sobhaone', urlValue: 'sobhaone' },
+      { name: 'Sobha One', value: 'sobhaone', urlValue: 'one' },
       { name: 'Sobha Orbis', value: 'orbis', urlValue: 'orbis' },
-      { name: 'Sobha Skyscape', value: 'skyscape', urlValue: 'skyscape' },
+     
     ],
     damac: [
-      { name: 'Damac Lagoons', value: 'lagoons', urlValue: 'lagoons' },
-    { name: 'Damac Hills 2 - Violet', value: 'hills-2-violet', urlValue: 'hills-2-violet' },
-    { name: 'Damac Hills - Autograph Collection', value: 'hills-autograph-collection', urlValue: 'hills-autograph-collection' },
-    { name: 'Canal Heights', value: 'canal-heights', urlValue: 'canal-heights' },
-    { name: 'Canal Heights 2', value: 'canal-heights-2', urlValue: 'canal-heights-2' },
-    { name: 'Canal Crown', value: 'canal-crown', urlValue: 'canal-crown' },
+    { name: 'Damac Lagoons', value: 'lagoons', urlValue: 'lagoons' },
+    { name: 'Damac Hills 2 - Violet', value: 'hills-2-violet', urlValue: 'violet' },
+    { name: 'Damac Hills - Autograph Collection', value: 'hills-autograph-collection', urlValue: 'autograph' },
+    { name: 'Canal Heights', value: 'canal-heights', urlValue: 'heights' },
+    { name: 'Canal Heights 2', value: 'canal-heights-2', urlValue: 'heights-2' },
+    { name: 'Canal Crown', value: 'canal-crown', urlValue: 'crown' },
     { name: 'Altitude', value: 'altitude', urlValue: 'altitude' },,
     ],
     arada: [
@@ -94,22 +94,19 @@ const ContactForm = () => {
       const url = router.asPath;
       const pathParts = url.split('/');
   
-      console.log("URL: ", url);
-      console.log("Path Parts: ", pathParts);
+   
   
       if (pathParts.length >= 3) {
         const developer = pathParts[1].toLowerCase();
         const project = pathParts[2].toLowerCase();
   
-        console.log("Developer: ", developer);
-        console.log("Project: ", project);
-  
+      
         if (developers[developer]) {
           setSelectedDeveloper(developer);
           const foundProject = developers[developer].find(p => p.urlValue.toLowerCase() === project);
           if (foundProject) {
             setSelectedProject(foundProject.value);
-            console.log("Found Project: ", foundProject);
+            
           }
         }
       }
