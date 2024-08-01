@@ -207,7 +207,7 @@ const ContactForm = () => {
         value={phone}
         onChange={(phone) => setPhone(phone)}
         />
-        {!isValid && <div className="text-red-500 mb-2">Phone number is not valid</div>}
+        {!isValid && <div className="text-[9px] md:text-sm  text-red-500 mb-2 text-center">Phone number is not valid</div>}
          </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center mb-5 w-full justify-center gap-5 ">
@@ -218,9 +218,9 @@ const ContactForm = () => {
 >
   <option value="">Select Project ↓</option>
   {Object.entries(developers).map(([developer, projects]) => (
-    <optgroup label={developer} key={developer}>
+    <optgroup label={developer} key={developer} className="capitalize">
       {projects.map((project) => (
-        <option key={project.value} value={project.value}>
+        <option key={project.value} value={project.value} >
           {project.name}
         </option>
       ))}

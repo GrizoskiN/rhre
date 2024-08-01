@@ -144,7 +144,7 @@ export default function Index() {
       <Squares  />
       <Faq />
 
-      <div className="w-full lg:w-2/3 m-auto">
+      <div className="w-full xl:w-2/3 m-auto">
         <ContactForm />
       </div>
     </>

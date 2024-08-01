@@ -78,7 +78,7 @@ export default function index() {
       />
       <div className="h-[1px] w-full bg-royal max-w-[1400px] m-auto"></div>
       <AllProjects project={projects} />
-      <div className="w-full max-w-[1200px] m-auto">
+      <div className="w-full xl:w-2/3 m-auto">
         <ContactForm />
       </div>
     </div>
