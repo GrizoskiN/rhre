@@ -7,11 +7,11 @@ const HeaderImage = ({ header, link, company, project, text, price }) => {
     <div className="relative overflow-hidden">
       <div className="flex flex-col lg:flex-row w-11/12 max-w-[1400px] m-auto justify-evenly items-start lg:justify-between  md:items-center  text-white  mt-48 mb-16 2xl:my-80">
         <div className=" md:text-center lg:text-left">
-          <h2 className="font-light uppercase  text-3xl lg:text-5xl">
+          <h2 className="font-light uppercase  text-3xl lg:text-3xl">
             {company}
           </h2>
-          <h1 className="text-7xl md:text-9xl  font-bold  ">{project}</h1>
-          <p className=" md:text-xl lg:w-3/4 font-light mt-3 leading-5 md:leading-normal text-gray-200">
+          <h1 className="text-7xl md:text-6xl  font-bold  ">{project}</h1>
+          <p className="  lg:w-3/4 font-light mt-3 leading-5 md:leading-normal text-gray-200">
             {text}
           </p>
 

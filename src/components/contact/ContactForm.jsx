@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -7,6 +7,7 @@ import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
 import Popup from './../../pages/Popup';
 import { PhoneNumberUtil } from 'google-libphonenumber';
+
 const schema = yup
   .object({
     name: yup.string().required(),
@@ -18,15 +19,17 @@ const schema = yup
     range: yup.string(),
   })
   .required();
-  const phoneUtil = PhoneNumberUtil.getInstance();
 
-  const isPhoneValid = (phone) => {
-    try {
-      return phoneUtil.isValidNumber(phoneUtil.parseAndKeepRawInput(phone));
-    } catch (error) {
-      return false;
-    }
-  };
+const phoneUtil = PhoneNumberUtil.getInstance();
+
+const isPhoneValid = (phone) => {
+  try {
+    return phoneUtil.isValidNumber(phoneUtil.parseAndKeepRawInput(phone));
+  } catch (error) {
+    return false;
+  }
+};
+
 const ContactForm = () => {
   const router = useRouter();
   const contactPage = router.pathname === "/contact";
@@ -35,57 +38,86 @@ const ContactForm = () => {
 
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [range, setRange] = useState(1000000);
-  const handleForm = (e) => {
-    e.preventDefault();
-  };
- 
 
- 
   const [selectedDeveloper, setSelectedDeveloper] = useState('');
   const [selectedProject, setSelectedProject] = useState('');
 
   const developers = {
-    Emaar: [
-      { name: 'Emaar Seapoint', value: 'emaar-seapoint' },
-      { name: 'Emaar Club Drive', value: 'emaar-club-drive' },
-      { name: 'Emaar Bayview', value: 'emaar-bayview' },
-      { name: 'Emaar Mangrove', value: 'emaar-mangrove' },
-      { name: 'Emaar Valo', value: 'emaar-valo' },
-      { name: 'Emaar Oria', value: 'emaar-oria' }
+    emaar: [
+      { name: 'Emaar Seapoint', value: 'emaar-seapoint', urlValue: 'seapoint' },
+      { name: 'Emaar Club Drive', value: 'emaar-club-drive', urlValue: 'clubDrive' },
+      { name: 'Emaar Bayview', value: 'emaar-bayview', urlValue: 'bayview' },
+      { name: 'Emaar Mangrove', value: 'emaar-mangrove', urlValue: 'mangrove' },
+      { name: 'Emaar Valo', value: 'emaar-valo', urlValue: 'valo' },
+      { name: 'Emaar Oria', value: 'emaar-oria', urlValue: 'oria' }
     ],
-    Ellington: [
-      { name: "One Riverpoint", value: 'One-riverpoint' },
+    ellington: [
+      { name: 'One Riverpoint', value: 'one-riverpoint', urlValue: 'oneriver' },
     ],
-    Danube: [
-      { name: "Danube Bayz 101", value: 'Bayz' },
-      { name: "Danube Sportz",value: 'Sportz'  },
-      { name: "Danube Diamondz",value: 'Diamondz'  }
+    danube: [
+      { name: 'Danube Bayz 101', value: 'bayz', urlValue: 'bayz' },
+      { name: 'Danube Sportz', value: 'sportz', urlValue: 'sportz' },
+      { name: 'Danube Diamondz', value: 'diamondz', urlValue: 'diamondz' }
     ],
-    Sobha: [
-      { name: "Sobha Riverside Crescent",value: 'Riverside' },
-      { name: "Sobha Reserve",value: 'Reserve'  },
-      { name: "Sobha Sea Heaven",value: 'SeaHeven'  },
-      { name: "Sobha Verde" ,value: 'Verde'},
-      { name: "Sobha One", value: 'SobhaOne' },
-      { name: "Sobha Orbis", value: 'Orbis' },
-      { name: "Sobha Skyscape ", value: 'Skyscape' },
+    sobha: [
+      { name: 'Sobha Riverside Crescent', value: 'riverside', urlValue: 'riverside' },
+      { name: 'Sobha Reserve', value: 'reserve', urlValue: 'reserve' },
+      { name: 'Sobha Sea Heaven', value: 'seaheven', urlValue: 'seaheven' },
+      { name: 'Sobha Verde', value: 'verde', urlValue: 'verde' },
+      { name: 'Sobha One', value: 'sobhaone', urlValue: 'sobhaone' },
+      { name: 'Sobha Orbis', value: 'orbis', urlValue: 'orbis' },
+      { name: 'Sobha Skyscape', value: 'skyscape', urlValue: 'skyscape' },
     ],
-    Damac: [
-      { name: 'Damac Lagoons ', value: 'Lagoons ' },
-      { name: 'Damac Hills 2 - Violet ', value: 'Hills 2 - Violet ' },
-      { name: 'Damac Hills - Autograph Collection ', value: 'Hills - Autograph Collection ' },
-    
+    damac: [
+      { name: 'Damac Lagoons', value: 'lagoons', urlValue: 'lagoons' },
+    { name: 'Damac Hills 2 - Violet', value: 'hills-2-violet', urlValue: 'hills-2-violet' },
+    { name: 'Damac Hills - Autograph Collection', value: 'hills-autograph-collection', urlValue: 'hills-autograph-collection' },
+    { name: 'Canal Heights', value: 'canal-heights', urlValue: 'canal-heights' },
+    { name: 'Canal Heights 2', value: 'canal-heights-2', urlValue: 'canal-heights-2' },
+    { name: 'Canal Crown', value: 'canal-crown', urlValue: 'canal-crown' },
+    { name: 'Altitude', value: 'altitude', urlValue: 'altitude' },,
     ],
-    Arada: [
-      { name: 'Armani Beach', value: 'Armani' },
-    
+    arada: [
+      { name: 'Armani Beach', value: 'armani', urlValue: 'armani' },
     ]
   };
+  
 
   const handleDeveloperChange = (e) => {
     setSelectedDeveloper(e.target.value);
     setSelectedProject('');
   };
+
+
+  useEffect(() => {
+    const initializeStateFromUrl = () => {
+      const url = router.asPath;
+      const pathParts = url.split('/');
+  
+      console.log("URL: ", url);
+      console.log("Path Parts: ", pathParts);
+  
+      if (pathParts.length >= 3) {
+        const developer = pathParts[1].toLowerCase();
+        const project = pathParts[2].toLowerCase();
+  
+        console.log("Developer: ", developer);
+        console.log("Project: ", project);
+  
+        if (developers[developer]) {
+          setSelectedDeveloper(developer);
+          const foundProject = developers[developer].find(p => p.urlValue.toLowerCase() === project);
+          if (foundProject) {
+            setSelectedProject(foundProject.value);
+            console.log("Found Project: ", foundProject);
+          }
+        }
+      }
+    };
+  
+    initializeStateFromUrl();
+  }, [router.asPath]);
+  
   const {
     register,
     handleSubmit,
@@ -101,28 +133,30 @@ const ContactForm = () => {
   const submitHandler = async (data) => {
     const httpResponse = await fetch("/api/hello", {
       method: "post",
-      body: JSON.stringify({...data, phone, selectedProject, range }),
+      body: JSON.stringify({ ...data, phone, selectedProject, range }),
     });
     reset();
     router.push({
       pathname: "/Popup",
-      query: { name: data.name }, // Pass the name as a query parameter
-    })
+      query: { name: data.name },
+    });
   };
+
   const closePopup = () => {
-    // Close the popup
     setPopupOpen(false);
   };
+
   const formatNumberWithCommas = (number) => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   };
+
   return (
     <>
       <h1
         className={
           "w-11/12   m-auto text-4xl lg:text-6xl font-semibold text-royal"
         }>
-        Drop as a message
+        Drop us a message
       </h1>
       <form
         className="w-11/12 m-auto overflow-hidden py-11  mb-32 lg:mt-16  "
@@ -196,6 +230,10 @@ const ContactForm = () => {
     </optgroup>
   ))}
 </select>
+
+
+
+
         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
           <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
             <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
@@ -215,51 +253,6 @@ const ContactForm = () => {
                   ? "border-red-500 placeholder-royal outline-none"
                   : "border-white outline-none text-royal "
               }`}></textarea>
-          </div>
-          <div className="flex flex-col w-full h-full mb-24 ">
-            <label htmlFor="name" className="text-royal  text-xl mt-5 relative">
-              What is your budget?
-            </label>
-
-            <div className="w-full lg:w-[75%]  flex flex-col xl:flex-row justify-between mt-5 items-center">
-              <div className=" w-full   ">
-                <div className="relative w-full flex justify-between  ">
-                  <label className="text-royal"> AED 500k </label>
-                  <input
-                    type="range"
-                    min="500000"
-                    max="100000000"
-                    className="w-3/4 accent-royal"
-                    {...register("budget")}
-                    value={range}
-                    onChange={(e) => setRange(e.target.value)}
-                  />
-
-                  <label className="text-royal"> AED 100M </label>
-                  <span className="absolute top-7 left-2/4 -translate-x-3/4 text-royal">
-                    AED {formatNumberWithCommas(range)}
-                  </span>
-                </div>
-              </div>
-
-              <div className="mt-11 xl:mt-0 text-center lg:w-1/3">
-                <input
-                  type="checkbox"
-                  id="budget"
-                  name="budget"
-                  {...register("checkbox")}
-                  value="I don't know my budget"
-                  className="hidden peer"
-                  // defaultChecked={true}
-                />
-                <label
-                  htmlFor="budget"
-                  id="budget"
-                  className=" w-full  border-[1px] border-Green hover:bg-[#262538] text-royal hover:text-white  cursor-pointer peer-checked:bg-red-500 peer-checked:text-white transition-all duration-800 ease-in-out p-3 text-sm ">
-                  I don't know my budget
-                </label>
-              </div>
-            </div>
           </div>
 
           <button   className="w-full lg:w-1/3 m-auto h-16 bg-royal hover:bg-royal/80 text-white rounded-xl ">
