@@ -6,7 +6,7 @@ import Icons from "@/components/Projects/Icons";
 import Image from "next/image";
 import one from "@/../public/img/sobha/orbis/second.webp";
 import comfort from "@/../public/img/sobha/orbis/third.webp";
-import reserveqr from "@/../public/img/sobha/qr/reserveqr.jpg";
+import reserveqr from "@/../public/img/sobha/qr/orbisqr.jpg";
 import Squares from "@/components/contact/Squares";
 import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
