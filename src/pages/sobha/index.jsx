@@ -68,6 +68,26 @@ export default function index() {
       text: "Embark on a waterfront lifestyle of beauty and tranquility. The tower stands poised with unparalleled views of the  clear waters and captivating illuminations of the city.",
       link: "/sobha/one",
     },
+    {
+      id: 6,
+      image: "/img/sobha/projects/elwood.jpg",
+      title: "Sobha Elwood",
+      subtitle: "By Sobha Realty",
+      price: "AED 7.9M",
+      address: "Dubailand",
+      text: "Sobha Realty redefines the concept of luxury residential living with a repertoire of real estate projects across Dubai. ",
+      link: "/sobha/elwood",
+    },
+    {
+      id: 7,
+      image: "/img/sobha/projects/siniya.jpg",
+      title: "Sobha Siniya Island",
+      subtitle: "By Sobha Realty",
+      price: "AED 1.1M",
+      address: "Sobha Siniya Island, Umm Al Quwain",
+      text: "This stunning neighborhood features beautiful apartments and villas with natural earth-tone designs. Each villa boasts direct waterfront access",
+      link: "/sobha/siniya-island",
+    },
   ];
 
   return (

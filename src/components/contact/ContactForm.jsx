@@ -66,6 +66,8 @@ const ContactForm = () => {
       { name: 'Sobha Verde', value: 'verde', urlValue: 'verde' },
       { name: 'Sobha One', value: 'sobhaone', urlValue: 'one' },
       { name: 'Sobha Orbis', value: 'orbis', urlValue: 'orbis' },
+      { name: 'Sobha Elwood', value: 'elwood', urlValue: 'elwood' },
+      { name: 'Sobha Siniya Island', value: 'siniya-island', urlValue: 'siniya-island' },
      
     ],
     damac: [
