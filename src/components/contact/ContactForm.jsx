@@ -81,6 +81,9 @@ const ContactForm = () => {
     ],
     arada: [
       { name: 'Armani Beach', value: 'armani', urlValue: 'armani' },
+    ],
+    meraas: [
+      { name: 'Acres', value: 'acres', urlValue: 'acres' },
     ]
   };
   

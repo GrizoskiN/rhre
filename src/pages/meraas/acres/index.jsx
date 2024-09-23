@@ -10,7 +10,7 @@ import Squares from "@/components/contact/Squares";
 import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
 import ProjectInfo from "@/components/Projects/ProjectInfo";
-
+import acresqr from "@/../public/img/meraas/qr/acresqr.jpg";
 export default function Index() {
   const photos = [
     {
@@ -123,7 +123,7 @@ export default function Index() {
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>
-      <ProjectInfo price={"5.01M"} handover={2027} payment={"65/35"} />
+      <ProjectInfo price={"5.01M"} handover={2027} payment={"65/35"} qr={acresqr}/>
       <Image
         src={fourth}
         width={2000}

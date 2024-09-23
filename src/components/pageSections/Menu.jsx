@@ -174,9 +174,9 @@ const Menu = (props) => {
                   className="flex py-1  hover:text-gray-300">
                   Ellington 
                 </Link>
-                {/* <Link href="/meraas" className="flex py-1  hover:text-gray-300">
+                <Link href="/meraas" className="flex py-1  hover:text-gray-300">
                   Meraas 
-                </Link> */}
+                </Link>
                 <Link href="/danube" className="flex py-1  hover:text-gray-300">
                   Danube 
                 </Link>
@@ -274,9 +274,9 @@ const Menu = (props) => {
                     <Link onClick={handleMenu} href="/ellington" className="flex py-1 ">
                       Ellington 
                     </Link>
-                    {/* <Link onClick={handleMenu} href="/meraas" className="flex py-1 ">
+                    <Link onClick={handleMenu} href="/meraas" className="flex py-1 ">
                       Meraas 
-                    </Link> */}
+                    </Link>
                     {/* <Link onClick={handleMenu} href="/nakheel" className="flex py-1 ">
                       Nakheel 
                     </Link> */}

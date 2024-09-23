@@ -5,7 +5,7 @@ import Footer from "@/components/pageSections/Footer";
 import ScrollToTopButton from "@/components/scrollToTop";
 import { useRouter } from "next/router";
 import Script from "next/script";
-import * as fbq from "../lib/fbpixel"
+import * as fbq from "../lib/fbpixel";
 
 export default function App({ Component, pageProps }) {
   const [active, setActive] = useState(false);
@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
   };
   const router = useRouter();
   const contact = router.pathname === "/contact";
-  const GTM_ID = 'G-ERVDTQX7LF'
+  const GTM_ID = "G-ERVDTQX7LF";
   useEffect(() => {
     // This pageview only triggers the first time (it's important for Pixel to have real information)
     fbq.pageview();
@@ -30,9 +30,8 @@ export default function App({ Component, pageProps }) {
   }, [router.events]);
   return (
     <>
-    
-     <link  rel='shortcut icon' href='/favicon.png' />
-    <Script id='google-analytics' strategy='afterInteractive'>
+      <link rel="shortcut icon" href="/favicon.png" />
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
@@ -40,11 +39,11 @@ export default function App({ Component, pageProps }) {
 
           gtag('config', 'G-ERVDTQX7LF');
         `}
-      </Script> 
-     
-   <Script
-            dangerouslySetInnerHTML={{
-              __html: `
+      </Script>
+
+      <Script
+        dangerouslySetInnerHTML={{
+          __html: `
               !function(f,b,e,v,n,t,s)
               {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
               n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -56,13 +55,10 @@ export default function App({ Component, pageProps }) {
               fbq('init', '1098510228076437');
               fbq('track', 'PageView');
               `,
-            }}
-          ></Script>
-
+        }}></Script>
 
       {/* <!-- Google Tag Manager --> */}
-      <Script id='google-tag-manager' strategy='afterInteractive'>
-       
+      <Script id="google-tag-manager" strategy="afterInteractive">
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -70,8 +66,8 @@ export default function App({ Component, pageProps }) {
           })(window,document,'script','dataLayer','GTM-PL663SLC')`}
         ;
       </Script>
-       {/* <!-- End Google Tag Manager --> */}
-       <Script
+      {/* <!-- End Google Tag Manager --> */}
+      <Script
         id="fb-pixel"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -89,7 +85,7 @@ export default function App({ Component, pageProps }) {
         }}
       />
       <Menu handleMenus={handleActive} />
-      {!contact && <ScrollToTopButton/>}
+      {!contact && <ScrollToTopButton />}
       <Component {...pageProps} />
       {/* <GoogleTagManager gtmId='G-ERVDTQX7LF' /> */}
       <Footer />

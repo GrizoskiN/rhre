@@ -17,16 +17,16 @@ export default function index() {
       text: "Welcome to The Acres, a brand-new community of standalone villas featuring impeccable surroundings enveloped by nature. ",
       link: "/meraas/acres",
     },
-    {
-      id: 1,
-      image: "/img/meraas/projects/design.webp",
-      title: "Design Quarter",
-      subtitle: "By Meraas Realty",
-      price: "AED 2.5M",
-      address: "Dubai Sports City",
-      text: "A come-as-you-are creative space where industry experts and local      entrepreneurs connect, create and collaborate.",
-      link: "/meraas/design",
-    },
+    // {
+    //   id: 1,
+    //   image: "/img/meraas/projects/design.webp",
+    //   title: "Design Quarter",
+    //   subtitle: "By Meraas Realty",
+    //   price: "AED 2.5M",
+    //   address: "Dubai Sports City",
+    //   text: "A come-as-you-are creative space where industry experts and local      entrepreneurs connect, create and collaborate.",
+    //   link: "/meraas/design",
+    // },
   ];
 
   return (
