@@ -12,7 +12,7 @@ export default function index() {
       image: "/img/meraas/projects/arces.webp",
       title: "The Acres",
       subtitle: "By Meraas Realty",
-      price: "AED 5.01M",
+      price: "AED 10M",
       address: "Business Bay",
       text: "Welcome to The Acres, a brand-new community of standalone villas featuring impeccable surroundings enveloped by nature. ",
       link: "/meraas/acres",

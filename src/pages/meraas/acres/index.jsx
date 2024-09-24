@@ -77,7 +77,7 @@ export default function Index() {
         text={
           "Discover The Acres, where every step inside brings you closer to the outdoors."
         }
-        price={"5.01M"}
+        price={"10M"}
       />
       <Title
         title={"STEP INSIDE"}
@@ -123,7 +123,7 @@ export default function Index() {
           className="w-full h-[45rem] md:h-auto object-cover"
         />
       </div>
-      <ProjectInfo price={"5.01M"} handover={2027} payment={"65/35"} qr={acresqr}/>
+      <ProjectInfo price={"10M"} handover={2027} payment={"65/35"} qr={acresqr}/>
       <Image
         src={fourth}
         width={2000}
