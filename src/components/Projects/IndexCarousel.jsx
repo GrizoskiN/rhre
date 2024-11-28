@@ -5,12 +5,7 @@ import Link from "next/link";
 export default function IndexCarousel({
   menuRef,
   width,
-  services,
-  contact,
-  info,
-  text1,
-  img,
-  address,
+  services
 }) {
   return (
     <div

@@ -92,10 +92,13 @@ export default function index() {
 
   return (
     <div>
-        <Head>
-    <title>Emaar Properties | RHRE | Dubai, UAE</title>
-    <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
-    </Head>
+      <Head>
+        <title>Emaar Properties | RHRE | Dubai, UAE</title>
+        <meta
+          name="description"
+          content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us."
+        />
+      </Head>
       <Header header={header} logo={emaarlogo} />
       <Title
         title={"Emaar Properties"}

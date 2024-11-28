@@ -9,15 +9,26 @@ import Head from "next/head";
 export default function index() {
   const projects = [
     {
-      id: 0,
-      image: "/img/sobha/projects/riverside.webp",
-      title: "Riverside Crescent",
+      id: 6,
+      image: "/img/sobha/projects/elwood.jpg",
+      title: "Sobha Elwood",
       subtitle: "By Sobha Realty",
-      price: "AED 1.57M",
-      address: "Sobha Hartland 2",
-      text: "Sobha Reserve is a holistic community with all essential amenities to enhance your quality of life, it is your one-stop destination to the best in wellness, comfort, and leisure.",
-      link: "/sobha/hartland2",
+      price: "AED 7.9M",
+      address: "Dubailand",
+      text: "Sobha Realty redefines the concept of luxury residential living with a repertoire of real estate projects across Dubai. ",
+      link: "/sobha/elwood",
     },
+    {
+      id: 8,
+      image: "/img/sobha/projects/solair.jpg",
+      title: "Sobha Skyvue Solair",
+      subtitle: "By Sobha Realty",
+      price: "AED 1.29M",
+      address: "Sobha Hartland 2",
+      text: "Taking opulence to the next level, whilst staying centered ",
+      link: "/sobha/SkyvueSolair",
+    },
+   
     {
       id: 1,
       image: "/img/sobha/projects/reserve.webp",
@@ -68,16 +79,7 @@ export default function index() {
       text: "Embark on a waterfront lifestyle of beauty and tranquility. The tower stands poised with unparalleled views of the  clear waters and captivating illuminations of the city.",
       link: "/sobha/one",
     },
-    {
-      id: 6,
-      image: "/img/sobha/projects/elwood.jpg",
-      title: "Sobha Elwood",
-      subtitle: "By Sobha Realty",
-      price: "AED 7.9M",
-      address: "Dubailand",
-      text: "Sobha Realty redefines the concept of luxury residential living with a repertoire of real estate projects across Dubai. ",
-      link: "/sobha/elwood",
-    },
+  
     {
       id: 7,
       image: "/img/sobha/projects/siniya.jpg",
@@ -87,6 +89,16 @@ export default function index() {
       address: "Sobha Siniya Island, Umm Al Quwain",
       text: "This stunning neighborhood features beautiful apartments and villas with natural earth-tone designs. Each villa boasts direct waterfront access",
       link: "/sobha/siniya-island",
+    },
+    {
+      id: 0,
+      image: "/img/sobha/projects/riverside.webp",
+      title: "Riverside Crescent",
+      subtitle: "By Sobha Realty",
+      price: "AED 1.57M",
+      address: "Sobha Hartland 2",
+      text: "Sobha Reserve is a holistic community with all essential amenities to enhance your quality of life, it is your one-stop destination to the best in wellness, comfort, and leisure.",
+      link: "/sobha/hartland2",
     },
   ];
 
