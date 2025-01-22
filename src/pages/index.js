@@ -19,7 +19,7 @@ export default function Home() {
     <title>Rise High Real Estate | Dubai, UAE</title>
     <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
+    <meta charSet="UTF-8" />
     <link rel="canonical" href="https://www.risehighrealestate.ae/" />
 
    

@@ -27,8 +27,8 @@ const Testimonials = () => {
           x2="214"
           y2="457.6"
           gradientUnits="userSpaceOnUse">
-          <stop stop-color="#225AC5" />
-          <stop offset="0.979167" stop-color="#8CADEB" />
+          <stop stopColor="#225AC5" />
+          <stop offset="0.979167" stopColor="#8CADEB" />
         </linearGradient>
       </defs>
     </svg>

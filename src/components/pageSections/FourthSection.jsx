@@ -73,17 +73,17 @@ const FourthSection = () => {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 120 }}
+      initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 40 }}
       transition={{ duration: 0.6 }}
       className="bg-royal  relative py-11 lg:py-32 w-11/12 m-auto rounded-3xl  my-11 lg:my-32 ">
       <motion.h1  ref={ref}
-      initial={{ opacity: 0, y: 220 }}
+      initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 40 }}
-      transition={{ duration: 0.6 }} className="text-center text-3xl xl:text-8xl font-bold text-white">
-        Available Locations
+      transition={{ duration: 0.6 }} className="text-center text-2xl md:text-3xl xl:text-4xl uppercase font-bold text-white w-10/12 xl:w-1/3 mx-auto">
+        The <span className="text-[#FF4747]">big w’s</span> in property hunting for investment
       </motion.h1>
-      <div className="hidden text-white md:flex w-2/3 lg:w-2/5 xl:w-1/4 m-auto items-center justify-between mt-6  lg:mt-16 text-xl">
+      {/* <div className="hidden text-white md:flex w-2/3 lg:w-2/5 xl:w-1/4 m-auto items-center justify-between mt-6  lg:mt-16 text-xl">
         <motion.a href="mailto:info@risehighrealestate.ae" ref={ref}
       initial={{ opacity: 0, y: 160 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 160}}
@@ -102,8 +102,8 @@ const FourthSection = () => {
       transition={{ duration: 0.6 }} className="flex  items-center hover:text-red-500 transition-color duration-300">
           <span className="mr-3 ">{whatsapp}</span>WhatsApp
         </motion.a>
-      </div>
-      <div className="relative lg:w-2/3 m-auto">
+      </div> */}
+      {/* <div className="relative lg:w-2/3 m-auto">
         <span className="absolute bg-white opacity-80 w-5 h-5 md:w-8 md:h-8 rounded-full top-32 left-[20%] z-10 animate-bounce "></span>
         <span className="absolute bg-white opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-16 left-[45%] z-0 animate-bounce "></span>
         <span className="absolute bg-white opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[40%] left-[65%] z-0 animate-bounce "></span>
@@ -114,6 +114,64 @@ const FourthSection = () => {
         <span className="absolute bg-white opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[53%] left-[65%] z-0 animate-bounce "></span>
         <span className="absolute bg-white opacity-60 w-5 h-5 md:w-8 md:h-8 rounded-full top-[57%] left-[35%] z-0 animate-bounce "></span>
         <Image src={dubai} width={1000} className="w-full  " />
+      </div> */}
+      <div className="grid w-10/12  xl:w-2/3 m-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-11 xl:mt-24">
+        {/* Section 1 */}
+        <div ref={ref}    initial={{ opacity: 0, y: 120 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 40 }}
+      transition={{ duration: 0.6 }} className="bg-white text-royal text-left py-6 xl:py-11 px-6 rounded-lg">
+          <h3 className="text-3xl font-medium text-royal mb-4"> 01</h3>
+          <h3 className="text-3xl font-bold uppercase mb-8"> <span className="text-[#FF4747]">WHEN</span> DO YOU BUY PROPERTY?</h3>
+          <p className="text-royal font-light"> 
+            <span className="font-bold">Pro Tip:</span> There couldn’t be a better time than now.
+          </p>
+        </div>
+        <div ref={ref}    initial={{ opacity: 0, y: 120 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 40 }}
+      transition={{ duration: 0.6 }} className="bg-white text-royal text-left py-6 xl:py-11 px-6 rounded-lg">
+          <h3 className="text-3xl font-medium text-royal mb-4"> 02</h3>
+          <h3 className="text-3xl font-bold uppercase mb-8"> <span className="text-[#FF4747]">WHERE</span>  do you buy property?</h3>
+          <p className="text-royal font-light"> 
+            <span className="font-bold">Pro Tip:</span> Choose location which has an established community.
+          </p>
+        </div>
+        <div ref={ref}    initial={{ opacity: 0, y: 120 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 40 }}
+      transition={{ duration: 0.6 }} className="bg-white text-royal text-left py-6 xl:py-11 px-6 rounded-lg">
+          <h3 className="text-3xl font-medium text-royal mb-4"> 03</h3>
+          <h3 className="text-3xl font-bold uppercase mb-8"> <span className="text-[#FF4747]">WHY</span> DO YOU BUY PROPERTY?</h3>
+          <p className="text-royal font-light"> 
+            <span className="font-bold">Pro Tip:</span>  Property is low risk investment that yields a good ROI.
+          </p>
+        </div>
+        <div ref={ref}    initial={{ opacity: 0, y: 120 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 40 }}
+      transition={{ duration: 0.6 }} className="bg-white text-royal text-left py-6 xl:py-11 px-6 rounded-lg">
+          <h3 className="text-3xl font-medium text-royal mb-4"> 04</h3>
+          <h3 className="text-3xl font-bold uppercase mb-8"> <span className="text-[#FF4747]">WHAT</span> property you’ll buy?</h3>
+          <p className="text-royal font-light"> 
+            <span className="font-bold">Pro Tip:</span>  Invest on property which has a strong potential investment.
+          </p>
+        </div>
+        <div ref={ref}    initial={{ opacity: 0, y: 120 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 40 }}
+      transition={{ duration: 0.6 }} className="bg-white text-royal text-left py-6 xl:py-11 px-6 rounded-lg">
+          <h3 className="text-3xl font-medium text-royal mb-4"> 05</h3>
+          <h3 className="text-3xl font-bold uppercase mb-8"> <span className="text-[#FF4747]">WHO</span> helps you buy property?</h3>
+          <p className="text-royal font-light"> 
+            <span className="font-bold">Pro Tip:</span> Choose someone who is expert in the market and service-oriented.
+          </p>
+        </div>
+        <div ref={ref}    initial={{ opacity: 0, y: 120 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 40 }}
+      transition={{ duration: 0.6 }} className="bg-white text-royal text-left py-6 xl:py-11 px-6 rounded-lg">
+          <h3 className="text-3xl font-medium text-royal mb-4"> 06</h3>
+          <h3 className="text-3xl font-bold uppercase mb-8"> <span className="text-[#FF4747]">WHOM</span> DO YOU BUY PROPERTY WITH?</h3>
+          <p className="text-royal font-light"> 
+            <span className="font-bold">Pro Tip:</span> Work with our trusted experts for seamless transactions and exclusive deals. Call us today!
+          </p>
+        </div>
+        {/* Section 2 */}
       </div>
     </motion.div>
   );
