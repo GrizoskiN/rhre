@@ -147,7 +147,7 @@ const SecondSection = () => {
           >
             {svg5}
             
-            <p className="text-md md:text-xl mt-11"><b>7th Safest City in the World</b>with Cosmopolitan Culture</p>
+            <p className="text-md md:text-xl mt-11"><b>7th Safest City in the World</b> with Cosmopolitan Culture</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
