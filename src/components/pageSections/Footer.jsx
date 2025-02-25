@@ -28,10 +28,10 @@ const Footer = () => {
         </div>
         <div className="lg:ml-auto">
         <h1 className="font-bold text-2xl  tracking-wider mb-6">Information</h1>
-          <h3 className="text-lg  my-1 font-light">A M H Al Shaikh Bldg
-Al Khabeesi, Deira
-Dubai</h3>
-          <h3 className="text-lg  my-1 font-light">00971 52999 2763</h3>
+          <h3 className="text-lg  my-1 font-light">Office # 305-457 <br/>
+Khalid Shaban Building <br/>
+<b>Al Garhoud, Dubai - UAEi</b></h3>
+          <h3 className="text-lg   font-light my-3">00971 52999 2763</h3>
           <h3 className="text-lg  my-1 font-light">info@risehighrealestate.ae</h3>
         </div>
       </div>
