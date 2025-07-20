@@ -13,7 +13,7 @@ const HeaderSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-5xl lg:text-7xl xl:text-8xl mt-16 font-light ">
-            Discover Your Dream Home<br />  <span className="font-bold uppercase">with Us</span>
+            Rise Above <br />  <span className="font-bold uppercase">Expectations</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 80 }}

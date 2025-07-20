@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
   <Head>
-    <title>Rise High Real Estate | Dubai, UAE</title>
+    <title>Rise High Real Estate | Rise Above Expectations - Dubai, UAE</title>
     <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charSet="UTF-8" />
