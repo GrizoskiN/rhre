@@ -84,7 +84,7 @@ export default function Index() {
         text={
           "This stunning neighborhood features beautiful apartments and villas with natural earth-tone designs. Each villa boasts direct waterfront access "
         }
-        price={"1.1M"}
+        price={"1.3M"}
       />
       <Title
         title={"DISCOVER "}
@@ -124,7 +124,7 @@ export default function Index() {
         />
       </div>
       <ProjectInfo
-        price={"1.1M"}
+        price={"1.3M"}
         handover={"2028"}
         payment={"60/40"}
         // qr={oneqr}

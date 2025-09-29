@@ -84,7 +84,7 @@ export default function Index() {
         text={
           "Escape the ordinary and step into a new chapter of living where every detail is crafted for your delight"
         }
-        price={"1.3M"}
+        price={"1.6M"}
       />
       <Title
         title={"Sobha Central "}
@@ -124,7 +124,7 @@ export default function Index() {
         />
       </div>
       <ProjectInfo
-        price={"1.3M"}
+        price={"1.6M"}
         handover={"March 2029"}
         payment={"60/40"}
         // qr={oneqr}

@@ -8,6 +8,16 @@ import Head from "next/head";
 
 export default function index() {
   const projects = [
+     {
+      id: 0,
+      image: "/img/sobha/projects/central.jpg",
+      title: "Sobha Central",
+      subtitle: "By Sobha Realty",
+      price: "AED 1.6M",
+      address: "Sheikh Zayed Road,",
+      text: "Strategically located on Sheikh Zayed Road, Dubai’s most powerful business and lifestyle corridor",
+      link: "/sobha/central",
+    },
     {
       id: 6,
       image: "/img/sobha/projects/elwood.jpg",
@@ -85,13 +95,13 @@ export default function index() {
       image: "/img/sobha/projects/siniya.jpg",
       title: "Sobha Siniya Island",
       subtitle: "By Sobha Realty",
-      price: "AED 1.1M",
+      price: "AED 1.3M",
       address: "Sobha Siniya Island, Umm Al Quwain",
       text: "This stunning neighborhood features beautiful apartments and villas with natural earth-tone designs. Each villa boasts direct waterfront access",
       link: "/sobha/siniya-island",
     },
     {
-      id: 0,
+      id: 9,
       image: "/img/sobha/projects/riverside.webp",
       title: "Riverside Crescent",
       subtitle: "By Sobha Realty",
@@ -100,16 +110,7 @@ export default function index() {
       text: "Sobha Reserve is a holistic community with all essential amenities to enhance your quality of life, it is your one-stop destination to the best in wellness, comfort, and leisure.",
       link: "/sobha/hartland2",
     },
-    {
-      id: 9,
-      image: "/img/sobha/projects/central.jpg",
-      title: "Sobha Central",
-      subtitle: "By Sobha Realty",
-      price: "AED 1.3M",
-      address: "Sheikh Zayed Road,",
-      text: "Strategically located on Sheikh Zayed Road, Dubai’s most powerful business and lifestyle corridor",
-      link: "/sobha/central",
-    },
+   
   ];
 
   return (
