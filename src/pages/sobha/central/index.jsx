@@ -17,7 +17,7 @@ import Head from "next/head";
 export default function Index() {
   const photos = [
     {
-      src: "/img/sobha/central/gallery/5.webp",
+      src: "/img/sobha/central/gallery/1.jpg",
       alt: "Image 1",
       width: 600,
       height: 800,
@@ -35,7 +35,7 @@ export default function Index() {
       height: 520,
     },
     {
-      src: "/img/sobha/central/gallery/1.jpg",
+      src: "/img/sobha/central/gallery/5.webp",
       alt: "Image 2",
       width: 800,
       height: 520,
