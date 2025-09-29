@@ -38,6 +38,16 @@ export default function index() {
       text: "This residential masterpiece caters to the discerning tastes of homeowners and investors alike...",
       link: "/danube/diamondz",
     },
+    {
+      id: 5,
+      image: "/img/danube/projects/breez.jpg",
+      title: "Breez",
+      subtitle: "by Danube Properties",
+      price: "AED 1.3M",
+      address: "Tallest Tower in Dubai Maritime City",
+      text: "Breez by Danube is a premium 60-floor waterfront residential tower in Dubai Maritime City.",
+      link: "/danube/breez",
+    },
     // {
     //   id: 2,
     //   image: "/img/danube/projects/oceanz.webp",

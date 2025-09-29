@@ -100,6 +100,16 @@ export default function index() {
       text: "Sobha Reserve is a holistic community with all essential amenities to enhance your quality of life, it is your one-stop destination to the best in wellness, comfort, and leisure.",
       link: "/sobha/hartland2",
     },
+    {
+      id: 9,
+      image: "/img/sobha/projects/central.jpg",
+      title: "Sobha Central",
+      subtitle: "By Sobha Realty",
+      price: "AED 1.3M",
+      address: "Sheikh Zayed Road,",
+      text: "Strategically located on Sheikh Zayed Road, Dubai’s most powerful business and lifestyle corridor",
+      link: "/sobha/central",
+    },
   ];
 
   return (

@@ -2,11 +2,11 @@ import Gallery from "@/components/Projects/Gallery";
 import HeaderImage from "@/components/Projects/HeaderImage";
 import Title from "@/components/Projects/Title";
 import Image from "next/image";
-import header from "@/../public/img/sobha/siniya/header.jpg";
-import second from "@/../public/img/sobha/siniya/second.jpg";
-import third from "@/../public/img/sobha/siniya/third.jpg";
-import fourth from "@/../public/img/sobha/siniya/fourth.jpg";
-// import oneqr from "@/../public/img/sobha/qr/siniyaqr.jpg";
+import header from "@/../public/img/sobha/central/header.webp";
+import second from "@/../public/img/sobha/central/second.webp";
+import third from "@/../public/img/sobha/central/third.webp";
+import fourth from "@/../public/img/sobha/central/fourth.webp";
+// import oneqr from "@/../public/img/sobha/qr/centralqr.jpg";
 import Squares from "@/components/contact/Squares";
 import Faq from "@/components/Projects/Faq";
 import ContactForm from "@/components/contact/ContactForm";
@@ -17,31 +17,31 @@ import Head from "next/head";
 export default function Index() {
   const photos = [
     {
-      src: "/img/sobha/siniya/gallery/5.jpg",
+      src: "/img/sobha/central/gallery/5.webp",
       alt: "Image 1",
       width: 600,
       height: 800,
     },
     {
-      src: "/img/sobha/siniya/gallery/2.jpg",
+      src: "/img/sobha/central/gallery/2.webp",
       alt: "Image 2",
       width: 800,
       height: 520,
     },
     {
-      src: "/img/sobha/siniya/gallery/3.jpg",
+      src: "/img/sobha/central/gallery/3.webp",
       alt: "Image 1",
       width: 800,
       height: 520,
     },
     {
-      src: "/img/sobha/siniya/gallery/1.jpg",
+      src: "/img/sobha/central/gallery/1.jpg",
       alt: "Image 2",
       width: 800,
       height: 520,
     },
     {
-      src: "/img/sobha/siniya/gallery/4.jpg",
+      src: "/img/sobha/central/gallery/4.jpg",
       alt: "Image 2",
       width: 800,
       height: 517,
@@ -74,23 +74,23 @@ export default function Index() {
   return (
     <>
     <Head>
-    <title>Sobha Realty - Elwood | RHRE | Dubai, UAE</title>
+    <title>Sobha Realty - Central | RHRE | Dubai, UAE</title>
     <meta name="description" content="Rise High Real Estate - Your trusted partner for buying, selling, and leasing properties in Dubai, UAE. Explore luxury apartments, townhouses, and villas with us." />
     </Head>
       <HeaderImage
         header={header}
         company={"Sobha"}
-        project={"Siniya Island"}
+        project={"Central"}
         text={
-          "This stunning neighborhood features beautiful apartments and villas with natural earth-tone designs. Each villa boasts direct waterfront access "
+          "Escape the ordinary and step into a new chapter of living where every detail is crafted for your delight"
         }
-        price={"1.1M"}
+        price={"1.3M"}
       />
       <Title
-        title={"DISCOVER "}
-        subtitle={"SOBHA SINIYA ISLAND"}
+        title={"Sobha Central "}
+        subtitle={"WHERE IT ALL CONNECTS"}
         paragraph={
-          "Sobha Siniya Island seamlessly blends luxury and nature, offering an exquisite collection of villas, waterfront mansions, apartments, and resorts. This island paradise captures the tranquility of untouched natural beauty, preserving its pristine wildlife and mangroves. Here, you can experience the vibrant pulse of UAE’s cosmopolitan life while enjoying peaceful seclusion, staying connected to the city's dynamic energy yet immersed in serene solitude."
+          "Sobha Central is a landmark residential community rising on Sheikh Zayed Road, Dubai’s most iconic corridor. This architectural giant unites six sleek and elegant towers around lush, elevated parks, a tech-powered retail mall, along with a dedicated oce space, and curated lifestyle amenities"
         }
       />
       {/* <Icons /> */}
@@ -109,8 +109,8 @@ export default function Index() {
       <Gallery photos={photos} />
       <div className="relative ">
         <div className="absolute top-32 2xl:top-[35%] right-0 z-10 text-white text-right font-light mr-[5%] 2xl:mr-48">
-          <h1 className=" text-md w-10/12 md:w-2/3 md:text-2xl ml-auto lg:w-2/4  lg:text-4xl  uppercase">
-          Residents enjoy a luxurious, serene lifestyle  amidst rich biodiversity and historical significance
+          <h1 className=" text-md w-10/12 md:w-2/3 md:text-2xl ml-auto lg:w-2/4  lg:text-2xl  uppercase">
+          STEP INTO A WORLD OF REFINED ELEGANCE, WHERE EVERY DETAIL IS DESIGNED FOR SOPHISTICATION AND COMFORT
           </h1>
        
           <DownloadBrochureBtn />
@@ -124,8 +124,8 @@ export default function Index() {
         />
       </div>
       <ProjectInfo
-        price={"1.1M"}
-        handover={"2028"}
+        price={"1.3M"}
+        handover={"March 2029"}
         payment={"60/40"}
         // qr={oneqr}
       />

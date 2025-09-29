@@ -57,7 +57,8 @@ const ContactForm = () => {
     danube: [
       { name: 'Danube Bayz 101', value: 'bayz', urlValue: 'bayz' },
       { name: 'Danube Sportz', value: 'sportz', urlValue: 'sportz' },
-      { name: 'Danube Diamondz', value: 'diamondz', urlValue: 'diamondz' }
+      { name: 'Danube Diamondz', value: 'diamondz', urlValue: 'diamondz' },
+      { name: 'Danube Breez', value: 'breez', urlValue: 'breez' },
     ],
     sobha: [
       { name: 'Sobha Riverside Crescent', value: 'riverside', urlValue: 'riverside' },
@@ -69,6 +70,7 @@ const ContactForm = () => {
       { name: 'Sobha Elwood', value: 'elwood', urlValue: 'elwood' },
       { name: 'Sobha Siniya Island', value: 'siniya-island', urlValue: 'siniya-island' },
       { name: 'Sobha Skyvue Solair', value: 'SkyvueSolair', urlValue: 'SkyvueSolair' },
+      { name: 'Sobha Central', value: 'Central', urlValue: 'central' },
      
     ],
     damac: [
