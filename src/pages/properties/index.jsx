@@ -5,28 +5,51 @@ import Link from "next/link";
 import xml2js from "xml2js";
 
 export async function getStaticProps() {
-  const response = await fetch(
-    "https://expert.propertyfinder.ae/feed/rise-high-real-estate-l-l-c/privatesite/c859a1c2a0092d1c046313eb0fe1b2c0",
-  );
-  const data = await response.text(); // Get the raw XML data
-
-  const parser = new xml2js.Parser();
-  let parsedData;
   try {
-    parsedData = await parser.parseStringPromise(data);
+    const response = await fetch(
+      "https://expert.propertyfinder.ae/feed/rise-high-real-estate-l-l-c/privatesite/c859a1c2a0092d1c046313eb0fe1b2c0"
+    );
+
+    // 1. Check if the connection was successful
+    if (!response.ok) {
+      console.error(`Fetch failed: ${response.status} ${response.statusText}`);
+      return { props: { data: {} } };
+    }
+
+    const textData = await response.text();
+    
+    // 2. Check if we got XML or an HTML error page
+    if (textData.trim().startsWith("<!DOCTYPE html>") || textData.includes("<html")) {
+      console.error("Error: Received HTML instead of XML. The feed URL might be incorrect or require a login.");
+      return { props: { data: {} } };
+    }
+
+  const parser = new xml2js.Parser({
+  strict: false, // FIX: Allows attributes without values
+  trim: true,
+  normalize: true,
+});
+    const parsedData = await parser.parseStringPromise(textData);
+
+    // 3. LOG THE STRUCTURE to your terminal
+    console.log("Parsed Data Keys:", Object.keys(parsedData)); 
+    
+    // If 'root' exists, log how many properties are in it
+    if (parsedData.root && parsedData.root.property) {
+       console.log("Found properties count:", parsedData.root.property.length);
+    }
+
+    return { props: { data: parsedData } };
+
   } catch (error) {
-    console.error("Error parsing XML:", error);
-    return { props: { data: {} } }; // Example of handling error
+    console.error("Error in getStaticProps:", error);
+    return { props: { data: {} } };
   }
-
-  // const paths = parsedData.list.property
-
-  return { props: { data: parsedData } };
 }
 
 export default function Listings({ data }) {
   // FIX: Safely access property. If data or list is missing, default to empty array []
-  const properties = data?.list?.property || [];
+  const properties = data?.root?.property || data?.list?.property || [];
 
   const mappedProjects = properties.map((project, index) => {
     // Assuming the title property is called "title" (adjust if different)
@@ -69,8 +92,8 @@ export default function Listings({ data }) {
   // Optional: Display a message if no properties are found
   if (mappedProjects.length === 0) {
     return (
-      <div className="mt-48 text-center">
-        <h2 className="text-2xl">No properties found at the moment.</h2>
+      <div className="mt-48 text-center min-h-[50vh] flex items-center justify-center">
+        <h2 className="text-2xl h-full">No properties found at the moment.</h2>
       </div>
     );
   }

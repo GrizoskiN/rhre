@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { parseXMLToJson } from "@/components/xmlFeed/getProjectData";
+import xml2js from "xml2js";
 import fetch from "node-fetch";
 import { convertAmenitiesShortcutsToFullText } from "../../components/dynamicPages/xmlData/amenities";
 import { splitXMLContent } from "../../components/dynamicPages/xmlData/description";
@@ -30,7 +30,7 @@ import LocationAdvantages from "@/components/dynamicPages/segments/LocationAdvan
 import PropertiesGallery from "@/components/dynamicPages/segments/PropertiesGallery";
 import AgentCard from "@/components/dynamicPages/segments/AgentCard";
 import QrCode from "@/components/dynamicPages/segments/QrCode";
-import AdditionalInformation from "@/components/dynamicPages/segments/AdditionalInfromation";
+
 import Head from "next/head"
 export default function ProjectPage({ project }) {
   const [index, setIndex] = useState(-1);
@@ -108,24 +108,33 @@ export default function ProjectPage({ project }) {
 }
 
 export async function getStaticPaths() {
-  // URL of your XML data
   const url = `https://expert.propertyfinder.ae/feed/rise-high-real-estate-l-l-c/privatesite/c859a1c2a0092d1c046313eb0fe1b2c0`;
 
-  // Fetch the XML data
-  const response = await fetch(url);
-  const xmlData = await response.text();
+  try {
+    const response = await fetch(url);
+    const xmlData = await response.text();
 
-  // Convert XML to JSON
-  const jsonData = await parseXMLToJson(xmlData);
-  console.log(JSON.stringify(jsonData, null, 2));
+    // FIX: Use local parser with strict: false to handle messy attributes
+    const parser = new xml2js.Parser({
+      strict: false,
+      trim: true,
+      normalize: true,
+    });
+    
+    const jsonData = await parser.parseStringPromise(xmlData);
 
-  // Assuming your JSON structure has a list of projects or items
-  // Make sure the structure matches your actual JSON after conversion
-  const paths = jsonData.list.property.map((project) => ({
-    params: { id: project.reference_number.toString() }, // Ensure the id is a string
-  }));
-  
-  return { paths, fallback: false };
+    // FIX: Check for 'root' OR 'list' to be safe
+    const properties = jsonData?.list?.property || jsonData?.root?.property || [];
+
+    const paths = properties.map((project) => ({
+      params: { id: project.reference_number?.[0]?.toString() },
+    }));
+
+    return { paths, fallback: false };
+  } catch (error) {
+    console.error("Error in getStaticPaths:", error);
+    return { paths: [], fallback: false };
+  }
 }
 
   // export async function getStaticProps({ params }) {
@@ -155,20 +164,56 @@ export async function getStaticPaths() {
   // }
 
 
-  async function fetchDataWithRetries(url, maxRetries = 3, delay = 1000) {
-    let retries = 0;
-    while (retries < maxRetries) {
-      try {
-        const response = await fetch(url);
-        return await response.text();
-      } catch (error) {
-        console.error(`Error fetching data (retry ${retries + 1}):`, error);
-        retries++;
-        await new Promise((resolve) => setTimeout(resolve, delay));
-      }
+// Helper for retries
+async function fetchDataWithRetries(url, maxRetries = 3, delay = 1000) {
+  let retries = 0;
+  while (retries < maxRetries) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`Status: ${response.status}`);
+      return await response.text();
+    } catch (error) {
+      console.error(`Error fetching data (retry ${retries + 1}):`, error);
+      retries++;
+      await new Promise((resolve) => setTimeout(resolve, delay));
     }
-    throw new Error(`Failed to fetch data after ${maxRetries} retries`);
   }
+  throw new Error(`Failed to fetch data after ${maxRetries} retries`);
+}
+
+export async function getStaticProps({ params }) {
+  const url = `https://expert.propertyfinder.ae/feed/rise-high-real-estate-l-l-c/privatesite/c859a1c2a0092d1c046313eb0fe1b2c0`;
+
+  try {
+    const xmlData = await fetchDataWithRetries(url);
+
+    // FIX: Use local parser with strict: false
+    const parser = new xml2js.Parser({
+      strict: false,
+      trim: true,
+      normalize: true,
+    });
+    
+    const jsonData = await parser.parseStringPromise(xmlData);
+
+    // FIX: Safety check for structure (root vs list)
+    const properties = jsonData?.list?.property || jsonData?.root?.property || [];
+
+    const project = properties.find(
+      (p) => p.reference_number?.[0]?.toString() === params.id
+    );
+
+    return {
+      props: {
+        project: project || null,
+      },
+      revalidate: 60,
+    };
+  } catch (error) {
+    console.error("Error in getStaticProps:", error);
+    return { props: { project: null } };
+  }
+}
   
   export async function getStaticProps({ params }) {
     const url = `https://expert.propertyfinder.ae/feed/rise-high-real-estate-l-l-c/privatesite/c859a1c2a0092d1c046313eb0fe1b2c0`;
