@@ -22,6 +22,8 @@ const Menu = (props) => {
   const router = useRouter();
   const about = router.pathname === "/about";
   const blog = router.pathname.startsWith("/blog/");
+    const terms = router.pathname === "/terms";
+    const privacy = router.pathname === "/privacy-policy";
 
   const listings = router.pathname === "/properties";
   const newProjects = router.pathname === "/newProjects";
@@ -40,7 +42,7 @@ const Menu = (props) => {
         height="22"
         rx="11"
         fill={`${
-          about || listings || newProjects || properties || blog  || blog ? "royal" : "white"
+          about || listings || newProjects || properties || blog  || blog || terms || privacy? "royal" : "white"
         }`}
       />
       <rect
@@ -49,7 +51,7 @@ const Menu = (props) => {
         height="22"
         rx="11"
         fill={`${
-          about || listings || newProjects || properties || blog  ? "royal" : "white"
+          about || listings || newProjects || properties || blog || terms || privacy ? "royal" : "white"
         }`}
       />
       <rect
@@ -59,7 +61,7 @@ const Menu = (props) => {
         height="22"
         rx="11"
         fill={`${
-          about || listings || newProjects || properties || blog  ? "royal" : "white"
+          about || listings || newProjects || properties || blog || terms || privacy ? "royal" : "white"
         }`}
       />
     </svg>
@@ -130,7 +132,7 @@ const Menu = (props) => {
         <Link href="/">
           <Image
             src={
-              about || listings || newProjects || properties || blog  ? logodark : logo
+              about || listings || newProjects || properties || blog || terms || privacy ? logodark : logo
             }
             priority
             width={180}
@@ -139,7 +141,7 @@ const Menu = (props) => {
         </Link>
         <div
           className={`flex items-center  font-[400] mt-4 text-lg ${
-            about || listings || newProjects || properties || blog 
+            about || listings || newProjects || properties || blog || terms || privacy
               ? "text-royal"
               : "text-white"
           }`}>
@@ -211,7 +213,7 @@ const Menu = (props) => {
           <Link
             href="/contact"
             className={`lg:mx-5   px-7 py-2 ${
-              about || listings || newProjects || properties || blog 
+              about || listings || newProjects || properties || blog || terms || privacy
                 ? "bg-royal text-white hover:bg-royal/90"
                 : "bg-white text-royal hover:bg-royal/20 hover:text-white hover:border-royal"
             } rounded-md   transition-all duration-300`}>
@@ -225,7 +227,7 @@ const Menu = (props) => {
           <Link href="/">
             <Image
               src={
-                about || listings || newProjects || properties || blog  ? logodark : logo
+                about || listings || newProjects || properties || blog || terms || privacy ? logodark : logo
               }
               priority
               className="object-cover"
