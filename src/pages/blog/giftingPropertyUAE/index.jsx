@@ -1,6 +1,6 @@
 import Image from "next/image";
-import gift from "@../../../public/img/blog/gift.jpg"
-import article2 from "@../../../public/img/blog/article2.jpg"
+
+
 import Head from "next/head"
 const index = () => {
   return (
@@ -12,7 +12,7 @@ const index = () => {
     <div className="w-11/12 max-w-[800px] text-royal m-auto mt-32 md:mt-48">
         <h1 className="text-2xl md:text-5xl font-bold md:text-center">Gifting Property in the UAE: Regulations and Fees</h1>
         <p className="md:text-center mt-2 md:mt-11 text-lg italics">March 10, 2024</p>
-        <Image src={gift} width={800} className="rounded-md my-6 lg:my-16"/>
+        <Image src="/img/blog/gift.jpg" width={800} height={500} className="rounded-md my-6 lg:my-16"/>
       <p className="font-light text-lg">
       Gifting property in the UAE can be a meaningful gesture, whether it's transferring ownership to a family member or a company. However, there are regulations and fees to consider before making such a decision.
       </p>

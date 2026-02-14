@@ -1,6 +1,5 @@
 import Image from "next/image";
-import golden from "@../../../public/img/blog/golden.jpg"
-import article2 from "@../../../public/img/blog/article2.jpg"
+
 import Head from "next/head";
 const index = () => {
   return (
@@ -12,7 +11,7 @@ const index = () => {
     <div className="w-11/12 max-w-[800px] text-royal m-auto mt-32 md:mt-48">
         <h1 className="text-2xl md:text-5xl font-bold md:text-center">Dubai's Golden Visa for Property Investors: A Comprehensive Overview</h1>
         <p className="md:text-center mt-2 md:mt-11 text-lg italics">April 18, 2024</p>
-        <Image src={golden} width={800} className="rounded-md my-6 lg:my-16"/>
+        <Image src="/img/blog/golden.jpg" height={500} width={800} className="rounded-md my-6 lg:my-16"/>
       <p className="font-light text-lg">
       Dubai, known for its iconic skyline and luxurious lifestyle, has introduced a Golden Visa scheme aimed at property investors. The Golden Visa offers long-term residency benefits to investors, making it an attractive option for those looking to invest in Dubai's thriving real estate market. Here's a detailed guide to Dubai's Golden Visa for property investors:
       </p>
@@ -37,7 +36,7 @@ const index = () => {
         <li className="my-3"><span className="font-bold ml-6 ">• Approval:</span> Once the application is submitted, it will be reviewed by the relevant authorities, and if approved, the Golden Visa will be issued.</li>
       </ul>
       <ul>
-      <Image src={article2} width={800} className="rounded-md my-16" />
+      <Image src="/img/blog/article2.jpg" width={800} height={500} className="rounded-md my-16" />
       <h3 className="font-semibold text-2xl mb-3 mt-5">Benefits of the Golden Visa:</h3>
      <p className="font-light text-lg">The Golden Visa offers several benefits for property investors, including:</p>
 

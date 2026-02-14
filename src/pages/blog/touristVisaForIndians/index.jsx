@@ -1,6 +1,6 @@
 import Image from "next/image";
-import dubai from "@../../../public/img/blog/dubai.jpg"
-import article1 from "@../../../public/img/blog/article1.jpg"
+
+
 import Head from "next/head"
 const index = () => {
   return (
@@ -12,7 +12,7 @@ const index = () => {
     <div className="w-11/12 max-w-[800px] text-royal m-auto mt-32 md:mt-48">
         <h1 className="text-2xl md:text-5xl font-bold md:text-center">Dubai's 5-Year Multiple Entry Tourist Visa for Indians: A Comprehensive Guide</h1>
         <p className="md:text-center mt-2 md:mt-11 text-lg italics">April 23, 2024</p>
-        <Image src={dubai} width={800} className="rounded-md my-6 lg:my-16"/>
+        <Image src="/img/blog/dubai.jpg" width={800} height={400} className="rounded-md my-6 lg:my-16"/>
       <p className="font-light text-lg">
       Dubai, a popular tourist destination known for its luxurious attractions and vibrant culture, has introduced a new visa scheme aimed at Indian tourists. The 5-year multiple entry tourist visa is a significant development that is expected to enhance tourism between India and Dubai. Here's everything you need to know about this new visa option:
       </p>
@@ -26,7 +26,7 @@ This allows for a total of 900 days in the UAE within five years, though not con
       <p className="font-light text-lg">The visa can be obtained through the UAE's official visa application channels, which may include online application portals or authorized visa service providers. Applicants are required to fill out the visa application form and submit the necessary documents, including a valid passport, passport-sized photographs, and proof of accommodation and travel itinerary.</p>
       <h3 className="font-semibold text-2xl mb-3 mt-5">Visa Fee and Charges:</h3>
       <p className="font-light text-lg">The visa fee and any additional charges are as per the UAE's visa regulations. It is advisable to check the latest fee structure and payment methods before applying for the visa.</p>
-      <Image src={article1} width={800} className="rounded-md my-16" />
+      <Image src="/img/blog/article1.jpg" width={800} height={500} className="rounded-md my-16" />
       <h3 className="font-semibold text-2xl mb-3 mt-5">Benefits for Indian Tourists:</h3>
       <ul>
       <p className="font-light text-lg">The introduction of the 5-year multiple entry tourist visa offers several benefits for Indian tourists:</p>
