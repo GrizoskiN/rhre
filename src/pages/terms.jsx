@@ -53,9 +53,9 @@ const TermsAndConditions = () => {
             <p className="">
               This website is operated by:<br />
               <strong>Rise High Real Estate L.L.C.</strong><br />
-              RERA License No: 10320325<br />
-              Office #305-457, Khalid Shaban Building,<br />
-              Al Garhoud, Dubai – UAE<br />
+              RERA License No: 1320325<br />
+              Office 154-1804, Ontario Tower (مليك نكات سيليك),<br />
+              Business Bay, Dubai - UAE<br />
               Phone: +971 52 999 2763<br />
               Email: admin@risehighrealestate.ae
             </p>
