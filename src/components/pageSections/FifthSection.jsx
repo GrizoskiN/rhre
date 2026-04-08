@@ -15,7 +15,6 @@ import danubelogo from "@/../public/img/danube/danubelogo.png";
 
 const FifthSection = () => {
   const services = [
-
     {
       id: 5,
       text1: `Elwood`,
@@ -23,7 +22,7 @@ const FifthSection = () => {
       address2: "Starting Price",
       logo: sobhalogo,
       img: elwood,
-      Projectlink:"/sobha/elwood",
+      Projectlink: "/sobha/elwood",
     },
 
     {
@@ -33,7 +32,7 @@ const FifthSection = () => {
       address2: "Starting Price",
       logo: sobhalogo,
       img: solair,
-      Projectlink:"/sobha/SkyvueSolair",
+      Projectlink: "/sobha/SkyvueSolair",
     },
     {
       id: 1,
@@ -81,7 +80,7 @@ const FifthSection = () => {
       Projectlink: "/danube/bayz",
     },
     {
-      id: 6,
+      id: 7,
       text1: `Riverside Crescent`,
       address: "AED 1.6M",
       address2: "Starting Price",
@@ -109,7 +108,7 @@ const FifthSection = () => {
           imagination
         </p>
       </div>
-      
+
       <IndexCarousel
         menuRef={menuRef}
         width={width}

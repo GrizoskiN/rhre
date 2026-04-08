@@ -22,8 +22,8 @@ const Menu = (props) => {
   const router = useRouter();
   const about = router.pathname === "/about";
   const blog = router.pathname.startsWith("/blog/");
-    const terms = router.pathname === "/terms";
-    const privacy = router.pathname === "/privacy-policy";
+  const terms = router.pathname === "/terms";
+  const privacy = router.pathname === "/privacy-policy";
 
   const listings = router.pathname === "/properties";
   const newProjects = router.pathname === "/newProjects";
@@ -42,7 +42,16 @@ const Menu = (props) => {
         height="22"
         rx="11"
         fill={`${
-          about || listings || newProjects || properties || blog  || blog || terms || privacy? "royal" : "white"
+          about ||
+          listings ||
+          newProjects ||
+          properties ||
+          blog ||
+          blog ||
+          terms ||
+          privacy
+            ? "royal"
+            : "white"
         }`}
       />
       <rect
@@ -51,7 +60,15 @@ const Menu = (props) => {
         height="22"
         rx="11"
         fill={`${
-          about || listings || newProjects || properties || blog || terms || privacy ? "royal" : "white"
+          about ||
+          listings ||
+          newProjects ||
+          properties ||
+          blog ||
+          terms ||
+          privacy
+            ? "royal"
+            : "white"
         }`}
       />
       <rect
@@ -61,7 +78,15 @@ const Menu = (props) => {
         height="22"
         rx="11"
         fill={`${
-          about || listings || newProjects || properties || blog || terms || privacy ? "royal" : "white"
+          about ||
+          listings ||
+          newProjects ||
+          properties ||
+          blog ||
+          terms ||
+          privacy
+            ? "royal"
+            : "white"
         }`}
       />
     </svg>
@@ -132,16 +157,32 @@ const Menu = (props) => {
         <Link href="/">
           <Image
             src={
-              about || listings || newProjects || properties || blog || terms || privacy ? logodark : logo
+              about ||
+              listings ||
+              newProjects ||
+              properties ||
+              blog ||
+              terms ||
+              privacy
+                ? logodark
+                : logo
             }
             priority
             width={180}
+            height={0}
+            style={{ height: "auto" }}
             className="bg-fit hover:scale-[105%] transition-transform duration-300"
           />
         </Link>
         <div
           className={`flex items-center  font-[400] mt-4 text-lg ${
-            about || listings || newProjects || properties || blog || terms || privacy
+            about ||
+            listings ||
+            newProjects ||
+            properties ||
+            blog ||
+            terms ||
+            privacy
               ? "text-royal"
               : "text-white"
           }`}>
@@ -166,21 +207,21 @@ const Menu = (props) => {
                 onMouseLeave={handleSubMenuLeave}>
                 {/* Add your submenu items here */}
                 <Link href="/damac" className="flex py-1  hover:text-gray-300">
-                  Damac 
+                  Damac
                 </Link>
-                 <Link href="/emaar" className="flex py-1  hover:text-gray-300">
-                  Emaar 
+                <Link href="/emaar" className="flex py-1  hover:text-gray-300">
+                  Emaar
                 </Link>
                 <Link
                   href="/ellington"
                   className="flex py-1  hover:text-gray-300">
-                  Ellington 
+                  Ellington
                 </Link>
                 <Link href="/meraas" className="flex py-1  hover:text-gray-300">
-                  Meraas 
+                  Meraas
                 </Link>
                 <Link href="/danube" className="flex py-1  hover:text-gray-300">
-                  Danube 
+                  Danube
                 </Link>
                 {/* <Link
                   href="/nakheel"
@@ -191,12 +232,11 @@ const Menu = (props) => {
                   Emaar 
                 </Link> */}
                 <Link href="/sobha" className="flex py-1  hover:text-gray-300">
-                  Sobha 
+                  Sobha
                 </Link>
                 <Link href="/arada" className="flex py-1  hover:text-gray-300">
-                  Arada 
+                  Arada
                 </Link>
-               
               </div>
             )}
           </div>
@@ -213,7 +253,13 @@ const Menu = (props) => {
           <Link
             href="/contact"
             className={`lg:mx-5   px-7 py-2 ${
-              about || listings || newProjects || properties || blog || terms || privacy
+              about ||
+              listings ||
+              newProjects ||
+              properties ||
+              blog ||
+              terms ||
+              privacy
                 ? "bg-royal text-white hover:bg-royal/90"
                 : "bg-white text-royal hover:bg-royal/20 hover:text-white hover:border-royal"
             } rounded-md   transition-all duration-300`}>
@@ -227,9 +273,20 @@ const Menu = (props) => {
           <Link href="/">
             <Image
               src={
-                about || listings || newProjects || properties || blog || terms || privacy ? logodark : logo
+                about ||
+                listings ||
+                newProjects ||
+                properties ||
+                blog ||
+                terms ||
+                privacy
+                  ? logodark
+                  : logo
               }
               priority
+              width={140}
+              height={0}
+              style={{ height: "auto" }}
               className="object-cover"
             />
           </Link>
@@ -267,33 +324,52 @@ const Menu = (props) => {
                 {isOpen && (
                   <div className=" top-full left-0 font-light text-lg py-2 px-4">
                     {/* Add your menu items here */}
-                    <Link onClick={handleMenu} href="/damac" className="flex py-1 ">
-                      Damac 
+                    <Link
+                      onClick={handleMenu}
+                      href="/damac"
+                      className="flex py-1 ">
+                      Damac
                     </Link>
-                        <Link onClick={handleMenu} href="/emaar" className="flex py-1 ">
-                      Emaar 
+                    <Link
+                      onClick={handleMenu}
+                      href="/emaar"
+                      className="flex py-1 ">
+                      Emaar
                     </Link>
-                    <Link onClick={handleMenu} href="/ellington" className="flex py-1 ">
-                      Ellington 
+                    <Link
+                      onClick={handleMenu}
+                      href="/ellington"
+                      className="flex py-1 ">
+                      Ellington
                     </Link>
-                    <Link onClick={handleMenu} href="/meraas" className="flex py-1 ">
-                      Meraas 
+                    <Link
+                      onClick={handleMenu}
+                      href="/meraas"
+                      className="flex py-1 ">
+                      Meraas
                     </Link>
                     {/* <Link onClick={handleMenu} href="/nakheel" className="flex py-1 ">
                       Nakheel 
                     </Link> */}
-                    
-                    <Link onClick={handleMenu} href="/sobha" className="flex py-1 ">
-                      Sobha 
+
+                    <Link
+                      onClick={handleMenu}
+                      href="/sobha"
+                      className="flex py-1 ">
+                      Sobha
                     </Link>
-                    <Link onClick={handleMenu} href="/danube" className="flex py-1 ">
-                      Danube 
+                    <Link
+                      onClick={handleMenu}
+                      href="/danube"
+                      className="flex py-1 ">
+                      Danube
                     </Link>
-                    <Link onClick={handleMenu} href="/arada" className="flex py-1 ">
-                      Arada 
+                    <Link
+                      onClick={handleMenu}
+                      href="/arada"
+                      className="flex py-1 ">
+                      Arada
                     </Link>
-                
-                    
                   </div>
                 )}
               </div>
